@@ -1,0 +1,37 @@
+Student Part
+
+Personal material
+======================================
+* System-assigned ID or passport number
+Name
+Age
+Country
+Language
+Toefl/Ielts
+Visa type
+======================================
+
+Education material
+======================================
+->ID
+Institution
+Completed degrees
+Gpa
+======================================
+
+Courses material
+======================================
+->ID
+Completed courses
+Grade
+======================================
+
+Apply
+======================================
+->ID
+Apply degree
+Apply major
+Purpose
+Preferred location
+Study budget
+======================================
