@@ -7,28 +7,12 @@ Name
 Age
 Country
 Language
-Toefl/Ielts
-Visa type
-======================================
-
-Education material
-======================================
-->ID
+Toefl/Ieltss
 Institution
 Completed degrees
-Gpa
-======================================
-
-Courses material
-======================================
-->ID
 Completed courses
-Grade
-======================================
-
-Apply
-======================================
-->ID
+Gpa type
+Gpa
 Apply degree
 Apply major
 Purpose
