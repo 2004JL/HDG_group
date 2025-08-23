@@ -1,0 +1,2582 @@
+[
+  {
+    "id": "STU0001",
+    "name": "Student 1",
+    "age": 25,
+    "gender": "female",
+    "nationality": "Brazil",
+    "previous_degree": "Bachelor",
+    "gpa": 4.08,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 115.0
+      }
+    ],
+    "apply_major": "Mathematics",
+    "apply_degree": "Master",
+    "purpose": "Futher_education",
+    "interests_fields": "AI/ML",
+    "preferred_country": "Canada",
+    "study_budget": 42500.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0002",
+    "name": "Student 2",
+    "age": 34,
+    "gender": "male",
+    "nationality": "Brazil",
+    "previous_degree": "Bachelor",
+    "gpa": 6.15,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 78.0
+      }
+    ],
+    "apply_major": "Business Analytics",
+    "apply_degree": "Master",
+    "purpose": "Personal_interest",
+    "interests_fields": "Materials Science",
+    "preferred_country": "New Zealand",
+    "study_budget": 34500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0003",
+    "name": "Student 3",
+    "age": 28,
+    "gender": "male",
+    "nationality": "USA",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 38.0,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 64.0
+      }
+    ],
+    "apply_major": "Civil Engineering",
+    "apply_degree": "Bachelor",
+    "purpose": "Personal_interest",
+    "interests_fields": "Sustainability",
+    "preferred_country": "New Zealand",
+    "study_budget": 61000.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0004",
+    "name": "Student 4",
+    "age": 24,
+    "gender": "male",
+    "nationality": "Singapore",
+    "previous_degree": "Bachelor",
+    "gpa": 4.14,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 47.0
+      },
+      {
+        "type": "TOEFL",
+        "score": 98.0
+      }
+    ],
+    "apply_major": "Law",
+    "apply_degree": "Master",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Entrepreneurship",
+    "preferred_country": "Ireland",
+    "study_budget": 60000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0005",
+    "name": "Student 5",
+    "age": 19,
+    "gender": "female",
+    "nationality": "Italy",
+    "previous_degree": "Bachelor",
+    "gpa": 6.05,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 54.0
+      },
+      {
+        "type": "TOEFL",
+        "score": 74.0
+      }
+    ],
+    "apply_major": "Law",
+    "apply_degree": "Master",
+    "purpose": "Research_opportunities",
+    "interests_fields": "Human-Computer Interaction",
+    "preferred_country": "Ireland",
+    "study_budget": 22000.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0006",
+    "name": "Student 6",
+    "age": 19,
+    "gender": "female",
+    "nationality": "Portugal",
+    "previous_degree": "Master",
+    "gpa": 5.8,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 71.0
+      },
+      {
+        "type": "IELTS",
+        "score": 6.7
+      }
+    ],
+    "apply_major": "Law",
+    "apply_degree": "PhD",
+    "purpose": "Personal_interest",
+    "interests_fields": "FinTech",
+    "preferred_country": "New Zealand",
+    "study_budget": 32500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0007",
+    "name": "Student 7",
+    "age": 35,
+    "gender": "male",
+    "nationality": "Egypt",
+    "previous_degree": "Bachelor",
+    "gpa": 5.29,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 35.0
+      }
+    ],
+    "apply_major": "Information Systems",
+    "apply_degree": "Master",
+    "purpose": "Futher_education",
+    "interests_fields": "Healthcare",
+    "preferred_country": "United Kingdom",
+    "study_budget": 35000.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0008",
+    "name": "Student 8",
+    "age": 31,
+    "gender": "male",
+    "nationality": "Spain",
+    "previous_degree": "Bachelor",
+    "gpa": 5.15,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 108.0
+      },
+      {
+        "type": "PTE",
+        "score": 78.0
+      }
+    ],
+    "apply_major": "Marketing",
+    "apply_degree": "Master",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Healthcare",
+    "preferred_country": "New Zealand",
+    "study_budget": 70500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0009",
+    "name": "Student 9",
+    "age": 25,
+    "gender": "female",
+    "nationality": "Germany",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 72.2,
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 8.3
+      },
+      {
+        "type": "TOEFL",
+        "score": 104.0
+      }
+    ],
+    "apply_major": "Education",
+    "apply_degree": "Bachelor",
+    "purpose": "Career_advancement",
+    "interests_fields": "FinTech",
+    "preferred_country": "Ireland",
+    "study_budget": 35500.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0010",
+    "name": "Student 10",
+    "age": 20,
+    "gender": "male",
+    "nationality": "Argentina",
+    "previous_degree": "Bachelor",
+    "gpa": 5.47,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 50.0
+      }
+    ],
+    "apply_major": "Linguistics",
+    "apply_degree": "Master",
+    "purpose": "Personal_interest",
+    "interests_fields": "Sustainability",
+    "preferred_country": "United Kingdom",
+    "study_budget": 31000.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0011",
+    "name": "Student 11",
+    "age": 33,
+    "gender": "male",
+    "nationality": "Japan",
+    "previous_degree": "Master",
+    "gpa": 5.33,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 79.0
+      },
+      {
+        "type": "IELTS",
+        "score": 6.3
+      }
+    ],
+    "apply_major": "Sociology",
+    "apply_degree": "PhD",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Digital Marketing",
+    "preferred_country": "Netherlands",
+    "study_budget": 30000.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0012",
+    "name": "Student 12",
+    "age": 34,
+    "gender": "female",
+    "nationality": "UK",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 2.1,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 69.0
+      }
+    ],
+    "apply_major": "Mechanical Engineering",
+    "apply_degree": "Bachelor",
+    "purpose": "Futher_education",
+    "interests_fields": "Materials Science",
+    "preferred_country": "Canada",
+    "study_budget": 80500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0013",
+    "name": "Student 13",
+    "age": 21,
+    "gender": "male",
+    "nationality": "Mexico",
+    "previous_degree": "Bachelor",
+    "gpa": 4.64,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 36.0
+      },
+      {
+        "type": "IELTS",
+        "score": 4.9
+      }
+    ],
+    "apply_major": "Mathematics",
+    "apply_degree": "Master",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Cloud Computing",
+    "preferred_country": "Germany",
+    "study_budget": 74500.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0014",
+    "name": "Student 14",
+    "age": 20,
+    "gender": "female",
+    "nationality": "Saudi Arabia",
+    "previous_degree": "Bachelor",
+    "gpa": 6.95,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 64.0
+      },
+      {
+        "type": "PTE",
+        "score": 42.0
+      }
+    ],
+    "apply_major": "Environmental Science",
+    "apply_degree": "Master",
+    "purpose": "Personal_interest",
+    "interests_fields": "FinTech",
+    "preferred_country": "Germany",
+    "study_budget": 38000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0015",
+    "name": "Student 15",
+    "age": 31,
+    "gender": "female",
+    "nationality": "Indonesia",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 92.3,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 51.0
+      },
+      {
+        "type": "IELTS",
+        "score": 8.7
+      }
+    ],
+    "apply_major": "Accounting",
+    "apply_degree": "Bachelor",
+    "purpose": "Career_advancement",
+    "interests_fields": "Cloud Computing",
+    "preferred_country": "Netherlands",
+    "study_budget": 76500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0016",
+    "name": "Student 16",
+    "age": 17,
+    "gender": "male",
+    "nationality": "Colombia",
+    "previous_degree": "Master",
+    "gpa": 5.33,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 6.4
+      },
+      {
+        "type": "PTE",
+        "score": 76.0
+      }
+    ],
+    "apply_major": "Environmental Science",
+    "apply_degree": "PhD",
+    "purpose": "Personal_interest",
+    "interests_fields": "FinTech",
+    "preferred_country": "United States",
+    "study_budget": 52500.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0017",
+    "name": "Student 17",
+    "age": 27,
+    "gender": "female",
+    "nationality": "Indonesia",
+    "previous_degree": "Bachelor",
+    "gpa": 5.63,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 47.0
+      }
+    ],
+    "apply_major": "International Relations",
+    "apply_degree": "Master",
+    "purpose": "Futher_education",
+    "interests_fields": "Entrepreneurship",
+    "preferred_country": "Canada",
+    "study_budget": 23500.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0018",
+    "name": "Student 18",
+    "age": 35,
+    "gender": "female",
+    "nationality": "UK",
+    "previous_degree": "Bachelor",
+    "gpa": 6.82,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 93.0
+      }
+    ],
+    "apply_major": "Sociology",
+    "apply_degree": "Master",
+    "purpose": "Research_opportunities",
+    "interests_fields": "Supply Chain",
+    "preferred_country": "Ireland",
+    "study_budget": 48000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0019",
+    "name": "Student 19",
+    "age": 26,
+    "gender": "male",
+    "nationality": "Nigeria",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 39.6,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 98.0
+      },
+      {
+        "type": "PTE",
+        "score": 69.0
+      }
+    ],
+    "apply_major": "Nursing",
+    "apply_degree": "Bachelor",
+    "purpose": "Futher_education",
+    "interests_fields": "Sustainability",
+    "preferred_country": "United States",
+    "study_budget": 79500.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0020",
+    "name": "Student 20",
+    "age": 24,
+    "gender": "male",
+    "nationality": "Peru",
+    "previous_degree": "Master",
+    "gpa": 6.76,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 7.3
+      }
+    ],
+    "apply_major": "Law",
+    "apply_degree": "PhD",
+    "purpose": "Research_opportunities",
+    "interests_fields": "AI/ML",
+    "preferred_country": "New Zealand",
+    "study_budget": 28000.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0021",
+    "name": "Student 21",
+    "age": 34,
+    "gender": "female",
+    "nationality": "Chile",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 89.0,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 43.0
+      }
+    ],
+    "apply_major": "Sociology",
+    "apply_degree": "Bachelor",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Neuroscience",
+    "preferred_country": "Netherlands",
+    "study_budget": 47000.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0022",
+    "name": "Student 22",
+    "age": 25,
+    "gender": "female",
+    "nationality": "China",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 42.4,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 40.0
+      }
+    ],
+    "apply_major": "Linguistics",
+    "apply_degree": "Bachelor",
+    "purpose": "Personal_interest",
+    "interests_fields": "Quantum Computing",
+    "preferred_country": "Germany",
+    "study_budget": 86500.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0023",
+    "name": "Student 23",
+    "age": 21,
+    "gender": "female",
+    "nationality": "Egypt",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 88.3,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 38.0
+      }
+    ],
+    "apply_major": "Data Science",
+    "apply_degree": "Bachelor",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Urban Planning",
+    "preferred_country": "Australia",
+    "study_budget": 60500.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0024",
+    "name": "Student 24",
+    "age": 34,
+    "gender": "male",
+    "nationality": "Canada",
+    "previous_degree": "Bachelor",
+    "gpa": 5.06,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 62.0
+      },
+      {
+        "type": "PTE",
+        "score": 86.0
+      }
+    ],
+    "apply_major": "Mathematics",
+    "apply_degree": "Master",
+    "purpose": "Futher_education",
+    "interests_fields": "Entrepreneurship",
+    "preferred_country": "Ireland",
+    "study_budget": 67500.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0025",
+    "name": "Student 25",
+    "age": 20,
+    "gender": "male",
+    "nationality": "Vietnam",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 78.7,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 98.0
+      },
+      {
+        "type": "PTE",
+        "score": 52.0
+      }
+    ],
+    "apply_major": "Architecture",
+    "apply_degree": "Bachelor",
+    "purpose": "Career_advancement",
+    "interests_fields": "Human-Computer Interaction",
+    "preferred_country": "Australia",
+    "study_budget": 39500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0026",
+    "name": "Student 26",
+    "age": 25,
+    "gender": "male",
+    "nationality": "New Zealand",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 6.9,
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 8.7
+      }
+    ],
+    "apply_major": "Civil Engineering",
+    "apply_degree": "Bachelor",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Entrepreneurship",
+    "preferred_country": "New Zealand",
+    "study_budget": 19500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0027",
+    "name": "Student 27",
+    "age": 30,
+    "gender": "female",
+    "nationality": "Turkey",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 78.6,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 32.0
+      },
+      {
+        "type": "TOEFL",
+        "score": 95.0
+      }
+    ],
+    "apply_major": "Computer Science",
+    "apply_degree": "Bachelor",
+    "purpose": "Research_opportunities",
+    "interests_fields": "Quantum Computing",
+    "preferred_country": "United States",
+    "study_budget": 61500.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0028",
+    "name": "Student 28",
+    "age": 27,
+    "gender": "female",
+    "nationality": "Argentina",
+    "previous_degree": "Master",
+    "gpa": 6.84,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 6.0
+      }
+    ],
+    "apply_major": "Anthropology",
+    "apply_degree": "PhD",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Quantum Computing",
+    "preferred_country": "United Kingdom",
+    "study_budget": 39500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0029",
+    "name": "Student 29",
+    "age": 35,
+    "gender": "male",
+    "nationality": "Saudi Arabia",
+    "previous_degree": "Bachelor",
+    "gpa": 6.71,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 48.0
+      }
+    ],
+    "apply_major": "Finance",
+    "apply_degree": "Master",
+    "purpose": "Personal_interest",
+    "interests_fields": "Supply Chain",
+    "preferred_country": "Ireland",
+    "study_budget": 74500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0030",
+    "name": "Student 30",
+    "age": 22,
+    "gender": "female",
+    "nationality": "Peru",
+    "previous_degree": "Bachelor",
+    "gpa": 5.53,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 4.9
+      }
+    ],
+    "apply_major": "Information Systems",
+    "apply_degree": "Master",
+    "purpose": "Career_advancement",
+    "interests_fields": "Bioinformatics",
+    "preferred_country": "United States",
+    "study_budget": 40000.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0031",
+    "name": "Student 31",
+    "age": 19,
+    "gender": "male",
+    "nationality": "UAE",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 98.4,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 89.0
+      },
+      {
+        "type": "IELTS",
+        "score": 6.7
+      }
+    ],
+    "apply_major": "Accounting",
+    "apply_degree": "Bachelor",
+    "purpose": "Career_advancement",
+    "interests_fields": "AI/ML",
+    "preferred_country": "Canada",
+    "study_budget": 69000.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0032",
+    "name": "Student 32",
+    "age": 31,
+    "gender": "female",
+    "nationality": "Spain",
+    "previous_degree": "Master",
+    "gpa": 6.39,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 38.0
+      }
+    ],
+    "apply_major": "Statistics",
+    "apply_degree": "PhD",
+    "purpose": "Research_opportunities",
+    "interests_fields": "Quantum Computing",
+    "preferred_country": "Ireland",
+    "study_budget": 71500.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0033",
+    "name": "Student 33",
+    "age": 22,
+    "gender": "male",
+    "nationality": "Iraq",
+    "previous_degree": "Master",
+    "gpa": 6.1,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 79.0
+      }
+    ],
+    "apply_major": "Information Systems",
+    "apply_degree": "PhD",
+    "purpose": "Research_opportunities",
+    "interests_fields": "Renewable Energy",
+    "preferred_country": "United States",
+    "study_budget": 50000.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0034",
+    "name": "Student 34",
+    "age": 27,
+    "gender": "male",
+    "nationality": "Italy",
+    "previous_degree": "Bachelor",
+    "gpa": 4.7,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 89.0
+      }
+    ],
+    "apply_major": "Anthropology",
+    "apply_degree": "Master",
+    "purpose": "Career_advancement",
+    "interests_fields": "Public Policy",
+    "preferred_country": "Canada",
+    "study_budget": 68000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0035",
+    "name": "Student 35",
+    "age": 23,
+    "gender": "male",
+    "nationality": "Turkey",
+    "previous_degree": "Bachelor",
+    "gpa": 5.25,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 113.0
+      },
+      {
+        "type": "IELTS",
+        "score": 6.2
+      }
+    ],
+    "apply_major": "Computer Science",
+    "apply_degree": "Master",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Bioinformatics",
+    "preferred_country": "Germany",
+    "study_budget": 68500.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0036",
+    "name": "Student 36",
+    "age": 32,
+    "gender": "female",
+    "nationality": "Turkey",
+    "previous_degree": "Bachelor",
+    "gpa": 4.82,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 7.8
+      }
+    ],
+    "apply_major": "Statistics",
+    "apply_degree": "Master",
+    "purpose": "Career_advancement",
+    "interests_fields": "UX Design",
+    "preferred_country": "Australia",
+    "study_budget": 65000.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0037",
+    "name": "Student 37",
+    "age": 31,
+    "gender": "female",
+    "nationality": "Indonesia",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 42.9,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 59.0
+      }
+    ],
+    "apply_major": "Psychology",
+    "apply_degree": "Bachelor",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Game Development",
+    "preferred_country": "New Zealand",
+    "study_budget": 68500.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0038",
+    "name": "Student 38",
+    "age": 18,
+    "gender": "male",
+    "nationality": "Brazil",
+    "previous_degree": "Bachelor",
+    "gpa": 6.25,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 43.0
+      },
+      {
+        "type": "IELTS",
+        "score": 8.8
+      }
+    ],
+    "apply_major": "Finance",
+    "apply_degree": "Master",
+    "purpose": "Futher_education",
+    "interests_fields": "UX Design",
+    "preferred_country": "United Kingdom",
+    "study_budget": 45500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0039",
+    "name": "Student 39",
+    "age": 23,
+    "gender": "male",
+    "nationality": "Colombia",
+    "previous_degree": "Bachelor",
+    "gpa": 5.69,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 60.0
+      },
+      {
+        "type": "PTE",
+        "score": 49.0
+      }
+    ],
+    "apply_major": "Civil Engineering",
+    "apply_degree": "Master",
+    "purpose": "Research_opportunities",
+    "interests_fields": "AI/ML",
+    "preferred_country": "New Zealand",
+    "study_budget": 88500.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0040",
+    "name": "Student 40",
+    "age": 19,
+    "gender": "female",
+    "nationality": "Bangladesh",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 71.5,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 80.0
+      },
+      {
+        "type": "IELTS",
+        "score": 8.9
+      }
+    ],
+    "apply_major": "Data Science",
+    "apply_degree": "Bachelor",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Quantum Computing",
+    "preferred_country": "Germany",
+    "study_budget": 62000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0041",
+    "name": "Student 41",
+    "age": 32,
+    "gender": "female",
+    "nationality": "Iran",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 42.0,
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 7.7
+      },
+      {
+        "type": "TOEFL",
+        "score": 95.0
+      }
+    ],
+    "apply_major": "Business Analytics",
+    "apply_degree": "Bachelor",
+    "purpose": "Research_opportunities",
+    "interests_fields": "Cybersecurity",
+    "preferred_country": "Netherlands",
+    "study_budget": 74500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0042",
+    "name": "Student 42",
+    "age": 19,
+    "gender": "male",
+    "nationality": "Iraq",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 24.5,
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 6.0
+      }
+    ],
+    "apply_major": "Economics",
+    "apply_degree": "Bachelor",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Entrepreneurship",
+    "preferred_country": "Netherlands",
+    "study_budget": 42000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0043",
+    "name": "Student 43",
+    "age": 25,
+    "gender": "female",
+    "nationality": "France",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 88.0,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 92.0
+      },
+      {
+        "type": "PTE",
+        "score": 61.0
+      }
+    ],
+    "apply_major": "Environmental Science",
+    "apply_degree": "Bachelor",
+    "purpose": "Career_advancement",
+    "interests_fields": "Renewable Energy",
+    "preferred_country": "Netherlands",
+    "study_budget": 72000.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0044",
+    "name": "Student 44",
+    "age": 24,
+    "gender": "male",
+    "nationality": "South Africa",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 22.2,
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 6.4
+      }
+    ],
+    "apply_major": "Linguistics",
+    "apply_degree": "Bachelor",
+    "purpose": "Research_opportunities",
+    "interests_fields": "Materials Science",
+    "preferred_country": "Ireland",
+    "study_budget": 73000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0045",
+    "name": "Student 45",
+    "age": 23,
+    "gender": "male",
+    "nationality": "Pakistan",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 12.1,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 64.0
+      },
+      {
+        "type": "IELTS",
+        "score": 5.5
+      }
+    ],
+    "apply_major": "Economics",
+    "apply_degree": "Bachelor",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Supply Chain",
+    "preferred_country": "New Zealand",
+    "study_budget": 27500.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0046",
+    "name": "Student 46",
+    "age": 26,
+    "gender": "female",
+    "nationality": "Italy",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 36.1,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 110.0
+      }
+    ],
+    "apply_major": "Architecture",
+    "apply_degree": "Bachelor",
+    "purpose": "Career_advancement",
+    "interests_fields": "Renewable Energy",
+    "preferred_country": "Canada",
+    "study_budget": 16500.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0047",
+    "name": "Student 47",
+    "age": 22,
+    "gender": "female",
+    "nationality": "Colombia",
+    "previous_degree": "Bachelor",
+    "gpa": 5.32,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 82.0
+      },
+      {
+        "type": "IELTS",
+        "score": 4.8
+      }
+    ],
+    "apply_major": "Economics",
+    "apply_degree": "Master",
+    "purpose": "Futher_education",
+    "interests_fields": "Supply Chain",
+    "preferred_country": "Australia",
+    "study_budget": 34000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0048",
+    "name": "Student 48",
+    "age": 34,
+    "gender": "male",
+    "nationality": "USA",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 24.8,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 106.0
+      }
+    ],
+    "apply_major": "Chemistry",
+    "apply_degree": "Bachelor",
+    "purpose": "Personal_interest",
+    "interests_fields": "Digital Marketing",
+    "preferred_country": "New Zealand",
+    "study_budget": 69500.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0049",
+    "name": "Student 49",
+    "age": 23,
+    "gender": "female",
+    "nationality": "Colombia",
+    "previous_degree": "Bachelor",
+    "gpa": 6.22,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 62.0
+      },
+      {
+        "type": "PTE",
+        "score": 65.0
+      }
+    ],
+    "apply_major": "Mechanical Engineering",
+    "apply_degree": "Master",
+    "purpose": "Career_advancement",
+    "interests_fields": "AI/ML",
+    "preferred_country": "Germany",
+    "study_budget": 72500.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0050",
+    "name": "Student 50",
+    "age": 26,
+    "gender": "male",
+    "nationality": "Malaysia",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 23.1,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 57.0
+      },
+      {
+        "type": "IELTS",
+        "score": 5.0
+      }
+    ],
+    "apply_major": "Accounting",
+    "apply_degree": "Bachelor",
+    "purpose": "Career_advancement",
+    "interests_fields": "Cybersecurity",
+    "preferred_country": "United Kingdom",
+    "study_budget": 24000.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0051",
+    "name": "Student 51",
+    "age": 35,
+    "gender": "male",
+    "nationality": "Iraq",
+    "previous_degree": "Bachelor",
+    "gpa": 5.79,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 7.6
+      }
+    ],
+    "apply_major": "Marketing",
+    "apply_degree": "Master",
+    "purpose": "Research_opportunities",
+    "interests_fields": "Quantum Computing",
+    "preferred_country": "Netherlands",
+    "study_budget": 71000.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0052",
+    "name": "Student 52",
+    "age": 25,
+    "gender": "female",
+    "nationality": "Singapore",
+    "previous_degree": "Master",
+    "gpa": 6.47,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 74.0
+      }
+    ],
+    "apply_major": "Nursing",
+    "apply_degree": "PhD",
+    "purpose": "Futher_education",
+    "interests_fields": "Entrepreneurship",
+    "preferred_country": "Netherlands",
+    "study_budget": 81000.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0053",
+    "name": "Student 53",
+    "age": 35,
+    "gender": "male",
+    "nationality": "Australia",
+    "previous_degree": "Master",
+    "gpa": 5.36,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 52.0
+      },
+      {
+        "type": "TOEFL",
+        "score": 92.0
+      }
+    ],
+    "apply_major": "Psychology",
+    "apply_degree": "PhD",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Healthcare",
+    "preferred_country": "United Kingdom",
+    "study_budget": 57000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0054",
+    "name": "Student 54",
+    "age": 34,
+    "gender": "female",
+    "nationality": "Russia",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 94.5,
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 5.0
+      }
+    ],
+    "apply_major": "Information Systems",
+    "apply_degree": "Bachelor",
+    "purpose": "Personal_interest",
+    "interests_fields": "Neuroscience",
+    "preferred_country": "Australia",
+    "study_budget": 84000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0055",
+    "name": "Student 55",
+    "age": 32,
+    "gender": "male",
+    "nationality": "Indonesia",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 51.8,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 76.0
+      }
+    ],
+    "apply_major": "Statistics",
+    "apply_degree": "Bachelor",
+    "purpose": "Personal_interest",
+    "interests_fields": "Healthcare",
+    "preferred_country": "Australia",
+    "study_budget": 45500.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0056",
+    "name": "Student 56",
+    "age": 30,
+    "gender": "female",
+    "nationality": "Brazil",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 1.4,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 90.0
+      },
+      {
+        "type": "TOEFL",
+        "score": 55.0
+      }
+    ],
+    "apply_major": "Law",
+    "apply_degree": "Bachelor",
+    "purpose": "Career_advancement",
+    "interests_fields": "Renewable Energy",
+    "preferred_country": "New Zealand",
+    "study_budget": 80000.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0057",
+    "name": "Student 57",
+    "age": 32,
+    "gender": "female",
+    "nationality": "Russia",
+    "previous_degree": "Bachelor",
+    "gpa": 5.45,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 88.0
+      }
+    ],
+    "apply_major": "Education",
+    "apply_degree": "Master",
+    "purpose": "Research_opportunities",
+    "interests_fields": "FinTech",
+    "preferred_country": "Canada",
+    "study_budget": 50000.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0058",
+    "name": "Student 58",
+    "age": 25,
+    "gender": "female",
+    "nationality": "Peru",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 78.8,
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 8.4
+      },
+      {
+        "type": "TOEFL",
+        "score": 97.0
+      }
+    ],
+    "apply_major": "Environmental Science",
+    "apply_degree": "Bachelor",
+    "purpose": "Personal_interest",
+    "interests_fields": "Urban Planning",
+    "preferred_country": "Ireland",
+    "study_budget": 85500.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0059",
+    "name": "Student 59",
+    "age": 23,
+    "gender": "female",
+    "nationality": "Portugal",
+    "previous_degree": "Bachelor",
+    "gpa": 4.97,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 50.0
+      }
+    ],
+    "apply_major": "Linguistics",
+    "apply_degree": "Master",
+    "purpose": "Personal_interest",
+    "interests_fields": "Game Development",
+    "preferred_country": "Germany",
+    "study_budget": 34000.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0060",
+    "name": "Student 60",
+    "age": 27,
+    "gender": "female",
+    "nationality": "Iraq",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 96.5,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 76.0
+      }
+    ],
+    "apply_major": "Electrical Engineering",
+    "apply_degree": "Bachelor",
+    "purpose": "Personal_interest",
+    "interests_fields": "FinTech",
+    "preferred_country": "Canada",
+    "study_budget": 75000.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0061",
+    "name": "Student 61",
+    "age": 19,
+    "gender": "male",
+    "nationality": "Italy",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 69.3,
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 8.4
+      }
+    ],
+    "apply_major": "Data Science",
+    "apply_degree": "Bachelor",
+    "purpose": "Research_opportunities",
+    "interests_fields": "Sustainability",
+    "preferred_country": "United States",
+    "study_budget": 51500.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0062",
+    "name": "Student 62",
+    "age": 20,
+    "gender": "female",
+    "nationality": "Iraq",
+    "previous_degree": "Bachelor",
+    "gpa": 5.3,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 32.0
+      }
+    ],
+    "apply_major": "Psychology",
+    "apply_degree": "Master",
+    "purpose": "Futher_education",
+    "interests_fields": "Bioinformatics",
+    "preferred_country": "Ireland",
+    "study_budget": 62500.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0063",
+    "name": "Student 63",
+    "age": 22,
+    "gender": "female",
+    "nationality": "Thailand",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 41.2,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 61.0
+      }
+    ],
+    "apply_major": "Nursing",
+    "apply_degree": "Bachelor",
+    "purpose": "Career_advancement",
+    "interests_fields": "Human-Computer Interaction",
+    "preferred_country": "Netherlands",
+    "study_budget": 47500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0064",
+    "name": "Student 64",
+    "age": 31,
+    "gender": "male",
+    "nationality": "Italy",
+    "previous_degree": "Bachelor",
+    "gpa": 6.7,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 8.9
+      }
+    ],
+    "apply_major": "Architecture",
+    "apply_degree": "Master",
+    "purpose": "Personal_interest",
+    "interests_fields": "Cybersecurity",
+    "preferred_country": "Netherlands",
+    "study_budget": 53500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0065",
+    "name": "Student 65",
+    "age": 29,
+    "gender": "male",
+    "nationality": "Portugal",
+    "previous_degree": "Master",
+    "gpa": 5.21,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 4.6
+      }
+    ],
+    "apply_major": "Sociology",
+    "apply_degree": "PhD",
+    "purpose": "Personal_interest",
+    "interests_fields": "Cybersecurity",
+    "preferred_country": "Australia",
+    "study_budget": 87000.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0066",
+    "name": "Student 66",
+    "age": 26,
+    "gender": "female",
+    "nationality": "USA",
+    "previous_degree": "Master",
+    "gpa": 6.49,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 119.0
+      },
+      {
+        "type": "PTE",
+        "score": 46.0
+      }
+    ],
+    "apply_major": "Sociology",
+    "apply_degree": "PhD",
+    "purpose": "Career_advancement",
+    "interests_fields": "Healthcare",
+    "preferred_country": "Australia",
+    "study_budget": 54500.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0067",
+    "name": "Student 67",
+    "age": 21,
+    "gender": "female",
+    "nationality": "Peru",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 36.5,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 42.0
+      }
+    ],
+    "apply_major": "Electrical Engineering",
+    "apply_degree": "Bachelor",
+    "purpose": "Research_opportunities",
+    "interests_fields": "Urban Planning",
+    "preferred_country": "New Zealand",
+    "study_budget": 36000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0068",
+    "name": "Student 68",
+    "age": 27,
+    "gender": "female",
+    "nationality": "Russia",
+    "previous_degree": "Master",
+    "gpa": 5.59,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 90.0
+      },
+      {
+        "type": "PTE",
+        "score": 84.0
+      }
+    ],
+    "apply_major": "Environmental Science",
+    "apply_degree": "PhD",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Sustainability",
+    "preferred_country": "Germany",
+    "study_budget": 16500.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0069",
+    "name": "Student 69",
+    "age": 25,
+    "gender": "male",
+    "nationality": "Australia",
+    "previous_degree": "Bachelor",
+    "gpa": 6.02,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 100.0
+      },
+      {
+        "type": "PTE",
+        "score": 31.0
+      }
+    ],
+    "apply_major": "Education",
+    "apply_degree": "Master",
+    "purpose": "Research_opportunities",
+    "interests_fields": "Materials Science",
+    "preferred_country": "United States",
+    "study_budget": 23000.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0070",
+    "name": "Student 70",
+    "age": 30,
+    "gender": "female",
+    "nationality": "Sri Lanka",
+    "previous_degree": "Master",
+    "gpa": 5.6,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 61.0
+      }
+    ],
+    "apply_major": "Civil Engineering",
+    "apply_degree": "PhD",
+    "purpose": "Futher_education",
+    "interests_fields": "Human-Computer Interaction",
+    "preferred_country": "United Kingdom",
+    "study_budget": 64500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0071",
+    "name": "Student 71",
+    "age": 34,
+    "gender": "male",
+    "nationality": "UK",
+    "previous_degree": "Bachelor",
+    "gpa": 6.23,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 71.0
+      },
+      {
+        "type": "TOEFL",
+        "score": 52.0
+      }
+    ],
+    "apply_major": "Economics",
+    "apply_degree": "Master",
+    "purpose": "Research_opportunities",
+    "interests_fields": "Cloud Computing",
+    "preferred_country": "New Zealand",
+    "study_budget": 19000.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0072",
+    "name": "Student 72",
+    "age": 24,
+    "gender": "male",
+    "nationality": "Bangladesh",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 44.5,
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 4.8
+      },
+      {
+        "type": "PTE",
+        "score": 47.0
+      }
+    ],
+    "apply_major": "Finance",
+    "apply_degree": "Bachelor",
+    "purpose": "Futher_education",
+    "interests_fields": "Digital Marketing",
+    "preferred_country": "Canada",
+    "study_budget": 42000.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0073",
+    "name": "Student 73",
+    "age": 21,
+    "gender": "female",
+    "nationality": "Malaysia",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 33.4,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 115.0
+      },
+      {
+        "type": "IELTS",
+        "score": 5.5
+      }
+    ],
+    "apply_major": "Accounting",
+    "apply_degree": "Bachelor",
+    "purpose": "Migration_pathway",
+    "interests_fields": "FinTech",
+    "preferred_country": "Australia",
+    "study_budget": 50000.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0074",
+    "name": "Student 74",
+    "age": 22,
+    "gender": "female",
+    "nationality": "South Africa",
+    "previous_degree": "Master",
+    "gpa": 6.08,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 85.0
+      },
+      {
+        "type": "PTE",
+        "score": 80.0
+      }
+    ],
+    "apply_major": "Accounting",
+    "apply_degree": "PhD",
+    "purpose": "Research_opportunities",
+    "interests_fields": "Materials Science",
+    "preferred_country": "Australia",
+    "study_budget": 37000.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0075",
+    "name": "Student 75",
+    "age": 20,
+    "gender": "female",
+    "nationality": "Ukraine",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 42.1,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 58.0
+      }
+    ],
+    "apply_major": "International Relations",
+    "apply_degree": "Bachelor",
+    "purpose": "Career_advancement",
+    "interests_fields": "UX Design",
+    "preferred_country": "Australia",
+    "study_budget": 81500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0076",
+    "name": "Student 76",
+    "age": 32,
+    "gender": "male",
+    "nationality": "Iran",
+    "previous_degree": "Bachelor",
+    "gpa": 4.09,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 4.8
+      },
+      {
+        "type": "PTE",
+        "score": 35.0
+      }
+    ],
+    "apply_major": "Psychology",
+    "apply_degree": "Master",
+    "purpose": "Research_opportunities",
+    "interests_fields": "FinTech",
+    "preferred_country": "Canada",
+    "study_budget": 31000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0077",
+    "name": "Student 77",
+    "age": 26,
+    "gender": "male",
+    "nationality": "Germany",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 59.7,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 110.0
+      },
+      {
+        "type": "PTE",
+        "score": 76.0
+      }
+    ],
+    "apply_major": "Finance",
+    "apply_degree": "Bachelor",
+    "purpose": "Personal_interest",
+    "interests_fields": "Digital Marketing",
+    "preferred_country": "United States",
+    "study_budget": 67500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0078",
+    "name": "Student 78",
+    "age": 27,
+    "gender": "male",
+    "nationality": "Nigeria",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 73.0,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 73.0
+      },
+      {
+        "type": "IELTS",
+        "score": 8.7
+      }
+    ],
+    "apply_major": "Mechanical Engineering",
+    "apply_degree": "Bachelor",
+    "purpose": "Futher_education",
+    "interests_fields": "Sustainability",
+    "preferred_country": "Canada",
+    "study_budget": 70000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0079",
+    "name": "Student 79",
+    "age": 35,
+    "gender": "male",
+    "nationality": "South Africa",
+    "previous_degree": "Master",
+    "gpa": 6.11,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 8.4
+      }
+    ],
+    "apply_major": "Linguistics",
+    "apply_degree": "PhD",
+    "purpose": "Futher_education",
+    "interests_fields": "Bioinformatics",
+    "preferred_country": "New Zealand",
+    "study_budget": 60000.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0080",
+    "name": "Student 80",
+    "age": 20,
+    "gender": "male",
+    "nationality": "Spain",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 48.2,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 81.0
+      }
+    ],
+    "apply_major": "Mathematics",
+    "apply_degree": "Bachelor",
+    "purpose": "Research_opportunities",
+    "interests_fields": "UX Design",
+    "preferred_country": "Australia",
+    "study_budget": 49000.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0081",
+    "name": "Student 81",
+    "age": 27,
+    "gender": "male",
+    "nationality": "China",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 76.2,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 34.0
+      }
+    ],
+    "apply_major": "Electrical Engineering",
+    "apply_degree": "Bachelor",
+    "purpose": "Futher_education",
+    "interests_fields": "Sustainability",
+    "preferred_country": "United States",
+    "study_budget": 63000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0082",
+    "name": "Student 82",
+    "age": 27,
+    "gender": "female",
+    "nationality": "Indonesia",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 37.0,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 50.0
+      }
+    ],
+    "apply_major": "Marketing",
+    "apply_degree": "Bachelor",
+    "purpose": "Personal_interest",
+    "interests_fields": "Cloud Computing",
+    "preferred_country": "Netherlands",
+    "study_budget": 71500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0083",
+    "name": "Student 83",
+    "age": 28,
+    "gender": "male",
+    "nationality": "Pakistan",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 51.2,
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 6.9
+      }
+    ],
+    "apply_major": "Architecture",
+    "apply_degree": "Bachelor",
+    "purpose": "Futher_education",
+    "interests_fields": "Human-Computer Interaction",
+    "preferred_country": "Germany",
+    "study_budget": 22000.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0084",
+    "name": "Student 84",
+    "age": 21,
+    "gender": "male",
+    "nationality": "Peru",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 21.1,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 77.0
+      }
+    ],
+    "apply_major": "Mathematics",
+    "apply_degree": "Bachelor",
+    "purpose": "Career_advancement",
+    "interests_fields": "FinTech",
+    "preferred_country": "Germany",
+    "study_budget": 83000.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0085",
+    "name": "Student 85",
+    "age": 28,
+    "gender": "female",
+    "nationality": "Saudi Arabia",
+    "previous_degree": "Bachelor",
+    "gpa": 6.5,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 31.0
+      },
+      {
+        "type": "TOEFL",
+        "score": 98.0
+      }
+    ],
+    "apply_major": "Mechanical Engineering",
+    "apply_degree": "Master",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Supply Chain",
+    "preferred_country": "Germany",
+    "study_budget": 88000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0086",
+    "name": "Student 86",
+    "age": 27,
+    "gender": "female",
+    "nationality": "Canada",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 40.5,
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 4.9
+      }
+    ],
+    "apply_major": "Civil Engineering",
+    "apply_degree": "Bachelor",
+    "purpose": "Career_advancement",
+    "interests_fields": "Cloud Computing",
+    "preferred_country": "Germany",
+    "study_budget": 82000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0087",
+    "name": "Student 87",
+    "age": 24,
+    "gender": "male",
+    "nationality": "Philippines",
+    "previous_degree": "Master",
+    "gpa": 6.49,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 107.0
+      }
+    ],
+    "apply_major": "International Relations",
+    "apply_degree": "PhD",
+    "purpose": "Career_advancement",
+    "interests_fields": "Urban Planning",
+    "preferred_country": "Ireland",
+    "study_budget": 33500.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0088",
+    "name": "Student 88",
+    "age": 21,
+    "gender": "female",
+    "nationality": "Thailand",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 19.7,
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 6.6
+      },
+      {
+        "type": "TOEFL",
+        "score": 112.0
+      }
+    ],
+    "apply_major": "Information Systems",
+    "apply_degree": "Bachelor",
+    "purpose": "Research_opportunities",
+    "interests_fields": "Digital Marketing",
+    "preferred_country": "Ireland",
+    "study_budget": 55000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0089",
+    "name": "Student 89",
+    "age": 26,
+    "gender": "male",
+    "nationality": "UK",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 44.2,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 79.0
+      }
+    ],
+    "apply_major": "Statistics",
+    "apply_degree": "Bachelor",
+    "purpose": "Personal_interest",
+    "interests_fields": "Robotics",
+    "preferred_country": "Australia",
+    "study_budget": 62000.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0090",
+    "name": "Student 90",
+    "age": 19,
+    "gender": "male",
+    "nationality": "Russia",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 86.4,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 97.0
+      }
+    ],
+    "apply_major": "Nursing",
+    "apply_degree": "Bachelor",
+    "purpose": "Career_advancement",
+    "interests_fields": "Materials Science",
+    "preferred_country": "Netherlands",
+    "study_budget": 79000.0,
+    "migration_goal": false,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0091",
+    "name": "Student 91",
+    "age": 27,
+    "gender": "female",
+    "nationality": "Germany",
+    "previous_degree": "Bachelor",
+    "gpa": 6.43,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 96.0
+      },
+      {
+        "type": "PTE",
+        "score": 58.0
+      }
+    ],
+    "apply_major": "International Relations",
+    "apply_degree": "Master",
+    "purpose": "Research_opportunities",
+    "interests_fields": "UX Design",
+    "preferred_country": "United Kingdom",
+    "study_budget": 61500.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0092",
+    "name": "Student 92",
+    "age": 18,
+    "gender": "male",
+    "nationality": "Malaysia",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 77.4,
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 5.8
+      }
+    ],
+    "apply_major": "Linguistics",
+    "apply_degree": "Bachelor",
+    "purpose": "Research_opportunities",
+    "interests_fields": "FinTech",
+    "preferred_country": "Ireland",
+    "study_budget": 25000.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0093",
+    "name": "Student 93",
+    "age": 29,
+    "gender": "female",
+    "nationality": "USA",
+    "previous_degree": "Master",
+    "gpa": 5.62,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 65.0
+      },
+      {
+        "type": "TOEFL",
+        "score": 88.0
+      }
+    ],
+    "apply_major": "Law",
+    "apply_degree": "PhD",
+    "purpose": "Migration_pathway",
+    "interests_fields": "FinTech",
+    "preferred_country": "Canada",
+    "study_budget": 69000.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0094",
+    "name": "Student 94",
+    "age": 23,
+    "gender": "male",
+    "nationality": "Poland",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 30.9,
+    "english_tests": [
+      {
+        "type": "TOEFL",
+        "score": 49.0
+      }
+    ],
+    "apply_major": "Architecture",
+    "apply_degree": "Bachelor",
+    "purpose": "Futher_education",
+    "interests_fields": "Neuroscience",
+    "preferred_country": "Australia",
+    "study_budget": 58000.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0095",
+    "name": "Student 95",
+    "age": 22,
+    "gender": "female",
+    "nationality": "Iraq",
+    "previous_degree": "Bachelor",
+    "gpa": 4.46,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 58.0
+      }
+    ],
+    "apply_major": "Education",
+    "apply_degree": "Master",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Digital Marketing",
+    "preferred_country": "United States",
+    "study_budget": 83000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0096",
+    "name": "Student 96",
+    "age": 23,
+    "gender": "male",
+    "nationality": "Portugal",
+    "previous_degree": "Master",
+    "gpa": 6.57,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "IELTS",
+        "score": 8.0
+      },
+      {
+        "type": "PTE",
+        "score": 62.0
+      }
+    ],
+    "apply_major": "International Relations",
+    "apply_degree": "PhD",
+    "purpose": "Personal_interest",
+    "interests_fields": "Entrepreneurship",
+    "preferred_country": "United States",
+    "study_budget": 32500.0,
+    "migration_goal": true,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0097",
+    "name": "Student 97",
+    "age": 28,
+    "gender": "female",
+    "nationality": "France",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 48.1,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 78.0
+      },
+      {
+        "type": "IELTS",
+        "score": 5.2
+      }
+    ],
+    "apply_major": "Statistics",
+    "apply_degree": "Bachelor",
+    "purpose": "Research_opportunities",
+    "interests_fields": "FinTech",
+    "preferred_country": "Germany",
+    "study_budget": 26500.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0098",
+    "name": "Student 98",
+    "age": 17,
+    "gender": "male",
+    "nationality": "Indonesia",
+    "previous_degree": "Master",
+    "gpa": 6.77,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 54.0
+      }
+    ],
+    "apply_major": "Mechanical Engineering",
+    "apply_degree": "PhD",
+    "purpose": "Migration_pathway",
+    "interests_fields": "Human-Computer Interaction",
+    "preferred_country": "Australia",
+    "study_budget": 55500.0,
+    "migration_goal": true,
+    "visa_type": "500"
+  },
+  {
+    "id": "STU0099",
+    "name": "Student 99",
+    "age": 21,
+    "gender": "female",
+    "nationality": "Vietnam",
+    "previous_degree": "Master",
+    "gpa": 6.3,
+    "highschool_grade_rank": "N/A",
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 78.0
+      }
+    ],
+    "apply_major": "Anthropology",
+    "apply_degree": "PhD",
+    "purpose": "Personal_interest",
+    "interests_fields": "Digital Marketing",
+    "preferred_country": "Australia",
+    "study_budget": 25000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  },
+  {
+    "id": "STU0100",
+    "name": "Student 100",
+    "age": 33,
+    "gender": "male",
+    "nationality": "Pakistan",
+    "previous_degree": "HighSchool",
+    "gpa": "N/A",
+    "highschool_grade_rank": 15.0,
+    "english_tests": [
+      {
+        "type": "PTE",
+        "score": 37.0
+      },
+      {
+        "type": "TOEFL",
+        "score": 46.0
+      }
+    ],
+    "apply_major": "Accounting",
+    "apply_degree": "Bachelor",
+    "purpose": "Personal_interest",
+    "interests_fields": "UX Design",
+    "preferred_country": "Netherlands",
+    "study_budget": 23000.0,
+    "migration_goal": false,
+    "visa_type": "485"
+  }
+]

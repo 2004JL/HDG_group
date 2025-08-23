@@ -10,7 +10,7 @@
     "age": {"type": "integer", "minimum": 17, "maximum": 35},
     "gender": {"type": "string", "enum": ["female","male"]},
     "nationality": {"type": "string"},
-    "previous_degree": {"type": "string", "enum": ["Bachelor","Master","PhD","HighSchool"]},
+    "previous_degree": {"type": "string", "enum": ["HighSchool","Bachelor","Master"]},
     "gpa": {
       "description": "If high school, then GPA is N/A",
       "oneOf": [
@@ -53,5 +53,25 @@
     "study_budget": {"type": "number"},
     "migration_goal": {"type": "boolean"},
     "visa_type": {"type": "string", "enum": ["500","485"]}
-  }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"previous_degree": {"const": "HighSchool"}}},
+      "then": {"properties": {"apply_degree": {"enum": ["Bachelor"]}, 
+        "gpa": {"type": "string", "const": "N/A"}, 
+        "highschool_grade_rank": {"type": "number", "minimum": 0.0, "maximum": 100.0}}}
+    },
+    {
+      "if": {"properties": {"previous_degree": {"const": "Bachelor"}}},
+      "then": {"properties": {"apply_degree": {"enum": ["Master"]},
+        "gpa": {"type": "number", "minimum": 0.0, "maximum": 7.0},
+        "highschool_grade_rank": {"type": "string", "const": "N/A"}}}
+    },
+    {
+      "if": {"properties": {"previous_degree": {"const": "Master"}}},
+      "then": {"properties": {"apply_degree": {"enum": ["PhD"]},
+        "gpa": {"type": "number", "minimum": 0.0, "maximum": 7.0},
+        "highschool_grade_rank": {"type": "string", "const": "N/A"}}}
+    }
+  ]
 }
