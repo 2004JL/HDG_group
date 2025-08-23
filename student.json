@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Student",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "county"],
+  "properties": {
+    "id": {"type": "string"},
+    "name": {"type": "string"},
+    "age": {"type": "integer", "minimum": 17, "maximum": 35},
+    "gender": {"type": "string", "enum": ["female","male"]},
+    "nationality": {"type": "string"},
+    "current_degree": {"type": "string", "enum": ["Bachelor","Master","PhD"]},
+    "gpa": {"type": "number", "minimum": 0, "maximum": 7.0},
+    "english_tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type","score","date"],
+        "properties": {
+          "type": {"type": "string", "enum": ["IELTS","TOEFL","PTE"]},
+          "score": {"type": "number", "minimum": 0},
+          "date": {"type": "string"}
+        }
+      }
+    },
+    "interests": {"type": "array", "items": {"type": "string"}},
+    "majors": {"type": "array", "items": {"type": "string"}},
+    "preferred_location": {"type": "string"},
+    "study_budget": {"type": "integer"},
+    "Migration goal": {"type": "boolean"}
+  }
+}
