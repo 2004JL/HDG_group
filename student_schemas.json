@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Student",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "preferred_country"],
+  "properties": {
+    "id": {"type": "string"},
+    "name": {"type": "string"},
+    "age": {"type": "integer", "minimum": 17, "maximum": 35},
+    "gender": {"type": "string", "enum": ["female","male"]},
+    "nationality": {"type": "string"},
+    "previous_degree": {"type": "string", "enum": ["Bachelor","Master","PhD","HighSchool"]},
+    "gpa": {
+      "description": "If high school, then GPA is N/A",
+      "oneOf": [
+        {"type": "string", "const": "N/A"},
+        {"type": "number", "minimum": 0.0, "maximum": 7.0}
+      ]
+    },
+    "highschool_grade_rank": {
+      "description": "Use rank to unity the grade in different country",
+      "oneOf": [
+        {"type": "string", "const": "N/A"},
+        {"type": "number", "minimum": 0.0, "maximum": 100.0}
+      ]
+    },
+    "english_tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type","score"],
+        "properties": {
+          "type": {"type": "string", "enum": ["IELTS","TOEFL","PTE"]},
+          "score": {"type": "number", "minimum": 0}
+        }
+      }
+    },
+    "apply_major": {"type": "string"},
+    "apply_degree": {"type": "string", "enum": ["Bachelor","Master","PhD"]},
+    "purpose": {
+      "type": "string", 
+      "enum": [
+        "Futher_education",
+        "Career_advancement",
+        "Migration_pathway",
+        "Personal_interest",
+        "Research_opportunities"
+      ]
+    },
+    "interests_fields": {"type": "string"},
+    "preferred_country": {"type": "string"},
+    "study_budget": {"type": "number"},
+    "migration_goal": {"type": "boolean"},
+    "visa_type": {"type": "string", "enum": ["500","485"]}
+  }
+}
