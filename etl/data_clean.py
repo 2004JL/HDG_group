@@ -14,9 +14,15 @@ def to_int(s: pd.Series) -> pd.Series:
     return pd.to_numeric(s, errors="coerce").astype("Int64")
 
 def bool_col(s: pd.Series) -> pd.Series:
-    m = {"true": True, "1": True, "yes": True, "y": True, "t": True,
-         "false": False, "0": False, "no": False, "n": False, "f": False}
-    return (s.astype(str).str.strip().str.lower().map(m)).astype("boolean")
+    s_num = pd.to_numeric(s, errors="coerce")
+
+    mapping = {
+        "true": True, "false": False
+    }
+
+    cond_str = s.astype(str).str.strip().str.lower().map(mapping)
+    cond_str = cond_str.astype("boolean").fillna(False)
+    return ((s_num > 0) | cond_str).astype("boolean")
 
 def english_test_col(s: pd.Series) -> pd.Series:
     s = s.astype(str).str.strip().str.upper()
