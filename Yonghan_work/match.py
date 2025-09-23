@@ -7,9 +7,15 @@ import pandas as pd
 # Part 2, base on australia institutions rank to calculate match value with wight
 # Part 3, For students who want to migrate, recommend the institutions with address is in designated regional area category 2 city.
 
-# Part 1 script
+# add interests
+
 eligible = pd.read_csv("eligible_programs.csv")
-sim = pd.read_csv("label_matrix.csv", index_col=0)
+students_df = pd.read_csv("base/students.csv")
+
+eligible = eligible.merge(students_df[["student_id", "interests"]], on="student_id", how="left")
+
+# Part 1 script
+sim = pd.read_csv("base/label_matrix.csv", index_col=0)
 
 # Cache row and column labels from the matrix
 labels = list(sim.index)
@@ -23,7 +29,7 @@ def split_clean(cell):
     if pd.isna(cell):
         return []
     else:
-        return [p.strip() for p in str(cell).split(";") if p.strip()]
+        return [p.strip().lower() for p in str(cell).split(";") if p.strip()]
 
 # Compute the average similarity between student interests and programs field_tags for a row.
 def row_match(row):
@@ -68,10 +74,10 @@ pti = eligible.merge(programs_df, on="program_id", how="left")
 pti = pti.merge(institutions_df, on="institution_id", how="left")
 
 # Add the rank (easy for view)
-eligible["institutions_rank"] = pd.to_numeric(pti["Rank"], errors="coerce")
+eligible["institutions_rank"] = pd.to_numeric(pti["overall_ranking"], errors="coerce")
 
 # Load the length (range) of the 'rank'
-max = pd.to_numeric(institutions_df["Rank"], errors="coerce").max()
+max = pd.to_numeric(institutions_df["overall_ranking"], errors="coerce").max()
 
 # Weight match score (based on rank)
 def calc_c_match(row):
@@ -101,8 +107,7 @@ def designated_regional(loc):
 
 # append to csv
 eligible["institution_id"] = pti["institution_id"].values
-eligible["designated_regional"] = pti["locations"].apply(designated_regional).astype(int)
-
+eligible["category_2_city"] = pti["locations"].apply(designated_regional).astype(int)
 
 students_df = pd.read_csv("base/students.csv")
 
