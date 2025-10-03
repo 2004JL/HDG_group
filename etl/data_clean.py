@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -52,6 +51,10 @@ institutions.to_csv(OUT / "institutions.csv", index=False)
 # programs
 programs = pd.read_csv(RAW / "programs.csv")
 programs = strip_obj(programs)
+
+paren_pattern = r"\s*\([^)]*\)"
+if "name" in programs.columns:
+    programs["name"] = programs["name"].str.replace(paren_pattern, "", regex=True).str.strip()
 
 for col in ["program_id", "institution_id"]:
     if col in programs.columns:
