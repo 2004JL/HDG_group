@@ -25,18 +25,24 @@ students_slim["_tmp"] = 1
 prog_ins["_tmp"] = 1
 cross = students_slim.merge(prog_ins, on="_tmp").drop(columns="_tmp")
 
-eligible = cross[
+judge = (
     (cross["gpa_std_4"] * 1.15 >= cross["min_gpa_std_4"])&
     (cross["english_test_type"] == cross["english_required_type"])&
     (cross["english_score_overall"] * 1.15 >= cross["english_min_overall"])&
     (cross["degree_goal"] == cross["degree_level"])
-]
+)
+
+cross["judge"] = judge.astype(bool)
 
 eligible_out = (
-    eligible[["student_id", "program_id"]]
-    .drop_duplicates()
-    .sort_values(["student_id", "program_id"])
-    .reset_index(drop=True)
+    cross[["student_id", "program_id", "judge"]]
+
+    .merge(students[["student_id", "english_test_type"]],
+    on="student_id", how="left")
+    .merge(students[["student_id", "english_score_overall"]],
+    on="student_id", how="left")
+    .merge(students[["student_id", "gpa_std_4"]],
+    on="student_id", how="left")
 
     .merge(students[["student_id", "degree_goal"]],
     on="student_id", how="left")
@@ -53,8 +59,6 @@ eligible_out = (
     .merge(institutions[["institution_id", "overall_ranking"]],
     on="institution_id", how="left")
 )
-
-eligible_out = eligible_out[["student_id", "interests", "degree_goal", "program_id", "field_tags", "degree_level", "institution_id", "overall_ranking"]]
 
 # Cache row and column labels from the matrix
 labels = list(sim.index)
@@ -116,7 +120,9 @@ def calc_c_match(row):
     # The value of "n" is linearly dependent to institutions rank
     return round(float(m) * n, 2)
 
-eligible_out["wight"] = eligible_out.apply(calc_c_match, axis=1)
+eligible_out["label_match_with_qs_wight"] = eligible_out.apply(calc_c_match, axis=1)
+
+eligible_out = eligible_out[["student_id", "interests", "degree_goal", "english_test_type", "english_score_overall", "gpa_std_4", "program_id", "judge", "label_match"]]
 
 eligible_out.to_csv(OUT / "eligible.csv", index=False)
 print(f"Saved: {OUT / 'eligible.csv'}")
