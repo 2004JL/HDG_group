@@ -30,7 +30,7 @@ Kim Hyuna
 
 Contents 
 
-Overview 
+<h1><span style="font-size:30px;>Overview</span></h1> 
 
 In today’s globally connected education landscape, international students often face difficulties due to an overwhelming number of choices and complex procedural systems. The current study abroad system has been criticized for being too general and lacking scalability, which prevents it from providing personalized guidance personalized to each student’s needs. 
 
@@ -42,7 +42,7 @@ The value of this project lies in integrating AI-driven analysis with human expe
 
  
 
-Project Scope 
+<h1><span style="font-size:30px;>Project Scope</span></h1>
 
 Synthetic Data creation: Generate a synthetic dataset representing students, mentors, and institutions. 
 
@@ -54,13 +54,13 @@ Prototype Implementation: A user interface is developed to visually present reco
 
 Evaluation: Model performance is compared using accuracy and relevance metrics (nDCG@3, diversity, interpretability). 
 
-Technology 
+<h1><span style="font-size:30px;>Technology</span></h1>
 
  
 
 Setup 
 
-Methodology 
+<h1><span style="font-size:30px;>Methodology</h1></span>
 
 1.Data Generation 
 
