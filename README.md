@@ -1,4 +1,4 @@
-AI-Powered Recommendation Platform for Study Pathways and Mentorship 
+<p align = "center"><span style="font-size:20px; color:#0078D7;font-weight:bold;">AI-Powered Recommendation Platform for Study Pathways and Mentorship</span></p>
 
  
 
