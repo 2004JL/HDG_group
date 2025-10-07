@@ -1,4 +1,4 @@
-<p align = "center"><span style="font-size:20px; color:#0078D7;font-weight:bold;">AI-Powered Recommendation Platform for Study Pathways and Mentorship</span></p>
+<p align = "center"><span style="font-size:50px; color:#0078D7;font-weight:bold;">AI-Powered Recommendation Platform for Study Pathways and Mentorship</span></p>
 
  
 
@@ -72,12 +72,12 @@ How it was created:
 
 What it included: 
 
-System Design 
+<h1><span style="font-size:30px;>System Design</span></h1>
 
  
 
-Result 
+<h1><span style="font-size:30px;>Result</span></h1>
 
  
 
-Conclusion 
+<h1><span style="font-size:30px;>Conclusion</span></h1>
