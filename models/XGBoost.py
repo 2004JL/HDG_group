@@ -28,7 +28,7 @@ for name, df in [("train", train), ("test", test)]:
     df["field_tags"]  = df["field_tags"].fillna("")
     df["label_match"] = pd.to_numeric(df["label_match"], errors="coerce").fillna(0.0)
 
-# 2) Feature engineering
+# Feature engineering
 def to_list(s: str):
     return [x.strip().lower() for x in str(s).split(";") if x.strip()]
 
