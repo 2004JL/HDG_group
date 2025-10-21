@@ -1,43 +1,5 @@
 import streamlit as st
 import json, os, secrets, base64, hashlib
-import pandas as pd
-from pathlib import Path
-import re
-
-def _uniq_clean_list(values):
-    seen = set()
-    out = []
-    for v in values:
-        if v is None:
-            continue
-        s = str(v).strip()
-        if not s:
-            continue
-        k = s.lower()
-        if k not in seen:
-            seen.add(k)
-            out.append(s)
-    return sorted(out)
-
-def _options_from_students_df(df: pd.DataFrame):
-    major_opts = _uniq_clean_list(df.get("major_intent", pd.Series(dtype=str)).tolist())
-    degree_opts = _uniq_clean_list(df.get("degree_goal", pd.Series(dtype=str)).tolist())
-    raw_interests = df.get("interests", pd.Series(dtype=str)).dropna().astype(str).tolist()
-    split_items = []
-    for s in raw_interests:
-        parts = re.split(r"[;,|/]+", s)
-        split_items.extend([p.strip() for p in parts if p.strip()])
-    interest_opts = _uniq_clean_list(split_items)
-    return major_opts, degree_opts, interest_opts
-
-def ensure_students_options_in_state():
-    if "students_opts" in st.session_state:
-        return
-    st.session_state["students_opts"] = {
-        "major": [],
-        "degree": [],
-        "interest": [],
-    }
 
 USERS_DB = "users.json"
 
@@ -61,10 +23,6 @@ def load_users():
 def save_users(data):
     json.dump(data, open(USERS_DB, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
-st.set_page_config(page_title="StudyMatch", layout="wide")
-st.markdown("<style>#MainMenu{visibility:hidden;}footer{visibility:hidden;}</style>", unsafe_allow_html=True)
-st.title("Explore degrees by leading Australian Universities")
-
 st.session_state.setdefault("auth_open", False)
 col1, col2 = st.columns([6, 1])
 with col2:
@@ -82,7 +40,6 @@ if st.session_state.get("auth_open"):
         st.markdown("### Sign in or create account")
         tabs = st.tabs(["Sign in", "Register"])
         users = load_users()
-
         with tabs[0]:
             email = st.text_input("Email", key="auth_signin_email")
             pw = st.text_input("Password", type="password", key="auth_signin_pw")
@@ -113,35 +70,25 @@ if st.session_state.get("auth_open"):
                     save_users(users)
                     st.success("Account created! You can now log in.")
 
+st.set_page_config(page_title="StudyMatch", layout="wide")
+st.markdown(
+    "<style>#MainMenu {visibility:hidden;} footer {visibility:hidden;}</style>",
+    unsafe_allow_html=True,
+)
+st.title("Explore degrees by leading Australian Universities")
+
 MAJOR_FIELDS = [
-    "Accounting, Commerce & Economics",
-    "Agriculture, Animal & Veterinary Science",
-    "Allied Health",
-    "Architecture & Design",
-    "Arts, Humanities & Social Sciences",
-    "Aviation",
-    "Business, Marketing & Management",
-    "Computer Science & Information Technology",
-    "Creative, Media & Communication",
-    "Engineering",
-    "Health & Biomedical Sciences",
-    "Law & Justice",
-    "Mathematics & Data Science",
-    "Medicine, Dentistry & Oral Health",
-    "Music",
-    "Nursing & Midwifery",
-    "Nutrition & Food Science",
-    "Property, Construction & Real Estate",
-    "Psychology & Social Work",
-    "Science, Environment & Sustainability",
-    "Teaching & Education",
-    "Tourism, Sport & Events",
+    "Accounting", "Business", "Computer Science", "Data Science", "Information Technology",
+    "Cybersecurity", "Artificial Intelligence", "Engineering", "Mechanical Engineering",
+    "Electrical Engineering", "Civil Engineering", "Software Engineering", "Biomedical Science",
+    "Health Sciences", "Nursing", "Psychology", "Education", "Law", "Architecture",
+    "Communication", "Creative Arts", "Economics", "Finance", "Marketing", "International Relations"
 ]
 
+DEGREE_GOALS = ["Bachelor", "Master", "PhD", "Diploma"]
+
 with st.sidebar:
-    st.markdown("### Filters")
-    ensure_students_options_in_state()
-    opts = st.session_state.get("Students opts", {"major": [], "degree": [], "interest": []})
+    st.markdown("### Profile")
     c1, c2 = st.columns(2)
     with c1:
         name = st.text_input("Name", "")
@@ -159,25 +106,11 @@ with st.sidebar:
         )
         gender = st.selectbox("Gender", ["Female", "Male", "Non-binary", "Prefer not to say"])
 
-    major_intent = st.selectbox("Major intent", options=(opts["major"] or MAJOR_FIELDS), index=0)
-    default_idx = 0
-    if "Master" in opts["degree"]:
-        default_idx = opts["degree"].index("Master")
-    degree_goal = st.selectbox("Degree goal", options=(opts["degree"] or ["Bachelor", "Master", "PhD", "Mixed"]), index=default_idx)
-
+    major_intent = st.selectbox("Major intent", options=MAJOR_FIELDS, index=0)
+    degree_goal = st.selectbox("Degree goal", options=DEGREE_GOALS, index=0)
     gpa_default = st.session_state.get("gpa", 3.0)
-    gpa = st.number_input("GPA", min_value=0.0, max_value=4.0, step=0.1, value=gpa_default, key="gpa_input")
+    gpa = st.number_input("GPA (max 4.0)", min_value=0.0, max_value=4.0, step=0.1, value=gpa_default, key="gpa_input")
     st.session_state["gpa"] = gpa
-
-    study_purpose = st.selectbox(
-        "Study purpose",
-        options=[
-            "Career development", "Research pathway", "Migration pathway", "PR pathway",
-            "Further study", "Skill improvement", "Other"
-        ],
-        index=0,
-        key="study_purpose_select"
-    )
 
     selected_interests = st.multiselect(
         "Interests (choose up to 4)",
@@ -194,9 +127,19 @@ with st.sidebar:
         ["English", "Mandarin", "Cantonese", "Hindi", "Spanish", "Arabic", "Vietnamese", "Korean", "Japanese"],
         default=["English", "Mandarin"]
     )
+
     english_test_type = st.selectbox("English test type", ["IELTS", "PTE", "TOEFL", "None"], index=0)
-    english_score_overall = st.number_input("English score overall", min_value=0.0, max_value=9.0, step=0.5, value=6.5)
-    has_pr = st.radio("Do you have PR (Permanent Residency)?", options=["Yes", "No"], horizontal=True, key="has_pr")
+
+    if english_test_type == "IELTS":
+        english_score_overall = st.number_input("English score overall", min_value=0.0, max_value=9.0, step=0.5, value=6.5)
+    elif english_test_type == "TOEFL":
+        english_score_overall = st.number_input("English score overall", min_value=0.0, max_value=120.0, step=1.0, value=90.0)
+    elif english_test_type == "PTE":
+        english_score_overall = st.number_input("English score overall", min_value=0.0, max_value=90.0, step=1.0, value=65.0)
+    else:
+        english_score_overall = 0.0
+
+    has_pr = st.radio("Do you want to get PR from studying", options=["Yes", "No"], horizontal=True, key="has_pr")
 
     if st.button("Save Profile"):
         st.session_state["PROFILE"] = {
@@ -215,13 +158,16 @@ with st.sidebar:
             "degree_goal": degree_goal,
             "gpa": gpa,
         }
-        st.success("Profile saved.")
+        st.success("Profile saved!")
 
 search_q = st.text_input("Search for courses and subjects", "", placeholder="Search for courses and subjects")
-tab1, tab2, tab3 = st.tabs(["Degrees", "Subjects", "Short courses"])
+tab1, tab2, tab3 = st.tabs(["Degrees", "Subjects", "Tutors"])
+
 with tab1:
-    st.info("Degrees tab (demo placeholder)")
+    st.info("Degrees tab (coming soon).")
+
 with tab2:
     st.info("Subjects tab (coming soon).")
+
 with tab3:
-    st.info("Short courses tab (coming soon).")
+    st.info("Tutors tab (coming soon).")
