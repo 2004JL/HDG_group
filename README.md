@@ -35,6 +35,5 @@ Evaluation: Model performance is compared using accuracy and relevance metrics (
 
 1.Data Generation 
 
-<h1><span style="font-size:30px;>System Design</span></h1>
+<h1><span style="font-size:30px;>User interface</span></h1>
 <h1><span style="font-size:30px;>Result</span></h1>
-<h1><span style="font-size:30px;>Conclusion</span></h1>
