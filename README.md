@@ -19,7 +19,7 @@
 
 <h2 style = "padding: 5px">Overview</h2>
 <ul>
- <li>Develops an <b>Prediction system recommendation platform</b> connecting students with mentors and programs.</li>
+ <li>Develops an <b>recommendation system platform based on regression model</b> connecting students with mentors and programs.</li>
  <li>Implements matching models using <b>KNN, XGBoost,</b> and <b>RandomForest</b>.</li>
  <li>Integrates datasets on <b>majors, scholarships, interests,</b> and <b> QS rankings</b>.</li>
  <li>Provides two modes: <b>PR mode</b> and <b>Non-PR mode</b>.</li>
