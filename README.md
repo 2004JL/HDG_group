@@ -2,11 +2,7 @@
 <p align = "center"><span style="font-size:45px; color:#0078D7;font-weight:bold;">AI-Powered Recommendation Platform for Study Pathways and Mentorship</span></p>
 
  
-
-
-
-<h1><span style="font-size:30px;>Overview</span></h1> 
-
+<h1><span style="font-size:30px;>Background & Motivation</span></h1>
  
 
 <h1><span style="font-size:30px;>Project Scope</span></h1>
