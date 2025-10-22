@@ -7,21 +7,7 @@ Oraganization: TriumphED
 
  
 
-Supervisor: Palak  
 
-Team Member: 
-
-Trang My Tien Au 
-
-Yonghan Zhou 
-
-Junlong Li 
-
-Shuxin Zhang 
-
-Qishuo Zheng 
-
-Kim Hyuna 
 
  
 
