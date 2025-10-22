@@ -27,7 +27,7 @@
 </ul>
 
 
-
+<h2><span style="font-size:30px;">Metholodgy</span></h2> 
 <h1><span style="font-size:30px;>Project Scope</span></h1>
 
 Synthetic Data creation: Generate a synthetic dataset representing students, mentors, and institutions. 
