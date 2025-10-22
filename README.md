@@ -24,13 +24,13 @@
 
 <h2><span style="font-size:30px;">Overview</span></h2> 
 <ul>
- <p>🔍 Addresses the limitations of manual and generic advisory systems by providing data-driven, personalized study recommendations.</p>
- <li>Develops an <b>recommendation system platform based on regression model</b> connecting students with mentors and programs.</li>
- <li>Implements matching models using <b>KNN, XGBoost,</b> and <b>RandomForest</b>.</li>
- <li>Integrates datasets on <b>majors, scholarships, interests,</b> and <b> QS rankings</b>.</li>
- <li>Provides two modes: <b>PR mode</b> and <b>Non-PR mode</b>.</li>
+<p>🔍 Addresses the limitations of manual and generic advisory systems by providing data-driven, personalized study recommendations.</p>
+  <li>Develops an <b>recommendation system platform based on regression model</b> connecting students with mentors and programs.</li>
+  <li>Implements matching models using <b>KNN, XGBoost,</b> and <b>RandomForest</b>.</li>
+  <li>Integrates datasets on <b>majors, scholarships, interests,</b> and <b> QS rankings</b>.</li>
+  <li>Provides two modes: <b>PR mode</b> and <b>Non-PR mode</b>.</li>
  <li>Evaluates results using <b>nDCG@3 metrics</b>.</li>
- <p>🎯 Enhances study decision-making by improving recommendation accuracy and scalability.</p>
+<p>🎯 Enhances study decision-making by improving recommendation accuracy and scalability.</p>
 </ul>
 
 
