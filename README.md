@@ -1,6 +1,9 @@
 
  <h1 align="center" style="font-size:45px; font-weight:bold;">AI-Powered Recommendation Platform for Study Pathways and Mentorship</h1>
-
+[Background](#background)
+[Motivation](#motivation)
+[Overview](#overview)<br>
+[Methodology](#methodology)
  
 
 <h2><span style="font-size:30px;">Background & Motivation</span></h2> 
@@ -27,7 +30,7 @@
 </ul>
 
 
-<h2><span style="font-size:30px;">Metholodgy</span></h2> 
+<h2><span style="font-size:30px;">Methodolodgy</span></h2> 
 <h1><span style="font-size:30px;>Project Scope</span></h1>
 
 Synthetic Data creation: Generate a synthetic dataset representing students, mentors, and institutions. 
