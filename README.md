@@ -1,9 +1,31 @@
 
-<p align = "center"><span style="font-size:45px; color:#0078D7;font-weight:bold;">AI-Powered Recommendation Platform for Study Pathways and Mentorship</span></p>
+<p align = "center">
+ <span style="font-size:45px; font-weight:bold;">AI-Powered Recommendation Platform for Study Pathways and Mentorship</span>
+</p>
  
 
 <h1><span style="font-size:30px;>Background & Motivation</span></h1> 
-<h2 style = "padding: 5px>
+<h2 style = "padding: 5px">Background</h2>
+<ul>
+ <li>International student numbers are rapidly increains, creating demand for personlized guidance.</li>
+ <li>Existing advisory tools remain generic, manual, and lack scalability.</li>
+ <li>There is a growing need for intelligent, data-driven systems that can provide personlized support.</li>
+</ul>
+
+<h2 style = "padding: 5px">Motivation</h2>
+<ul>
+ <li>Overcomes the limitations of manual and generic advisory tools</li>
+ <li>Builds an <b>AI-driven system</b> that provides personalized and scalable study guidance</li>
+</ul>
+
+<h2 style = "padding: 5px">Overview</h2>
+<ul>
+ <li>Develops an <b>Prediction system recommendation platform</b> connecting students with mentors and programs.</li>
+ <li>Implements matching models using <b>KNN, XGBoost,</b> and <b>RandomForest</b>.</li>
+ <li>Integrates datasets on <b>majors, scholarships, interests,</b> and <b> QS rankings</b>.</li>
+ <li>Provides two modes: <b>PR mode</b> and <b>Non-PR mode</b>.</li>
+ <li>Evaluates results using <b>nDCG@3 metrics</b>.</li>
+</ul>
 
 
 
@@ -19,24 +41,4 @@ Prototype Implementation: A user interface is developed to visually present reco
 
 Evaluation: Model performance is compared using accuracy and relevance metrics (nDCG@3, diversity, interpretability). 
 
-<h1><span style="font-size:30px;>Technology</span></h1>
 
- 
-
-Setup 
-
-<h1><span style="font-size:30px;>Methodology</h1></span>
-
-1.Data Generation 
-
-Studnets, Mentors,Institutions 
-
-Why it was created: 
-
-How it was created: 
-
-What it included: 
-
-<h1><span style="font-size:30px;>System Design</span></h1>
-<h1><span style="font-size:30px;>Result</span></h1>
-<h1><span style="font-size:30px;>Conclusion</span></h1>
