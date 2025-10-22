@@ -5,7 +5,7 @@
 <h1><span style="font-size:30px;>Background & Motivation</span></h1>
  
 
-<h1><span style="font-size:30px;>Project Scope</span></h1>
+<h2><span style="font-size:30px;>Project Scope</span></h2>
 
 Synthetic Data creation: Generate a synthetic dataset representing students, mentors, and institutions. 
 
