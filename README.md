@@ -3,7 +3,7 @@
 
  
 
-<h2><span style="font-size:30px;>Background & Motivation</span></h2> 
+<h2><span style="font-size:30px;">Background & Motivation</span></h2> 
 <h3 style = "padding: 5px">Background</h3>
 <ul>
  <li>International student numbers are rapidly increains, creating demand for personlized guidance.</li>
