@@ -41,11 +41,6 @@ Setup
 
 Studnets, Mentors,Institutions 
 
-Why it was created: 
-
-How it was created: 
-
-What it included: 
 
 <h1><span style="font-size:30px;>System Design</span></h1>
 <h1><span style="font-size:30px;>Result</span></h1>
