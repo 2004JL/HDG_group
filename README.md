@@ -1,9 +1,11 @@
 
  <h1 align="center" style="font-size:45px; font-weight:bold;">AI-Powered Recommendation Platform for Study Pathways and Mentorship</h1>
-[Background](#background)
-[Motivation](#motivation)
-[Overview](#overview)<br>
-[Methodology](#methodology)
+<p align = "center" style="font-size:20px">
+<a href="#background--motivation" styple="color:#1E90FF; text-decoration:underline;">Background &amp;&amp; Motivation</a> ◆
+<a href="#background--motivation" styple="color:#1E90FF; text-decoration:underline;">Overview</a> ◆
+<a href="#background--motivation" styple="color:#1E90FF; text-decoration:underline;">Methodology</a> ◆
+ 
+</p>
  
 
 <h2><span style="font-size:30px;">Background & Motivation</span></h2> 
