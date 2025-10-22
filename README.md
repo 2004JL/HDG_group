@@ -1,7 +1,6 @@
 
-<p align = "center">
- <span style="font-size:45px; font-weight:bold;">AI-Powered Recommendation Platform for Study Pathways and Mentorship</span>
-</p>
+ <h1 align="center" style="font-size:45px; font-weight:bold;">AI-Powered Recommendation Platform for Study Pathways and Mentorship</h1>
+
  
 
 <h1><span style="font-size:30px;>Background & Motivation</span></h1> 
