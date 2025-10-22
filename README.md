@@ -31,16 +31,9 @@ Evaluation: Model performance is compared using accuracy and relevance metrics (
 
 <h1><span style="font-size:30px;>Technology</span></h1>
 
- 
-
-Setup 
-
 <h1><span style="font-size:30px;>Methodology</h1></span>
 
 1.Data Generation 
-
-Studnets, Mentors,Institutions 
-
 
 <h1><span style="font-size:30px;>System Design</span></h1>
 <h1><span style="font-size:30px;>Result</span></h1>
