@@ -3,21 +3,21 @@
 
  
 
-<h1><span style="font-size:30px;>Background & Motivation</span></h1> 
-<h2 style = "padding: 5px">Background</h2>
+<h2><span style="font-size:30px;>Background & Motivation</span></h2> 
+<h3 style = "padding: 5px">Background</h3>
 <ul>
  <li>International student numbers are rapidly increains, creating demand for personlized guidance.</li>
  <li>Existing advisory tools remain generic, manual, and lack scalability.</li>
  <li>There is a growing need for intelligent, data-driven systems that can provide personlized support.</li>
 </ul>
 
-<h2 style = "padding: 5px">Motivation</h2>
+<h3 style = "padding: 5px">Motivation</h3>
 <ul>
  <li>Overcomes the limitations of manual and generic advisory tools</li>
  <li>Builds an <b>AI-driven system</b> that provides personalized and scalable study guidance</li>
 </ul>
 
-<h2 style = "padding: 5px">Overview</h2>
+<h3 style = "padding: 5px">Overview</h3>
 <ul>
  <li>Develops an <b>recommendation system platform based on regression model</b> connecting students with mentors and programs.</li>
  <li>Implements matching models using <b>KNN, XGBoost,</b> and <b>RandomForest</b>.</li>
