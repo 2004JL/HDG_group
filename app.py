@@ -1,14 +1,20 @@
 import streamlit as st
 import io
 import sys
+import joblib
 import pandas as pd
+import numpy as np
+import xgboost as xgb
+from sklearn.preprocessing import MultiLabelBinarizer
+from scipy.sparse import hstack
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from retrieval.retrieval import Retrieval
+from retrieval.retrieval_program import Retrieval
+from retrieval.retrieval_mentor import RetrievalMentor
 
 # ----------------- Login / Register Button -----------------
 import json, os, secrets, base64, hashlib
@@ -291,13 +297,11 @@ with st.sidebar:
             key="has_pr"
         )
 
-# student input
+# Take student input
 with st.sidebar:
     st.markdown("Student profile & export")
-
     is_ug = st.session_state.get("Study level-Undergraduate", True) if "Study level-Undergraduate" in st.session_state else False
     is_pg = st.session_state.get("Study level-Postgraduate", False) if "Study level-Postgraduate" in st.session_state else False
-
     selected_areas = st.session_state.get("Interest area-Area", ["Business"]) if "Interest area-Area" in st.session_state else ["Business"]
 
     if is_pg:
@@ -315,9 +319,9 @@ with st.sidebar:
     major = st.text_input("Major intent", value=auto_major_intent, key="major_intent_input")
     degree = st.selectbox("Degree goal", ["bachelor", "master", "phd"], index=["bachelor","master","phd"].index(auto_degree))
     eng_type = st.selectbox("English test type", ["IELTS", "TOEFL", "PTE"], index=0)
-    eng_score = st.number_input("English overall", min_value=0.0, max_value=120.0, step=0.5, value=7.0, help="IELTS 0–9, TOEFL 0–120, PTE 0–90")
-    gpa = st.number_input("GPA (0–4 scale)", min_value=0.0, max_value=4.0, step=0.1, value=3.4)
-    interests = st.text_area("Interests (; separated)", value=auto_interests or "ai;data science;ml")
+    eng_score = st.number_input("English overall", min_value=0.0, max_value=120.0, step=0.5, value=7.0, help="IELTS 0-9, TOEFL 0-120, PTE 0-90")
+    gpa = st.number_input("GPA (0-4 scale)", min_value=0.0, max_value=4.0, step=0.1, value=3.4)
+    interests = st.text_area("Interests (; separated)", value=auto_interests)
 
     payload = {
         "student_id": sid.strip(),
@@ -339,9 +343,6 @@ with st.sidebar:
             out_path = dest_dir / "student.json"
             with open(out_path, "w", encoding="utf-8") as f:
                 json.dump(payload, f, ensure_ascii=False, indent=2)
-            st.success(f"Saved → {out_path}")
-            st.session_state["last_student_json_path"] = str(out_path)
-
 
 json_path = st.session_state.get(
     "last_student_json_path",
@@ -354,16 +355,86 @@ if run:
     try:
         r = Retrieval()
         df = r.run(json_path)
-        st.success(f"Found {len(df)} eligible rows.")
 
-        st.dataframe(df.head(50), use_container_width=True)
+        bundle = joblib.load(ROOT / "models" / "xgb_program_labelmatch_regressor.pkl")
+        if isinstance(bundle, dict) and "model" in bundle:
+            model   = bundle["model"]
+            mlb_int = bundle["mlb_int"]
+            mlb_tag = bundle["mlb_tag"]
 
-        csv = df.to_csv(index=False).encode("utf-8")
+        df["interests"]  = df["interests"].fillna("")
+        df["field_tags"] = df["field_tags"].fillna("")
+
+        def to_list(s):
+            return [x.strip().lower() for x in str(s).split(";") if x.strip()]
+
+        X_int = mlb_int.transform(df["interests"].map(to_list))
+        X_tag = mlb_tag.transform(df["field_tags"].map(to_list))
+        X = hstack([X_int, X_tag], format="csr")
+
+        dX = xgb.DMatrix(X)
+        pred = model.predict(dX)
+
+        out = df.copy()
+        out["pred_label_match"] = np.round(pred, 4)
+        out = out.sort_values("pred_label_match", ascending=False).reset_index(drop=True)
+        out.to_csv( ROOT / "retrieval" / "student_program.csv", index=False)
+
+        st.success(f"Found {len(out)} eligible rows.")
+
+        st.dataframe(out.head(3), use_container_width=True)
+
+    except Exception as e:
+        st.error(f"Error: {e}")
+
+if st.button("Find mentors for top-N programs"):
+    try:
+        rm = RetrievalMentor()
+        df_m = rm.run(student_program_csv=ROOT / "retrieval" / "student_program.csv", top_n=3)
+
+        need_cols = {"program_id", "field_tags", "mentor_id", "expertise_tags"}
+        miss = need_cols - set(df_m.columns)
+        if miss:
+            raise ValueError(f"RetrievalMentor output missing columns: {miss}")
+
+        bundle = joblib.load(ROOT / "models" / "xgb_mentor_labelmatch_regressor.pkl")
+        if not (isinstance(bundle, dict) and {"model","mlb_int","mlb_tag"} <= set(bundle.keys())):
+            raise ValueError("xgb_mentor_labelmatch_regressor.pkl should be a dict with keys: model/mlb_int/mlb_tag")
+
+        model = bundle["model"]
+        mlb_int = bundle["mlb_int"]
+        mlb_tag = bundle["mlb_tag"]
+
+        df_m["field_tags"]    = df_m["field_tags"].fillna("")
+        df_m["expertise_tags"] = df_m["expertise_tags"].fillna("")
+
+        def to_list(s):
+            return [x.strip().lower() for x in str(s).split(";") if x.strip()]
+
+        X_f = mlb_int.transform(df_m["field_tags"].map(to_list))
+        X_e = mlb_tag.transform(df_m["expertise_tags"].map(to_list))
+        X   = hstack([X_f, X_e], format="csr")
+
+        dX   = xgb.DMatrix(X)
+        pred = model.predict(dX)
+
+        scored = df_m.copy()
+        scored["pred_label_match"] = np.round(pred, 4)
+
+        scored = scored.sort_values(["program_id", "pred_label_match"], ascending=[True, False])
+        top3   = scored.groupby("program_id", as_index=False).head(3).reset_index(drop=True)
+
+        save_path = ROOT / "retrieval" / "student_program_topN_mentor_scored.csv"
+        top3.to_csv(save_path, index=False)
+
+        st.success(f"Mentor rows (after scoring & per-program top3): {len(top3)}")
+        st.dataframe(top3.head(20), use_container_width=True)
         st.download_button(
-            "Download full CSV",
-            data=csv,
-            file_name="eligible_results.csv",
+            "Download mentor matches (CSV)",
+            data=top3.to_csv(index=False).encode("utf-8"),
+            file_name="student_program_topN_mentor_scored.csv",
             mime="text/csv"
         )
+
     except Exception as e:
         st.error(f"Error: {e}")

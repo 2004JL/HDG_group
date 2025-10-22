@@ -134,4 +134,4 @@ mentors = mentors.dropna(subset=["mentor_id"])
 mentors = mentors.drop_duplicates(subset=["mentor_id"]).reset_index(drop=True)
 mentors.to_csv(OUT / "mentors.csv", index=False)
 
-print("✓ cleaned parquet written to", OUT.resolve())
+print("cleaned parquet written to", OUT.resolve())
