@@ -11,9 +11,11 @@
 <h2><span style="font-size:30px;">Background & Motivation</span></h2> 
 <h3 style = "padding: 5px">Background</h3>
 <ul>
+ <li>🔍 Addresses the limitations of manual and generic advisory systems by providing data-driven, personalized study recommendations.</li>
  <li>International student numbers are rapidly increains, creating demand for personlized guidance.</li>
  <li>Existing advisory tools remain generic, manual, and lack scalability.</li>
  <li>There is a growing need for intelligent, data-driven systems that can provide personlized support.</li>
+ <li>🎯  Enhances study decision-making by improving recommendation accuracy and scalability.</li>
 </ul>
 
 <h3 style = "padding: 5px">Motivation</h3>
