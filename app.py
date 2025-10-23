@@ -123,47 +123,37 @@ st.title("Explore degrees by leading Australian Universities")
 
 # ================== OUA LOOK & FEEL ==================
 # 1) CSS
+
+
 st.markdown("""
 <style>
-:root{
-  --br:#e5e7eb;--muted:#6b7280;--blue:#1f45ff;--ink:#111827;--bg:#fff;
+.profile2-card{
+  background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;
+  padding:18px; box-shadow:0 8px 24px rgba(15,23,42,.06); margin-bottom:16px;
 }
-/* container width a little wider feeling */
-.block-container{padding-top:1rem;}
+.profile2-title{font-weight:800;font-size:1.05rem;color:#0f172a;margin:0 0 2px}
+.profile2-sub{font-size:.85rem;color:#64748b;margin:0 0 14px}
 
-.oua-wrap{padding-top:4px}
-.oua-hbar{display:flex;gap:10px;justify-content:space-between;align-items:center;margin:4px 0 14px}
-.oua-title{font-weight:700;color:var(--ink)}
-.oua-saved{color:var(--muted);font-size:.92rem}
-.oua-compare{border:1px solid var(--br);background:#f8fafc;border-radius:999px;padding:8px 14px}
+#profile2-panel input, #profile2-panel select, #profile2-panel textarea{
+  border:1px solid #e5e7eb !important; border-radius:10px !important; background:#fff !important;
+  box-shadow:0 2px 8px rgba(2,6,23,.03);
+}
+#profile2-panel input:focus, #profile2-panel select:focus, #profile2-panel textarea:focus{
+  outline:none !important; border-color:#3b82f6 !important; box-shadow:0 0 0 3px rgba(59,130,246,.15) !important;
+}
+#profile2-panel .stTextInput, #profile2-panel .stNumberInput, #profile2-panel .stSelectbox, #profile2-panel .stTextArea{
+  margin-bottom:10px !important;
+}
 
-.card{
-  border:1px solid var(--br); border-radius:14px; background:var(--bg); padding:0 0 14px; position:relative;
-  box-shadow:0 2px 10px rgba(2,6,23,.04);
+#profile2-panel [role="radiogroup"] > label{
+  border:1px solid #d1d5db; border-radius:999px; padding:6px 14px; margin-right:10px;
+  background:#fff; cursor:pointer; transition:all .2s ease;
 }
-.ribbon{height:52px; border-radius:14px 14px 0 0;
-  background: linear-gradient(135deg, #2339a2 50%, #7b4bd4 50%);
-}
-.logo-chip{position:absolute; top:32px; left:16px; background:#fff; border:1px solid var(--br);
-  border-radius:10px; padding:4px 8px; font-weight:600; box-shadow:0 2px 6px rgba(2,6,23,.08);}
-.heart{position:absolute; right:14px; top:38px; border:1px solid var(--br); width:38px; height:38px;
-  border-radius:999px; display:flex; align-items:center; justify-content:center; background:#fff}
-.body{padding:12px 16px 0}
-.title a{font-weight:800; color:#183c8c; text-decoration:underline; font-size:1.02rem}
-.subtitle{color:var(--muted); font-size:.92rem; margin:2px 0 8px}
-.desc{margin:6px 0 10px; color:var(--ink)}
-.hr{border-top:1px solid var(--br); margin:8px 0 10px}
-.meta{display:flex; flex-direction:column; gap:8px; color:var(--muted);}
-.meta span{display:flex; gap:8px; align-items:center}
-.btn{display:inline-block; background:#1f45ff; color:#fff; border-radius:999px; padding:10px 18px; font-weight:700; text-decoration:none}
-.badge{display:inline-flex; gap:6px; align-items:center; background:#f1f5f9; border:1px solid var(--br); padding:3px 8px; border-radius:999px; font-size:.82rem}
-.viewmore{color:#183c8c; cursor:pointer; user-select:none}
-.pag{display:flex; gap:8px; justify-content:center; margin-top:14px}
-.pag button{border:1px solid var(--br); background:#fff; padding:6px 10px; border-radius:8px}
+#profile2-panel [role="radiogroup"] > label:hover{ box-shadow:0 2px 8px rgba(0,0,0,.08); background:#f9fafb; }
+input[type="radio"]{ accent-color:#2563eb; }
 </style>
 """, unsafe_allow_html=True)
 
-# 2) 一些小工具
 def oua_colgrid(items, per_row=2):
     cols = st.columns(per_row)
     for i, item in enumerate(items):
@@ -174,7 +164,6 @@ def heart_toggle(key, default=False):
     clicked = st.button("♡" if not st.session_state[key] else "♥", key=f"heart_{key}")
     if clicked: st.session_state[key] = not st.session_state[key]
 
-# 3) OUA 卡片（Degree）
 def render_oua_degree_card(p: dict, idx: int):
     st.markdown('<div class="card">', unsafe_allow_html=True)
     st.markdown('<div class="ribbon"></div>', unsafe_allow_html=True)
@@ -213,7 +202,6 @@ def render_oua_degree_card(p: dict, idx: int):
     st.markdown('</div>', unsafe_allow_html=True)  
     st.markdown('</div>', unsafe_allow_html=True) 
 
-# 4) Mock 数据
 if "DEMO_DEGREES" not in st.session_state:
     st.session_state.DEMO_DEGREES = [
         {
@@ -264,40 +252,13 @@ if "DEMO_DEGREES" not in st.session_state:
         },
     ]
 
-# 5) 左侧 Filters（折叠样式）
-with st.sidebar:
-    st.markdown("### Filters")
-    with st.expander("Study level", expanded=True):
-        st.checkbox("Undergraduate", True)
-        st.checkbox("Postgraduate", False)
-    with st.expander("Interest area", expanded=False):
-        st.multiselect("Area", ["Business","IT & computer science","Education & teaching","Psychology"], ["Business"]) 
-    with st.expander("University", expanded=False):
-        st.multiselect("University", ["Curtin","Griffith","ECU","La Trobe"]) 
-    with st.expander("Qualification", expanded=False):
-        st.multiselect("Type", ["Degree","Undergraduate certificate","Diploma"], ["Degree"]) 
-    with st.expander("Study method", expanded=False):
-        st.checkbox("100% online", True)
-        st.checkbox("On-campus", False)
-    with st.expander("Entry options", expanded=False):
-        st.checkbox("No ATAR required", True)
-    with st.expander("Other", expanded=False):
-        st.slider("Duration (years)", 0, 6, (0,3))
-        st.markdown("#### PR (Permanent Residency)")
-        has_pr = st.radio(
-            "Do you have PR?",
-            options=["Yes", "No"],
-            horizontal=True,
-            key="has_pr"
-        )
-
 # student input
 with st.sidebar:
-    st.markdown("Student profile & export")
+    st.markdown('<div class="profile2-card"><div class="profile2-title">Student profile & export</div><div class="profile2-sub">Fill in your student profile for exporting JSON</div></div>', unsafe_allow_html=True)
+    st.markdown('<div id="profile2-panel">', unsafe_allow_html=True)
 
     is_ug = st.session_state.get("Study level-Undergraduate", True) if "Study level-Undergraduate" in st.session_state else False
     is_pg = st.session_state.get("Study level-Postgraduate", False) if "Study level-Postgraduate" in st.session_state else False
-
     selected_areas = st.session_state.get("Interest area-Area", ["Business"]) if "Interest area-Area" in st.session_state else ["Business"]
 
     if is_pg:
@@ -308,16 +269,36 @@ with st.sidebar:
         auto_degree = "bachelor"
 
     auto_interests = ";".join([x.strip().lower() for x in selected_areas if str(x).strip()])
-
     auto_major_intent = selected_areas[0].strip().lower() if selected_areas else "general"
 
-    sid = st.text_input("Student ID", value="S000123", key="student_id_input")
-    major = st.text_input("Major intent", value=auto_major_intent, key="major_intent_input")
-    degree = st.selectbox("Degree goal", ["bachelor", "master", "phd"], index=["bachelor","master","phd"].index(auto_degree))
-    eng_type = st.selectbox("English test type", ["IELTS", "TOEFL", "PTE"], index=0)
-    eng_score = st.number_input("English overall", min_value=0.0, max_value=120.0, step=0.5, value=7.0, help="IELTS 0–9, TOEFL 0–120, PTE 0–90")
-    gpa = st.number_input("GPA (0–4 scale)", min_value=0.0, max_value=4.0, step=0.1, value=3.4)
-    interests = st.text_area("Interests (; separated)", value=auto_interests or "ai;data science;ml")
+    c1, c2 = st.columns(2, vertical_alignment="center")
+    with c1:
+        sid = st.text_input("Student ID", value="S000123", key="student_id_input")
+    with c2:
+        major = st.text_input("Major intent", value=auto_major_intent, key="major_intent_input")
+
+    c3, c4 = st.columns(2, vertical_alignment="center")
+    with c3:
+        degree = st.selectbox("Degree goal", ["bachelor", "master", "phd"],
+                              index=["bachelor","master","phd"].index(auto_degree), key="degree_goal_input")
+    with c4:
+        eng_type = st.selectbox("English test type", ["IELTS", "TOEFL", "PTE"], index=0, key="english_test_type_input")
+
+    c5, c6 = st.columns(2, vertical_alignment="center")
+    with c5:
+        eng_score = st.number_input("English overall", min_value=0.0, max_value=120.0, step=0.5, value=7.0,
+                                    help="IELTS 0–9, TOEFL 0–120, PTE 0–90", key="english_overall_input")
+    with c6:
+        gpa = st.number_input("GPA (0–4 scale)", min_value=0.0, max_value=4.0, step=0.1, value=3.4, key="gpa_input_sidebar")
+
+    interests = st.text_area("Interests (; separated)", value=auto_interests or "ai;data science;ml", key="interests_input")
+
+    st.divider()
+
+    st.markdown("**Do you want to get PR from studying**")
+    st.radio(" ", options=["Yes", "No"], horizontal=True, key="has_pr")
+
+    st.markdown('</div>', unsafe_allow_html=True)
 
     payload = {
         "student_id": sid.strip(),
@@ -327,20 +308,20 @@ with st.sidebar:
         "english_score_overall": float(eng_score),
         "gpa_std_4": float(gpa),
         "interests": interests.strip(),
+        "has_pr": st.session_state.get("has_pr", "No"),
     }
 
-    #output json
-    col, = st.columns(1)
-    with col:
-        if st.button("json", use_container_width=True):
-            ROOT = Path(__file__).resolve().parents[0]
-            dest_dir = ROOT / "retrieval"
-            dest_dir.mkdir(parents=True, exist_ok=True)
-            out_path = dest_dir / "student.json"
-            with open(out_path, "w", encoding="utf-8") as f:
-                json.dump(payload, f, ensure_ascii=False, indent=2)
-            st.success(f"Saved → {out_path}")
-            st.session_state["last_student_json_path"] = str(out_path)
+    if st.button("Save", use_container_width=True):
+        ROOT = Path(__file__).resolve().parents[0]
+        dest_dir = ROOT / "retrieval"
+        dest_dir.mkdir(parents=True, exist_ok=True)
+        out_path = dest_dir / "student.json"
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+        st.success(f"Saved → {out_path}")
+        st.session_state["last_student_json_path"] = str(out_path)
+
+
 
 
 json_path = st.session_state.get(
@@ -354,9 +335,62 @@ if run:
     try:
         r = Retrieval()
         df = r.run(json_path)
-        st.success(f"Found {len(df)} eligible rows.")
+        import math
+        student_interest_str = st.session_state.get("interests_input") or ";".join(
+            st.session_state.get("interests", [])
+        )
+        student_interests = {
+            s.strip().lower() for s in (student_interest_str or "").replace(",", ";").split(";") if s.strip()
+        }
+        if not student_interests:
+            student_interests = {"business"}  
 
-        st.dataframe(df.head(50), use_container_width=True)
+        def interest_overlap(tags: str) -> float:
+            if not isinstance(tags, str) or not tags.strip():
+                return 0.0
+            tags_set = {t.strip().lower() for t in tags.replace(",", ";").split(";") if t.strip()}
+            if not tags_set:
+                return 0.0
+            return len(student_interests & tags_set) / max(1, len(student_interests))
+
+        df["interest_score"] = df.get("field_tags", "").apply(interest_overlap)
+
+        if "overall_ranking" in df.columns:
+            df["overall_ranking"] = pd.to_numeric(df["overall_ranking"], errors="coerce")
+            r_min = df["overall_ranking"].min(skipna=True)
+            r_max = df["overall_ranking"].max(skipna=True)
+            if pd.notna(r_min) and pd.notna(r_max) and r_max > r_min:
+                df["rank_score"] = (r_max - df["overall_ranking"]) / (r_max - r_min)
+            else:
+                df["rank_score"] = 0.0
+        else:
+            df["rank_score"] = 0.0
+
+        W_INTEREST = 0.6
+        W_RANK = 0.4
+        df["relevance_score"] = W_INTEREST * df["interest_score"] + W_RANK * df["rank_score"]
+
+        df = df.sort_values(["relevance_score", "interest_score", "rank_score"], ascending=False).reset_index(drop=True)
+
+        st.markdown("### 🎓 Recommended Programs")
+
+        for i, row in df.iterrows():
+            with st.container():
+                st.markdown(f"""
+                <div style="
+                    background-color:#ffffff;border:1px solid #e5e7eb;border-radius:14px;
+                    padding:14px 16px;margin-bottom:12px;box-shadow:0 4px 12px rgba(15,23,42,0.06);">
+                <p style="font-size:0.9rem;margin:0;">
+                    <b>Program ID:</b> {row.get('program_id','')}<br>
+                    <b>Institution ID:</b> {row.get('institution_id','')}<br>
+                    <b>Field Tags:</b> {row.get('field_tags','')}<br>
+                    <b>Overall Ranking:</b> {row.get('overall_ranking','')}<br>
+                    <b>Interests:</b> {row.get('interests','')}<br>
+                    <b>Match Score:</b> {row.get('relevance_score',0):.2f}
+                </p>
+                </div>
+                """, unsafe_allow_html=True)
+
 
         csv = df.to_csv(index=False).encode("utf-8")
         st.download_button(

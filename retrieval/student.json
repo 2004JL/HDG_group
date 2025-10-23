@@ -1,9 +1,10 @@
 {
-  "student_id": "S000123",
-  "major_intent": "business",
-  "degree_goal": "bachelor",
-  "english_test_type": "IELTS",
-  "english_score_overall": 7.0,
-  "gpa_std_4": 2.5,
-  "interests": "business"
+  "student_id": "qqq",
+  "major_intent": "IT",
+  "degree_goal": "master",
+  "english_test_type": "TOEFL",
+  "english_score_overall": 90.0,
+  "gpa_std_4": 3.0,
+  "interests": "IT",
+  "has_pr": "Yes"
 }
