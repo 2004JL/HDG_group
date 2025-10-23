@@ -32,6 +32,12 @@
  <li>Evaluates results using <b>nDCG@3 metrics</b>.</li>
 </ul>
 <p>🎯 Enhances study decision-making by improving recommendation accuracy and scalability.</p>
+```mermaid
+graph TD
+    S[🎓 Students] --> M[🤖 Machine Learning<br/>(Regression + KNN / XGBoost / RandomForest)]
+    M --> T[🧑‍🏫 Mentors]
+    M --> P[🏫 Programs]
+
 
 
 <h2><span style="font-size:30px;">Methodolodgy</span></h2> 
