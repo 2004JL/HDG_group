@@ -13,7 +13,6 @@ class Retrieval:
         self.OUT  = self.ROOT / "retrieval"
         self.OUT.mkdir(parents=True, exist_ok=True)
 
-
         self.programs_df   = pd.read_csv(self.RAW1 / "programs.csv")
         self.institutions  = pd.read_csv(self.RAW1 / "institutions.csv")
         self.reqs_df       = pd.read_csv(self.RAW1 / "program_requirements.csv")

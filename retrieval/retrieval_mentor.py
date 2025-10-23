@@ -15,40 +15,32 @@ class RetrievalMentor:
 
     def eligible_mentors(self, student_program_csv: str | Path | None = None, top_n: int = 3) -> pd.DataFrame:
 
-            if student_program_csv is None: student_program_csv = self.OUT / "student_program.csv" 
-            sp_path = Path(student_program_csv)
+        if student_program_csv is None:
+            student_program_csv = self.OUT / "student_program.csv"
 
-            sp = pd.read_csv(sp_path)
+        sp = pd.read_csv(student_program_csv)
 
-            if "field_tags" not in sp.columns:
-                sp = sp.merge(self.programs[["program_id", "field_tags"]], on="program_id", how="left")
+        if "field_tags" not in sp.columns:
+            sp = sp.merge(self.programs, on="program_id", how="left")
 
-            order_cols = [c for c in ["pred_label_match", "score", "label_match"] if c in sp.columns]
-            if order_cols:
-                sp_top = sp.sort_values(order_cols, ascending=[False]*len(order_cols)).head(top_n)
-            else:
-                sp_top = sp.head(top_n)
+        order_cols = [c for c in ["pred_label_match", "score", "label_match"] if c in sp.columns]
+        if order_cols:
+            sp_top = sp.sort_values(order_cols, ascending=[False]*len(order_cols)).head(top_n)
+        else:
+            sp_top = sp.head(top_n)
 
-            sp_top = sp_top[["program_id", "field_tags"]].copy()
-            sp_top["__tmp"] = 1
+        sp_top = sp_top[["program_id", "field_tags"]].copy()
+        sp_top["_tmp"] = 1
 
-            keep_cols = ["mentor_id", "expertise_tags"]
-            for opt in ["languages", "education_background", "years_experience"]:
-                if opt in self.mentors.columns:
-                    keep_cols.append(opt)
+        mentors = self.mentors.copy()
+        mentors["_tmp"] = 1
 
-            mentors_slim = self.mentors[keep_cols].copy()
-            mentors_slim["expertise_tags"] = mentors_slim["expertise_tags"].fillna("")
-            mentors_slim["__tmp"] = 1
+        cross = sp_top.merge(mentors, on="_tmp").drop(columns="_tmp")
 
-            cross = sp_top.merge(mentors_slim, on="__tmp").drop(columns="__tmp")
-
-            base_cols = ["program_id", "field_tags", "mentor_id", "expertise_tags"]
-            extra_cols = [c for c in ["languages", "education_background", "years_experience"] if c in cross.columns]
-            out_cols = base_cols + extra_cols
-
-            out = cross[out_cols].copy()
-            return out
+        base_cols = ["program_id", "field_tags", "mentor_id", "expertise_tags"]
+        extra_cols = [c for c in ["languages", "education_background", "years_experience"] if c in cross.columns]
+        out = cross[base_cols + extra_cols].copy()
+        return out
 
     def run(self, student_program_csv: str | Path | None = None, top_n: int = 3) -> pd.DataFrame:
 

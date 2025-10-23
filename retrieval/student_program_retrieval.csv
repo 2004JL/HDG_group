@@ -1,0 +1,178 @@
+student_id,program_id,interests,field_tags,institution_id,locations,overall_ranking
+S000123,4,design; public health; sustainable design,Artificial Intelligence;Film,1,Sydney,103
+S000123,21,design; public health; sustainable design,Ecology;Data Science;International Law,1,Sydney,103
+S000123,23,design; public health; sustainable design,Public Health;Information Technology,1,Sydney,103
+S000123,24,design; public health; sustainable design,Artificial Intelligence;Accounting,1,Sydney,103
+S000123,33,design; public health; sustainable design,Design;Nursing;Data Science,1,Sydney,103
+S000123,35,design; public health; sustainable design,Design;Information Technology,1,Sydney,103
+S000123,43,design; public health; sustainable design,Cybersecurity;Banking,2,Melbourne,436
+S000123,47,design; public health; sustainable design,Architecture;Finance;Environmental Science,2,Melbourne,436
+S000123,49,design; public health; sustainable design,Data Science;Engineering,2,Melbourne,436
+S000123,63,design; public health; sustainable design,International Law;Artificial Intelligence,3,Brisbane,349
+S000123,65,design; public health; sustainable design,Finance;Marketing;Banking,3,Brisbane,349
+S000123,69,design; public health; sustainable design,Ecology;Renewable Energy;Marketing,3,Brisbane,349
+S000123,72,design; public health; sustainable design,Accounting;Finance,3,Brisbane,349
+S000123,75,design; public health; sustainable design,Accounting;Ecology,3,Brisbane,349
+S000123,81,design; public health; sustainable design,Law;Sustainable Design,3,Brisbane,349
+S000123,109,design; public health; sustainable design,Computer Science;Environmental Science,4,Adelaide,271
+S000123,116,design; public health; sustainable design,Design;Cybersecurity,4,Adelaide,271
+S000123,122,design; public health; sustainable design,Computer Science;Design,4,Adelaide,271
+S000123,125,design; public health; sustainable design,Computer Science;Public Health,4,Adelaide,271
+S000123,126,design; public health; sustainable design,Engineering;Ecology,4,Adelaide,271
+S000123,130,design; public health; sustainable design,Sustainable Design;Cybersecurity;Environmental Science,4,Adelaide,271
+S000123,146,design; public health; sustainable design,Architecture;Accounting;Artificial Intelligence,5,Perth,107
+S000123,151,design; public health; sustainable design,Sustainable Design;Information Technology;Nursing,5,Perth,107
+S000123,153,design; public health; sustainable design,Film;Business,5,Perth,107
+S000123,160,design; public health; sustainable design,Artificial Intelligence;Renewable Energy,5,Perth,107
+S000123,161,design; public health; sustainable design,Marketing;Environmental Science;Film,5,Perth,107
+S000123,162,design; public health; sustainable design,Nursing;Ecology,5,Perth,107
+S000123,167,design; public health; sustainable design,Psychology;Psychology,5,Perth,107
+S000123,186,design; public health; sustainable design,Environmental Science;Environmental Science,6,Hobart,72
+S000123,190,design; public health; sustainable design,Engineering;Environmental Science;Artificial Intelligence,6,Hobart,72
+S000123,202,design; public health; sustainable design,Finance;Renewable Energy,6,Hobart,72
+S000123,210,design; public health; sustainable design,Law;Environmental Science;Ecology,7,Canberra,189
+S000123,211,design; public health; sustainable design,Design;Information Technology;Renewable Energy,7,Canberra,189
+S000123,218,design; public health; sustainable design,Finance;International Law;Engineering,7,Canberra,189
+S000123,220,design; public health; sustainable design,Data Science;Computer Science;Business,7,Canberra,189
+S000123,224,design; public health; sustainable design,Marketing;Public Health,7,Canberra,189
+S000123,229,design; public health; sustainable design,Engineering;Business;Sustainable Design,7,Canberra,189
+S000123,233,design; public health; sustainable design,Information Technology;Law,7,Canberra,189
+S000123,243,design; public health; sustainable design,Education;Information Technology,8,Gold Coast,21
+S000123,246,design; public health; sustainable design,Artificial Intelligence;Public Health,8,Gold Coast,21
+S000123,255,design; public health; sustainable design,Design;Computer Science,8,Gold Coast,21
+S000123,259,design; public health; sustainable design,Education;Psychology;Education,9,Wollongong,103
+S000123,276,design; public health; sustainable design,Environmental Science;Engineering;Design,9,Wollongong,103
+S000123,282,design; public health; sustainable design,Renewable Energy;Law,9,Wollongong,103
+S000123,294,design; public health; sustainable design,Design;International Law,10,Newcastle,122
+S000123,302,design; public health; sustainable design,Banking;International Law,10,Newcastle,122
+S000123,303,design; public health; sustainable design,Renewable Energy;Cybersecurity;Nursing,10,Newcastle,122
+S000123,317,design; public health; sustainable design,Accounting;International Law,10,Newcastle,122
+S000123,328,design; public health; sustainable design,Information Technology;Law,11,Geelong,467
+S000123,331,design; public health; sustainable design,Public Health;Public Health;Ecology,11,Geelong,467
+S000123,366,design; public health; sustainable design,Cybersecurity;Finance;Public Health,12,Townsville,215
+S000123,372,design; public health; sustainable design,International Law;Law;Accounting,12,Townsville,215
+S000123,390,design; public health; sustainable design,Cybersecurity;Design;Nursing,12,Townsville,215
+S000123,399,design; public health; sustainable design,Engineering;Design;Marketing,13,Darwin,331
+S000123,423,design; public health; sustainable design,Renewable Energy;Design;Psychology,14,Launceston,459
+S000123,431,design; public health; sustainable design,Architecture;International Law,14,Launceston,459
+S000123,435,design; public health; sustainable design,Nursing;Data Science;Finance,14,Launceston,459
+S000123,436,design; public health; sustainable design,Renewable Energy;Design,14,Launceston,459
+S000123,450,design; public health; sustainable design,Information Technology;Design,15,Sydney,88
+S000123,454,design; public health; sustainable design,Banking;Law;Accounting,15,Sydney,88
+S000123,486,design; public health; sustainable design,International Law;Nursing,16,Melbourne,373
+S000123,495,design; public health; sustainable design,Finance;Design,16,Melbourne,373
+S000123,496,design; public health; sustainable design,Film;Accounting;Education,16,Melbourne,373
+S000123,510,design; public health; sustainable design,Marketing;Public Health,17,Brisbane,100
+S000123,512,design; public health; sustainable design,Marketing;Data Science,17,Brisbane,100
+S000123,516,design; public health; sustainable design,International Law;Ecology,17,Brisbane,100
+S000123,520,design; public health; sustainable design,Banking;Nursing;Environmental Science,17,Brisbane,100
+S000123,534,design; public health; sustainable design,Business;Engineering;Computer Science,18,Adelaide,360
+S000123,535,design; public health; sustainable design,Information Technology;Education,18,Adelaide,360
+S000123,539,design; public health; sustainable design,Banking;Finance;Education,18,Adelaide,360
+S000123,547,design; public health; sustainable design,International Law;Accounting;Artificial Intelligence,18,Adelaide,360
+S000123,560,design; public health; sustainable design,Accounting;Banking;Law,18,Adelaide,360
+S000123,567,design; public health; sustainable design,Environmental Science;Engineering;Business,19,Perth,152
+S000123,571,design; public health; sustainable design,Accounting;Ecology;Business,19,Perth,152
+S000123,573,design; public health; sustainable design,Banking;International Law,19,Perth,152
+S000123,583,design; public health; sustainable design,Ecology;Business;Computer Science,19,Perth,152
+S000123,605,design; public health; sustainable design,Artificial Intelligence;Renewable Energy;Design,20,Hobart,131
+S000123,609,design; public health; sustainable design,Nursing;Environmental Science;Renewable Energy,20,Hobart,131
+S000123,615,design; public health; sustainable design,Finance;Education;Renewable Energy,21,Canberra,150
+S000123,624,design; public health; sustainable design,Design;Law,21,Canberra,150
+S000123,626,design; public health; sustainable design,Environmental Science;Data Science,21,Canberra,150
+S000123,635,design; public health; sustainable design,Artificial Intelligence;Design,21,Canberra,150
+S000123,647,design; public health; sustainable design,Engineering;Renewable Energy;Law,21,Canberra,150
+S000123,653,design; public health; sustainable design,Sustainable Design;Psychology;Design,22,Gold Coast,309
+S000123,654,design; public health; sustainable design,Nursing;Engineering;Information Technology,22,Gold Coast,309
+S000123,658,design; public health; sustainable design,Renewable Energy;Marketing;Public Health,22,Gold Coast,309
+S000123,659,design; public health; sustainable design,Data Science;Sustainable Design,22,Gold Coast,309
+S000123,668,design; public health; sustainable design,International Law;Environmental Science,22,Gold Coast,309
+S000123,685,design; public health; sustainable design,Information Technology;Data Science;Engineering,23,Wollongong,258
+S000123,696,design; public health; sustainable design,Sustainable Design;Renewable Energy,23,Wollongong,258
+S000123,701,design; public health; sustainable design,Data Science;Artificial Intelligence;Film,23,Wollongong,258
+S000123,708,design; public health; sustainable design,Engineering;Sustainable Design;Design,24,Newcastle,344
+S000123,720,design; public health; sustainable design,Nursing;Computer Science,24,Newcastle,344
+S000123,730,design; public health; sustainable design,Design;Artificial Intelligence;Nursing,24,Newcastle,344
+S000123,740,design; public health; sustainable design,Environmental Science;Finance;Computer Science,24,Newcastle,344
+S000123,747,design; public health; sustainable design,Film;Artificial Intelligence;Public Health,25,Geelong,492
+S000123,749,design; public health; sustainable design,Banking;Sustainable Design;Renewable Energy,25,Geelong,492
+S000123,753,design; public health; sustainable design,Marketing;International Law,25,Geelong,492
+S000123,760,design; public health; sustainable design,Public Health;Psychology,25,Geelong,492
+S000123,761,design; public health; sustainable design,Public Health;Data Science,25,Geelong,492
+S000123,770,design; public health; sustainable design,Computer Science;Banking;Marketing,26,Townsville,414
+S000123,800,design; public health; sustainable design,Finance;Nursing;Marketing,27,Darwin,294
+S000123,813,design; public health; sustainable design,Education;Renewable Energy,27,Darwin,294
+S000123,824,design; public health; sustainable design,Design;Artificial Intelligence,28,Launceston,386
+S000123,825,design; public health; sustainable design,Marketing;Ecology,28,Launceston,386
+S000123,831,design; public health; sustainable design,International Law;Public Health,28,Launceston,386
+S000123,847,design; public health; sustainable design,Design;International Law;Data Science,28,Launceston,386
+S000123,848,design; public health; sustainable design,Accounting;Cybersecurity,28,Launceston,386
+S000123,866,design; public health; sustainable design,Cybersecurity;Information Technology;Public Health,29,Sydney,192
+S000123,868,design; public health; sustainable design,Law;Data Science,29,Sydney,192
+S000123,878,design; public health; sustainable design,Banking;Computer Science;Data Science,29,Sydney,192
+S000123,880,design; public health; sustainable design,Engineering;Marketing;Banking,29,Sydney,192
+S000123,891,design; public health; sustainable design,Film;Cybersecurity;Sustainable Design,29,Sydney,192
+S000123,893,design; public health; sustainable design,Ecology;Renewable Energy;Engineering,30,Melbourne,444
+S000123,903,design; public health; sustainable design,Accounting;Education,30,Melbourne,444
+S000123,917,design; public health; sustainable design,International Law;Environmental Science;Computer Science,30,Melbourne,444
+S000123,921,design; public health; sustainable design,Public Health;Cybersecurity;Engineering,30,Melbourne,444
+S000123,929,design; public health; sustainable design,Architecture;Film;Architecture,31,Brisbane,277
+S000123,953,design; public health; sustainable design,Finance;Accounting,32,Adelaide,161
+S000123,955,design; public health; sustainable design,Architecture;Psychology,32,Adelaide,161
+S000123,957,design; public health; sustainable design,Psychology;Psychology;Sustainable Design,32,Adelaide,161
+S000123,959,design; public health; sustainable design,Ecology;Engineering;Design,32,Adelaide,161
+S000123,961,design; public health; sustainable design,Psychology;Design,32,Adelaide,161
+S000123,968,design; public health; sustainable design,Marketing;Business,32,Adelaide,161
+S000123,969,design; public health; sustainable design,Finance;Sustainable Design,32,Adelaide,161
+S000123,979,design; public health; sustainable design,Film;Finance,32,Adelaide,161
+S000123,993,design; public health; sustainable design,Ecology;Nursing,33,Perth,460
+S000123,996,design; public health; sustainable design,Business;Marketing,33,Perth,460
+S000123,998,design; public health; sustainable design,Nursing;Environmental Science;Film,33,Perth,460
+S000123,1003,design; public health; sustainable design,Artificial Intelligence;Environmental Science,33,Perth,460
+S000123,1011,design; public health; sustainable design,Architecture;Business,33,Perth,460
+S000123,1018,design; public health; sustainable design,Banking;Renewable Energy,33,Perth,460
+S000123,1023,design; public health; sustainable design,Artificial Intelligence;Business;Renewable Energy,34,Hobart,314
+S000123,1042,design; public health; sustainable design,Cybersecurity;Computer Science;Data Science,34,Hobart,314
+S000123,1064,design; public health; sustainable design,Education;Accounting,35,Canberra,22
+S000123,1072,design; public health; sustainable design,International Law;Accounting;International Law,36,Gold Coast,253
+S000123,1073,design; public health; sustainable design,Education;Artificial Intelligence;Finance,36,Gold Coast,253
+S000123,1081,design; public health; sustainable design,Accounting;Ecology;Information Technology,36,Gold Coast,253
+S000123,1082,design; public health; sustainable design,Engineering;Design,36,Gold Coast,253
+S000123,1089,design; public health; sustainable design,Ecology;Renewable Energy,36,Gold Coast,253
+S000123,1092,design; public health; sustainable design,Marketing;Artificial Intelligence,36,Gold Coast,253
+S000123,1104,design; public health; sustainable design,Architecture;Engineering,37,Wollongong,236
+S000123,1111,design; public health; sustainable design,Architecture;Psychology;International Law,37,Wollongong,236
+S000123,1116,design; public health; sustainable design,Nursing;Banking;Nursing,37,Wollongong,236
+S000123,1118,design; public health; sustainable design,Film;Accounting,37,Wollongong,236
+S000123,1119,design; public health; sustainable design,Marketing;Psychology,37,Wollongong,236
+S000123,1128,design; public health; sustainable design,Renewable Energy;Film,37,Wollongong,236
+S000123,1138,design; public health; sustainable design,Renewable Energy;Cybersecurity;Psychology,38,Newcastle,345
+S000123,1140,design; public health; sustainable design,Law;Cybersecurity,38,Newcastle,345
+S000123,1143,design; public health; sustainable design,Ecology;Education;Public Health,38,Newcastle,345
+S000123,1148,design; public health; sustainable design,Cybersecurity;Business;Public Health,38,Newcastle,345
+S000123,1149,design; public health; sustainable design,Data Science;Banking;Engineering,38,Newcastle,345
+S000123,1152,design; public health; sustainable design,Environmental Science;Nursing,38,Newcastle,345
+S000123,1161,design; public health; sustainable design,Education;Design,39,Geelong,49
+S000123,1163,design; public health; sustainable design,Artificial Intelligence;Sustainable Design,39,Geelong,49
+S000123,1165,design; public health; sustainable design,Computer Science;Cybersecurity;Accounting,39,Geelong,49
+S000123,1167,design; public health; sustainable design,Education;International Law,39,Geelong,49
+S000123,1181,design; public health; sustainable design,Business;Cybersecurity,39,Geelong,49
+S000123,1183,design; public health; sustainable design,Business;Accounting,39,Geelong,49
+S000123,1184,design; public health; sustainable design,Renewable Energy;Business;Sustainable Design,39,Geelong,49
+S000123,1193,design; public health; sustainable design,Film;Law,39,Geelong,49
+S000123,1216,design; public health; sustainable design,Computer Science;Law,40,Townsville,475
+S000123,1226,design; public health; sustainable design,Film;Ecology;Architecture,41,Darwin,59
+S000123,1227,design; public health; sustainable design,Ecology;International Law,41,Darwin,59
+S000123,1230,design; public health; sustainable design,Marketing;Public Health,41,Darwin,59
+S000123,1263,design; public health; sustainable design,Marketing;Engineering;Data Science,42,Launceston,170
+S000123,1271,design; public health; sustainable design,Information Technology;Engineering,42,Launceston,170
+S000123,1289,design; public health; sustainable design,Architecture;Finance,42,Launceston,170
+S000123,1301,design; public health; sustainable design,International Law;Cybersecurity,43,Sydney,476
+S000123,1305,design; public health; sustainable design,Finance;Ecology;Education,43,Sydney,476
+S000123,1309,design; public health; sustainable design,Ecology;Architecture,43,Sydney,476
+S000123,1311,design; public health; sustainable design,Environmental Science;Ecology,43,Sydney,476
+S000123,1312,design; public health; sustainable design,Business;Artificial Intelligence;Ecology,43,Sydney,476
+S000123,1316,design; public health; sustainable design,Ecology;Accounting,43,Sydney,476
+S000123,1324,design; public health; sustainable design,Education;Sustainable Design,43,Sydney,476
+S000123,1327,design; public health; sustainable design,Marketing;Nursing,43,Sydney,476
+S000123,1330,design; public health; sustainable design,Accounting;Finance;Ecology,43,Sydney,476

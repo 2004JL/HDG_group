@@ -350,8 +350,7 @@ json_path = st.session_state.get(
 )
 
 #programs recommendation
-run = st.button("Find eligible programs")
-if run:
+if st.button("Find eligible programs"):
     try:
         r = Retrieval()
         df = r.run(json_path)
@@ -387,7 +386,7 @@ if run:
     except Exception as e:
         st.error(f"Error: {e}")
 
-if st.button("Find mentors for top-N programs"):
+if st.button("Find mentors"):
     try:
         rm = RetrievalMentor()
         df_m = rm.run(student_program_csv=ROOT / "retrieval" / "student_program.csv", top_n=3)
@@ -429,12 +428,6 @@ if st.button("Find mentors for top-N programs"):
 
         st.success(f"Mentor rows (after scoring & per-program top3): {len(top3)}")
         st.dataframe(top3.head(20), use_container_width=True)
-        st.download_button(
-            "Download mentor matches (CSV)",
-            data=top3.to_csv(index=False).encode("utf-8"),
-            file_name="student_program_topN_mentor_scored.csv",
-            mime="text/csv"
-        )
 
     except Exception as e:
         st.error(f"Error: {e}")
