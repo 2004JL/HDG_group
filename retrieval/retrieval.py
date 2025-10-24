@@ -1,4 +1,4 @@
-# retrieval.py  —— 可导入类版本
+# retrieval.py
 import json
 import argparse
 import pandas as pd
@@ -88,15 +88,28 @@ class Retrieval:
             .merge(student_row[["student_id", "interests"]], on="student_id", how="left")
             .merge(self.programs_df[["program_id", "field_tags"]], on="program_id", how="left")
             .merge(self.programs_df[["program_id", "institution_id"]], on="program_id", how="left")
-            .merge(self.institutions[["institution_id", "overall_ranking"]], on="institution_id", how="left")
+        #     .merge(self.institutions[["institution_id", "overall_ranking"]], on="institution_id", how="left")
+        #     .merge(self.institutions[["institution_id", "institution_name", "overall_ranking"]], on="institution_id", how="left")
+            .merge(self.institutions[["institution_id", "name", "overall_ranking"]], on="institution_id", how="left")
         )
+        out.rename(columns={"institution_name": "university"}, inplace=True)
         return out
 
+    # def run(self, student_json: Path | None = None) -> pd.DataFrame:
+    #     stu = self.load_student_json(Path(student_json))
+    #     df  = self.eligible_programs(stu)
+    #     ROOT = Path(__file__).resolve().parents[1]
+    #     OUT  = ROOT / "retrieval"
+    #     OUT.mkdir(parents=True, exist_ok=True)
+    #     df.to_csv(OUT / "student_retrieval.csv", index=False)
+    #     return df
+    
     def run(self, student_json: Path | None = None) -> pd.DataFrame:
-        stu = self.load_student_json(Path(student_json))
-        df  = self.eligible_programs(stu)
-        ROOT = Path(__file__).resolve().parents[1]
-        OUT  = ROOT / "retrieval"
-        OUT.mkdir(parents=True, exist_ok=True)
-        df.to_csv(OUT / "student_retrieval.csv", index=False)
-        return df
+            stu = self.load_student_json(Path(student_json))
+            df = self.eligible_programs(stu)
+
+            df.to_csv(self.OUT / "student_retrieval.csv", index=False)
+            return df
+    
+
+    

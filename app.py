@@ -349,21 +349,43 @@ json_path = st.session_state.get(
 )
 
 #programs recommendation
+# run = st.button("Find eligible programs")
+# if run:
+#     try:
+#         r = Retrieval()
+#         df = r.run(json_path)
+#         st.success(f"Found {len(df)} eligible rows.")
+
+#         st.dataframe(df.head(50), use_container_width=True)
+
+#         csv = df.to_csv(index=False).encode("utf-8")
+#         st.download_button(
+#             "Download full CSV",
+#             data=csv,
+#             file_name="eligible_results.csv",
+#             mime="text/csv"
+#         )
+#programs recommendation
 run = st.button("Find eligible programs")
 if run:
     try:
         r = Retrieval()
         df = r.run(json_path)
-        st.success(f"Found {len(df)} eligible rows.")
+        st.success(f"Found {len(df)} eligible programs.")
 
-        st.dataframe(df.head(50), use_container_width=True)
+        # give top3
+        top3 = df.head(3)
 
-        csv = df.to_csv(index=False).encode("utf-8")
-        st.download_button(
-            "Download full CSV",
-            data=csv,
-            file_name="eligible_results.csv",
-            mime="text/csv"
-        )
+        # 使用卡片样式展示
+        for i, row in top3.iterrows():
+            st.markdown('<div class="card">', unsafe_allow_html=True)
+            st.markdown('<div class="ribbon"></div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="logo-chip">{row.get("institution", "Unknown University")}</div>', unsafe_allow_html=True)
+            st.markdown('<div class="body">', unsafe_allow_html=True)
+            st.markdown(f'<div class="title"><a href="{row.get("url", "#")}" target="_blank">{row.get("program_name", "Program ID: "+str(row["program_id"]))}</a></div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="desc">{row.get("blurb", "Field: "+row.get("field_tags",""))}</div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="meta"><span>Overall ranking: {row.get("overall_ranking","N/A")}</span></div>', unsafe_allow_html=True)
+            st.markdown('</div></div>', unsafe_allow_html=True)
+
     except Exception as e:
         st.error(f"Error: {e}")
