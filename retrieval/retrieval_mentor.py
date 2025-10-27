@@ -13,15 +13,9 @@ class RetrievalMentor:
         self.mentors  = pd.read_csv(self.RAW / "mentors.csv")
         self.programs = pd.read_csv(self.RAW / "programs.csv")
 
-    def eligible_mentors(self, student_program_csv: str | Path | None = None, top_n: int = 3) -> pd.DataFrame:
+    def eligible_mentors(self, top_n: int = 3) -> pd.DataFrame:
 
-        if student_program_csv is None:
-            student_program_csv = self.OUT / "student_program.csv"
-
-        sp = pd.read_csv(student_program_csv)
-
-        if "field_tags" not in sp.columns:
-            sp = sp.merge(self.programs, on="program_id", how="left")
+        sp = pd.read_csv(self.OUT / "student_program.csv")
 
         order_cols = [c for c in ["pred_label_match", "score", "label_match"] if c in sp.columns]
         if order_cols:
@@ -42,10 +36,8 @@ class RetrievalMentor:
         out = cross[base_cols + extra_cols].copy()
         return out
 
-    def run(self, student_program_csv: str | Path | None = None, top_n: int = 3) -> pd.DataFrame:
+    def run(self, top_n: int = 3) -> pd.DataFrame:
 
-        df = self.eligible_mentors(student_program_csv=student_program_csv, top_n=top_n)
-        save_path = self.OUT / "program_mentor_retrieval.csv"
-        df.to_csv(save_path, index=False)
-        print(f"Saved: {save_path}")
+        df = self.eligible_mentors(top_n=top_n)
+        df.to_csv(self.OUT / "program_mentor_retrieval.csv", index=False)
         return df

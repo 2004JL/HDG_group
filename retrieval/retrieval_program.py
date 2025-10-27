@@ -17,25 +17,14 @@ class Retrieval:
         self.institutions  = pd.read_csv(self.RAW1 / "institutions.csv")
         self.reqs_df       = pd.read_csv(self.RAW1 / "program_requirements.csv")
 
-        programs_slim = self.programs_df[["program_id", "name", "institution_id", "degree_level"]].copy()
-        instit_slim   = self.institutions[["institution_id", "locations", "overall_ranking"]].copy()
-        reqs_slim     = self.reqs_df[["program_id", "min_gpa_std_4", "english_required_type", "english_min_overall"]].copy()
-
-        prog_full = programs_slim.merge(reqs_slim, on="program_id", how="inner")
-        self.prog_ins = prog_full.merge(instit_slim, on="institution_id", how="inner")
+        self.prog_ins = self.programs_df[["program_id", "name", "field_tags", "institution_id", "degree_level"]].copy() \
+            .merge(self.reqs_df[["program_id", "min_gpa_std_4", "english_required_type", "english_min_overall"]].copy(), on="program_id", how="inner") \
+            .merge(self.institutions[["institution_id", "locations", "overall_ranking"]].copy(), on="institution_id", how="inner")
 
     @staticmethod
     def load_student_json(path: Path) -> dict:
         with open(path, "r", encoding="utf-8") as f:
             obj = json.load(f)
-
-        required = [
-            "student_id", "major_intent", "degree_goal",
-            "english_test_type", "english_score_overall", "gpa_std_4",
-            "interests"
-        ]
-
-        missing = [k for k in required if k not in obj]
 
         return {
             "student_id": str(obj["student_id"]).strip(),
@@ -68,9 +57,6 @@ class Retrieval:
         cross["degree_goal"] = cross["degree_goal"].astype(str).str.lower()
         cross["degree_level"] = cross["degree_level"].astype(str).str.lower()
 
-        for col in ["gpa_std_4", "english_score_overall", "min_gpa_std_4", "english_min_overall"]:
-            cross[col] = pd.to_numeric(cross[col], errors="coerce")
-
         eligible = cross[
             (cross["gpa_std_4"] >= cross["min_gpa_std_4"]) &
             (cross["english_test_type"] == cross["english_required_type"]) &
@@ -78,18 +64,7 @@ class Retrieval:
             (cross["degree_goal"] == cross["degree_level"])
         ].copy()
 
-
-        out = (
-            eligible[["student_id", "program_id"]]
-            .drop_duplicates()
-            .sort_values(["student_id", "program_id"])
-            .reset_index(drop=True)
-            .merge(student_row[["student_id", "interests"]], on="student_id", how="left")
-            .merge(self.programs_df[["program_id", "field_tags"]], on="program_id", how="left")
-            .merge(self.programs_df[["program_id", "institution_id"]], on="program_id", how="left")
-            .merge(self.institutions[["institution_id", "locations"]], on="institution_id", how="left")
-            .merge(self.institutions[["institution_id", "overall_ranking"]], on="institution_id", how="left")
-        )
+        out = eligible[["student_id", "program_id", "interests", "field_tags", "name", "institution_id", "locations", "overall_ranking"]]
         return out
 
     def run(self, student_json: Path | None = None) -> pd.DataFrame:

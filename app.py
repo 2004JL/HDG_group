@@ -15,8 +15,9 @@ if str(ROOT) not in sys.path:
 
 from retrieval.retrieval_program import Retrieval
 from retrieval.retrieval_mentor import RetrievalMentor
+from retrieval.retrieval_core import RetrievalCore
 
-# ----------------- Login / Register Button -----------------
+# Login
 import json, os, secrets, base64, hashlib
 
 USERS_DB = "users.json"
@@ -58,7 +59,6 @@ if st.session_state.get("auth_open"):
         st.markdown("### Sign in or create account")
         tabs = st.tabs(["Sign in", "Register"])
 
-        import json, os, secrets, base64, hashlib
         USERS_DB = "users.json"
         def load_users():
             if os.path.exists(USERS_DB):
@@ -125,7 +125,7 @@ hide_streamlit_style = """
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-st.title("Explore degrees by leading Australian Universities")
+st.title("Educational pathway")
 
 # ================== OUA LOOK & FEEL ==================
 # 1) CSS
@@ -297,6 +297,10 @@ with st.sidebar:
             key="has_pr"
         )
 
+INTEREST_OPTIONS = ["accounting", "architecture", "artificial intelligence", "banking", "business", "computer science", "cybersecurity",
+    "data science", "design", "ecology", "education", "engineering", "environmental science", "film", "finance", "information technology",
+    "international law", "law", "marketing", "nursing", "psychology", "public health", "renewable energy", "sustainable design"]
+
 # Take student input
 with st.sidebar:
     st.markdown("Student profile & export")
@@ -311,7 +315,7 @@ with st.sidebar:
     else:
         auto_degree = "bachelor"
 
-    auto_interests = ";".join([x.strip().lower() for x in selected_areas if str(x).strip()])
+    auto_interests = [x.strip().lower() for x in selected_areas if str(x).strip()]
 
     auto_major_intent = selected_areas[0].strip().lower() if selected_areas else "general"
 
@@ -321,8 +325,11 @@ with st.sidebar:
     eng_type = st.selectbox("English test type", ["IELTS", "TOEFL", "PTE"], index=0)
     eng_score = st.number_input("English overall", min_value=0.0, max_value=120.0, step=0.5, value=7.0, help="IELTS 0-9, TOEFL 0-120, PTE 0-90")
     gpa = st.number_input("GPA (0-4 scale)", min_value=0.0, max_value=4.0, step=0.1, value=3.4)
-    interests = st.text_area("Interests (; separated)", value=auto_interests)
-
+    migration = st.radio("migration option", options=["Yes", "No"], horizontal=False)
+    migration = (migration == "Yes")
+    interests = st.multiselect("Interests (choose one or more)", options=INTEREST_OPTIONS, default=[], help="You can pick multiple interests")
+    interests = ";".join([t.strip().lower() for t in interests])
+    
     payload = {
         "student_id": sid.strip(),
         "major_intent": major.strip(),
@@ -330,10 +337,11 @@ with st.sidebar:
         "english_test_type": eng_type.strip(),
         "english_score_overall": float(eng_score),
         "gpa_std_4": float(gpa),
+        "migration_interest": migration,
         "interests": interests.strip(),
     }
 
-    #output json
+    # Output json
     col, = st.columns(1)
     with col:
         if st.button("json", use_container_width=True):
@@ -349,62 +357,97 @@ json_path = st.session_state.get(
     str(ROOT / "retrieval" / "student.json")
 )
 
-#programs recommendation
-if st.button("Find eligible programs"):
-    try:
-        r = Retrieval()
-        df = r.run(json_path)
+def program_labelmatch(df):
+    bundle = joblib.load(ROOT / "models" / "xgb_program_labelmatch_regressor.pkl")
+    if isinstance(bundle, dict) and "model" in bundle:
+        model   = bundle["model"]
+        mlb_int = bundle["mlb_int"]
+        mlb_tag = bundle["mlb_tag"]
 
-        bundle = joblib.load(ROOT / "models" / "xgb_program_labelmatch_regressor.pkl")
-        if isinstance(bundle, dict) and "model" in bundle:
-            model   = bundle["model"]
-            mlb_int = bundle["mlb_int"]
-            mlb_tag = bundle["mlb_tag"]
+    df["interests"]  = df["interests"].fillna("")
+    df["field_tags"] = df["field_tags"].fillna("")
 
-        df["interests"]  = df["interests"].fillna("")
-        df["field_tags"] = df["field_tags"].fillna("")
+    def to_list(s):
+        return [x.strip().lower() for x in str(s).split(";") if x.strip()]
 
-        def to_list(s):
-            return [x.strip().lower() for x in str(s).split(";") if x.strip()]
+    X_int = mlb_int.transform(df["interests"].map(to_list))
+    X_tag = mlb_tag.transform(df["field_tags"].map(to_list))
+    X = hstack([X_int, X_tag], format="csr")
 
-        X_int = mlb_int.transform(df["interests"].map(to_list))
-        X_tag = mlb_tag.transform(df["field_tags"].map(to_list))
-        X = hstack([X_int, X_tag], format="csr")
+    dX = xgb.DMatrix(X)
+    pred = model.predict(dX)
 
-        dX = xgb.DMatrix(X)
-        pred = model.predict(dX)
+    out = df.copy()
+    out["pred_label_match"] = np.round(pred, 4)
+    return out
 
-        out = df.copy()
-        out["pred_label_match"] = np.round(pred, 4)
-        out = out.sort_values("pred_label_match", ascending=False).reset_index(drop=True)
-        out.to_csv( ROOT / "retrieval" / "student_program.csv", index=False)
+col1, col2 = st.columns(2)
+if "last_output" not in st.session_state:
+    st.session_state["last_output"] = None
+if "last_action" not in st.session_state:
+    st.session_state["last_action"] = None
 
-        st.success(f"Found {len(out)} eligible rows.")
+# Programs recommendation
+with col1:
+    if st.button("Find eligible programs", use_container_width=True):
+        if migration != True:
+            r = Retrieval()
+            df = r.run(json_path)
 
-        st.dataframe(out.head(3), use_container_width=True)
+            out = program_labelmatch(df)
+            out = out.sort_values("pred_label_match", ascending=False).reset_index(drop=True)
+            out = out.head(3).reset_index(drop=True)
+            out.to_csv( ROOT / "retrieval" / "student_program.csv", index=False)
+        else:
+            f = RetrievalCore()
+            df = f.find(json_path)
 
-    except Exception as e:
-        st.error(f"Error: {e}")
+            bundle = joblib.load(ROOT / "models" / "xgb_core_program_labelmatch_regressor.pkl")
+            if isinstance(bundle, dict) and "model" in bundle:
+                model   = bundle["model"]
+                mlb_int = bundle["mlb_int"]
+                mlb_tag = bundle["mlb_tag"]
 
-if st.button("Find mentors"):
-    try:
+            df["interests"] = df["interests"].fillna("")
+            df["core_program"] = df["core_program"].fillna("")
+
+            def to_list(s):
+                return [x.strip().lower() for x in str(s).split(";") if x.strip()]
+            
+            X_int = mlb_int.transform(df["interests"].map(to_list))
+            X_tag = mlb_tag.transform(df["core_program"].map(to_list))
+            X = hstack([X_int, X_tag], format="csr")
+
+            dX = xgb.DMatrix(X)
+            pred = model.predict(dX)
+
+            p = df.copy()
+            p["pred_label_match"] = np.round(pred, 4)
+            p = p.sort_values("pred_label_match", ascending=False).reset_index(drop=True)
+            p.to_csv( ROOT / "retrieval" / "core_program.csv", index=False)
+        
+            dp = f.run(json_path, top_n=3)
+
+            out = program_labelmatch(dp)
+            out = out.sort_values("pred_label_match", ascending=False).reset_index(drop=True)
+            out = out.head(3).reset_index(drop=True)
+            out.to_csv( ROOT / "retrieval" / "student_program.csv", index=False)
+
+        st.session_state["last_output"] = out
+        st.session_state["last_action"] = "programs"
+
+# Mentors recommendation
+with col2:
+    if st.button("Find mentors for programs", use_container_width=True):
         rm = RetrievalMentor()
-        df_m = rm.run(student_program_csv=ROOT / "retrieval" / "student_program.csv", top_n=3)
-
-        need_cols = {"program_id", "field_tags", "mentor_id", "expertise_tags"}
-        miss = need_cols - set(df_m.columns)
-        if miss:
-            raise ValueError(f"RetrievalMentor output missing columns: {miss}")
+        df_m = rm.run(top_n=3)
 
         bundle = joblib.load(ROOT / "models" / "xgb_mentor_labelmatch_regressor.pkl")
-        if not (isinstance(bundle, dict) and {"model","mlb_int","mlb_tag"} <= set(bundle.keys())):
-            raise ValueError("xgb_mentor_labelmatch_regressor.pkl should be a dict with keys: model/mlb_int/mlb_tag")
-
         model = bundle["model"]
         mlb_int = bundle["mlb_int"]
         mlb_tag = bundle["mlb_tag"]
 
-        df_m["field_tags"]    = df_m["field_tags"].fillna("")
+        df_m["field_tags"] = df_m["field_tags"].fillna("")
         df_m["expertise_tags"] = df_m["expertise_tags"].fillna("")
 
         def to_list(s):
@@ -412,22 +455,20 @@ if st.button("Find mentors"):
 
         X_f = mlb_int.transform(df_m["field_tags"].map(to_list))
         X_e = mlb_tag.transform(df_m["expertise_tags"].map(to_list))
-        X   = hstack([X_f, X_e], format="csr")
+        X = hstack([X_f, X_e], format="csr")
 
-        dX   = xgb.DMatrix(X)
+        dX = xgb.DMatrix(X)
         pred = model.predict(dX)
 
         scored = df_m.copy()
         scored["pred_label_match"] = np.round(pred, 4)
 
         scored = scored.sort_values(["program_id", "pred_label_match"], ascending=[True, False])
-        top3   = scored.groupby("program_id", as_index=False).head(3).reset_index(drop=True)
+        out = scored.groupby("program_id", as_index=False).head(3).reset_index(drop=True)
+        out.to_csv(ROOT / "retrieval" / "program_mentor_scored.csv", index=False)
 
-        save_path = ROOT / "retrieval" / "student_program_topN_mentor_scored.csv"
-        top3.to_csv(save_path, index=False)
+        st.session_state["last_output"] = out
+        st.session_state["last_action"] = "mentors"
 
-        st.success(f"Mentor rows (after scoring & per-program top3): {len(top3)}")
-        st.dataframe(top3.head(20), use_container_width=True)
-
-    except Exception as e:
-        st.error(f"Error: {e}")
+if st.session_state["last_output"] is not None:
+    st.dataframe(st.session_state["last_output"].head(10), use_container_width=True)

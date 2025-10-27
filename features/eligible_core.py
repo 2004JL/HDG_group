@@ -15,9 +15,9 @@ core_labels = list(sim.columns)
 students_slim = students[["student_id"]].copy()
 labels_df = pd.DataFrame({"core_program": core_labels})
 
-students_slim["_k"] = 1
-labels_df["_k"] = 1
-cross = students_slim.merge(labels_df, on="_k").drop(columns="_k")
+students_slim["_tmp"] = 1
+labels_df["_tmp"] = 1
+cross = students_slim.merge(labels_df, on="_tmp").drop(columns="_tmp")
 
 out = (
     cross[["student_id", "core_program"]]

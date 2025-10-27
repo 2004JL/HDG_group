@@ -43,7 +43,7 @@ def split_clean(cell):
 def row_match(row):
     
     interests = split_clean(row.get("interests", ""))
-    tags      = split_clean(row.get("field_tags", ""))
+    tags = split_clean(row.get("field_tags", ""))
 
     m = len(interests)
     n = len(tags)
@@ -72,20 +72,6 @@ def row_match(row):
     return avg
 
 eligible_out["label_match"] = eligible_out.apply(row_match, axis=1)
-
-# Load the length (range) of the 'rank'
-max = pd.to_numeric(institutions["overall_ranking"], errors="coerce").max()
-
-# Weight match score (based on rank)
-def calc_c_match(row):
-    r = row.get("overall_ranking", -1)
-    m = row.get("label_match", float("nan"))
-    n = (1 - (float(r)-1) / float(max))
-    # The match num is multiply by "n" between 0 and 1
-    # The value of "n" is linearly dependent to institutions rank
-    return round(float(m) * n, 2)
-
-eligible_out["wight"] = eligible_out.apply(calc_c_match, axis=1)
 
 eligible_out[["student_id", "interests", "program_id", "field_tags", "label_match"]].to_csv(OUT / "eligible_program.csv", index=False)
 print(f"Saved: {OUT / 'eligible_program.csv'}")

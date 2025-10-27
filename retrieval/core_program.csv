@@ -1,0 +1,12 @@
+student_id,interests,core_program,pred_label_match
+S000123,business,information technology,0.4936
+S000123,business,public health,0.4242
+S000123,business,education,0.4105
+S000123,business,engineering,0.3823
+S000123,business,construction,0.3503
+S000123,business,agriculture,0.3193
+S000123,business,mining,0.2918
+S000123,business,logistics,0.2679
+S000123,business,cyber security,0.2668
+S000123,business,trades,0.2615
+S000123,business,nursing,0.2137

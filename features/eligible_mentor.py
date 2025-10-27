@@ -36,7 +36,7 @@ def split_clean(cell):
 def row_match(row):
     
     interests = split_clean(row.get("field_tags", ""))
-    tags      = split_clean(row.get("expertise_tags", ""))
+    tags = split_clean(row.get("expertise_tags", ""))
 
     m = len(interests)
     n = len(tags)
