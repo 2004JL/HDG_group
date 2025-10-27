@@ -5,6 +5,6 @@
   "english_test_type": "IELTS",
   "english_score_overall": 7.0,
   "gpa_std_4": 3.4,
-  "migration_interest": true,
-  "interests": "business"
+  "migration_interest": false,
+  "interests": "psychology;business"
 }

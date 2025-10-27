@@ -12,14 +12,14 @@ mentors = pd.read_csv(RAW1 / "mentors.csv")
 sim = pd.read_csv(RAW2 / "label_matrix_mentor.csv", index_col=0)
 
 programs_slim = programs[["program_id", "field_tags"]].copy()
-mentors_slim = mentors[["mentor_id", "languages", "expertise_tags","education_background","years_experience"]].copy()
+mentors_slim = mentors[["mentor_id", "expertise_tags"]].copy()
 
 programs_slim ["_tmp"] = 1
 mentors_slim["_tmp"] = 1
 cross = programs_slim .merge(mentors_slim, on="_tmp").drop(columns="_tmp")
 
 eligible_out = cross[
-    ["program_id", "field_tags", "mentor_id", "languages", "expertise_tags", "education_background", "years_experience"]
+    ["program_id", "field_tags", "mentor_id", "expertise_tags"]
 ].copy()
 
 labels = list(sim.index)
@@ -60,5 +60,5 @@ def row_match(row):
 
 eligible_out["label_match"] = eligible_out.apply(row_match, axis=1)
 
-eligible_out[["program_id", "field_tags", "mentor_id", "languages", "expertise_tags", "education_background", "years_experience", "label_match"]].to_csv(OUT / "eligible_mentor.csv", index=False)
+eligible_out[["program_id", "field_tags", "mentor_id", "expertise_tags", "label_match"]].to_csv(OUT / "eligible_mentor.csv", index=False)
 print(f"Saved: {OUT / 'eligible_mentor.csv'}")

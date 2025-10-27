@@ -5,6 +5,7 @@ import joblib
 import pandas as pd
 import numpy as np
 import xgboost as xgb
+import json
 from sklearn.preprocessing import MultiLabelBinarizer
 from scipy.sparse import hstack
 from pathlib import Path
@@ -16,99 +17,6 @@ if str(ROOT) not in sys.path:
 from retrieval.retrieval_program import Retrieval
 from retrieval.retrieval_mentor import RetrievalMentor
 from retrieval.retrieval_core import RetrievalCore
-
-# Login
-import json, os, secrets, base64, hashlib
-
-USERS_DB = "users.json"
-
-def hash_pw(pw, salt=None):
-    if salt is None:
-        salt = secrets.token_bytes(16)
-    dk = hashlib.pbkdf2_hmac("sha256", pw.encode(), salt, 100_000)
-    return base64.b64encode(salt).decode(), base64.b64encode(dk).decode()
-
-def verify_pw(pw, salt_b64, hash_b64):
-    salt = base64.b64decode(salt_b64)
-    expected = base64.b64decode(hash_b64)
-    dk = hashlib.pbkdf2_hmac("sha256", pw.encode(), salt, 100_000)
-    return secrets.compare_digest(dk, expected)
-
-def load_users():
-    if os.path.exists(USERS_DB):
-        return json.load(open(USERS_DB, "r", encoding="utf-8"))
-    return {}
-
-def save_users(data):
-    json.dump(data, open(USERS_DB, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-
-st.session_state.setdefault("auth_open", False)
-col1, col2 = st.columns([6, 1])
-with col2:
-    if st.session_state.get("user"):
-        st.write(f"👋 Hello, **{st.session_state['user']}**")
-        if st.button("Sign out", key="btn_signout"):
-            st.session_state["user"] = None
-            st.rerun()
-    else:
-        if st.button("Login / Register", key="btn_login_toggle"):
-            st.session_state["auth_open"] = not st.session_state["auth_open"]
-
-if st.session_state.get("auth_open"):
-    with st.sidebar:
-        st.markdown("### Sign in or create account")
-        tabs = st.tabs(["Sign in", "Register"])
-
-        USERS_DB = "users.json"
-        def load_users():
-            if os.path.exists(USERS_DB):
-                return json.load(open(USERS_DB, "r", encoding="utf-8"))
-            return {}
-        def save_users(data):
-            json.dump(data, open(USERS_DB, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-        def hash_pw(pw, salt=None):
-            if salt is None:
-                salt = secrets.token_bytes(16)
-            dk = hashlib.pbkdf2_hmac("sha256", pw.encode(), salt, 100_000)
-            return base64.b64encode(salt).decode(), base64.b64encode(dk).decode()
-        def verify_pw(pw, salt_b64, hash_b64):
-            salt = base64.b64decode(salt_b64)
-            expected = base64.b64decode(hash_b64)
-            dk = hashlib.pbkdf2_hmac("sha256", pw.encode(), salt, 100_000)
-            return secrets.compare_digest(dk, expected)
-
-        users = load_users()
-
-        with tabs[0]:
-            email = st.text_input("Email", key="auth_signin_email")
-            pw = st.text_input("Password", type="password", key="auth_signin_pw")
-            if st.button("Sign in now", key="btn_signin_now"):
-                u = users.get(email)
-                if u and verify_pw(pw, u["salt"], u["hash"]):
-                    st.session_state["user"] = u.get("name") or email
-                    st.session_state["auth_open"] = False
-                    st.success("Welcome back!")
-                    st.rerun()
-                else:
-                    st.error("Invalid email or password.")
-
-        with tabs[1]:
-            name = st.text_input("Your name", key="auth_reg_name")
-            email2 = st.text_input("Email", key="auth_reg_email")
-            pw1 = st.text_input("Password (min 8 chars)", type="password", key="auth_reg_pw1")
-            pw2 = st.text_input("Confirm password", type="password", key="auth_reg_pw2")
-            if st.button("Create account", key="btn_create_account"):
-                if len(pw1) < 8:
-                    st.error("Password must be at least 8 characters.")
-                elif pw1 != pw2:
-                    st.error("Passwords do not match.")
-                elif email2 in users:
-                    st.error("This email is already registered.")
-                else:
-                    salt, hashed = hash_pw(pw1)
-                    users[email2] = {"name": name, "salt": salt, "hash": hashed}
-                    save_users(users)
-                    st.success("Account created! You can now log in.")
 
 # ================== PAGE SETUP ==================
 st.set_page_config(page_title="OUA-Style Degrees", layout="wide")
@@ -270,33 +178,6 @@ if "DEMO_DEGREES" not in st.session_state:
         },
     ]
 
-# 5) 左侧 Filters（折叠样式）
-with st.sidebar:
-    st.markdown("### Filters")
-    with st.expander("Study level", expanded=True):
-        st.checkbox("Undergraduate", True)
-        st.checkbox("Postgraduate", False)
-    with st.expander("Interest area", expanded=False):
-        st.multiselect("Area", ["Business","IT & computer science","Education & teaching","Psychology"], ["Business"]) 
-    with st.expander("University", expanded=False):
-        st.multiselect("University", ["Curtin","Griffith","ECU","La Trobe"]) 
-    with st.expander("Qualification", expanded=False):
-        st.multiselect("Type", ["Degree","Undergraduate certificate","Diploma"], ["Degree"]) 
-    with st.expander("Study method", expanded=False):
-        st.checkbox("100% online", True)
-        st.checkbox("On-campus", False)
-    with st.expander("Entry options", expanded=False):
-        st.checkbox("No ATAR required", True)
-    with st.expander("Other", expanded=False):
-        st.slider("Duration (years)", 0, 6, (0,3))
-        st.markdown("#### PR (Permanent Residency)")
-        has_pr = st.radio(
-            "Do you have PR?",
-            options=["Yes", "No"],
-            horizontal=True,
-            key="has_pr"
-        )
-
 INTEREST_OPTIONS = ["accounting", "architecture", "artificial intelligence", "banking", "business", "computer science", "cybersecurity",
     "data science", "design", "ecology", "education", "engineering", "environmental science", "film", "finance", "information technology",
     "international law", "law", "marketing", "nursing", "psychology", "public health", "renewable energy", "sustainable design"]
@@ -396,8 +277,9 @@ with col1:
 
             out = program_labelmatch(df)
             out = out.sort_values("pred_label_match", ascending=False).reset_index(drop=True)
-            out = out.head(3).reset_index(drop=True)
             out.to_csv( ROOT / "retrieval" / "student_program.csv", index=False)
+
+            out = out.head(3).reset_index(drop=True)
         else:
             f = RetrievalCore()
             df = f.find(json_path)
@@ -430,8 +312,9 @@ with col1:
 
             out = program_labelmatch(dp)
             out = out.sort_values("pred_label_match", ascending=False).reset_index(drop=True)
-            out = out.head(3).reset_index(drop=True)
             out.to_csv( ROOT / "retrieval" / "student_program.csv", index=False)
+
+            out = out.head(3).reset_index(drop=True)
 
         st.session_state["last_output"] = out
         st.session_state["last_action"] = "programs"
@@ -440,35 +323,121 @@ with col1:
 with col2:
     if st.button("Find mentors for programs", use_container_width=True):
         rm = RetrievalMentor()
-        df_m = rm.run(top_n=3)
+        df = rm.run(top_n=3)
 
         bundle = joblib.load(ROOT / "models" / "xgb_mentor_labelmatch_regressor.pkl")
         model = bundle["model"]
         mlb_int = bundle["mlb_int"]
         mlb_tag = bundle["mlb_tag"]
 
-        df_m["field_tags"] = df_m["field_tags"].fillna("")
-        df_m["expertise_tags"] = df_m["expertise_tags"].fillna("")
+        df["field_tags"] = df["field_tags"].fillna("")
+        df["expertise_tags"] = df["expertise_tags"].fillna("")
 
         def to_list(s):
             return [x.strip().lower() for x in str(s).split(";") if x.strip()]
 
-        X_f = mlb_int.transform(df_m["field_tags"].map(to_list))
-        X_e = mlb_tag.transform(df_m["expertise_tags"].map(to_list))
+        X_f = mlb_int.transform(df["field_tags"].map(to_list))
+        X_e = mlb_tag.transform(df["expertise_tags"].map(to_list))
         X = hstack([X_f, X_e], format="csr")
 
         dX = xgb.DMatrix(X)
         pred = model.predict(dX)
 
-        scored = df_m.copy()
+        scored = df.copy()
         scored["pred_label_match"] = np.round(pred, 4)
 
         scored = scored.sort_values(["program_id", "pred_label_match"], ascending=[True, False])
-        out = scored.groupby("program_id", as_index=False).head(3).reset_index(drop=True)
-        out.to_csv(ROOT / "retrieval" / "program_mentor_scored.csv", index=False)
+        scored.to_csv(ROOT / "retrieval" / "program_mentor.csv", index=False)
 
+        out = scored.groupby("program_id", as_index=False).head(3).reset_index(drop=True)
         st.session_state["last_output"] = out
         st.session_state["last_action"] = "mentors"
 
+def render_program_cards(df: pd.DataFrame, top_k: int = 3):
+    small = df.head(top_k).reset_index(drop=True)
+
+    def safe(row, key, default=""):
+        return row.get(key, default)
+
+    st.markdown("""
+    <style>
+    .prog-card{
+        border:1px solid #e5e7eb; border-radius:14px; padding:14px 16px; margin:10px 0;
+        box-shadow:0 2px 10px rgba(2,6,23,.05); background:#fff;
+    }
+    .prog-title{font-weight:700; font-size:1.05rem; margin-bottom:6px;}
+    .prog-meta{color:#6b7280; font-size:.92rem; margin:2px 0;}
+    .prog-link a{font-weight:600; text-decoration:underline;}
+    </style>
+    """, unsafe_allow_html=True)
+
+    for i, row in small.iterrows():
+        institution_id = safe(row, "institution_id")
+        ins_name       = safe(row, "ins_name") or safe(row, "institution_name")
+        website        = safe(row, "website")
+        program_id     = safe(row, "program_id")
+
+        st.markdown(f"""
+        <div class="prog-card">
+          <div class="prog-title">{ins_name or 'Institution'}</div>
+          <div class="prog-meta">institution_id: <b>{institution_id}</b></div>
+          <div class="prog-meta">program_id: <b>{program_id}</b></div>
+          <div class="prog-link">website: {"<a href='"+website+"' target='_blank'>"+website+"</a>" if website else "—"}</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+def render_mentor_cards(df: pd.DataFrame, top_k_prog: int = 3, top_k_mentor: int = 3):
+    cols = ["institution_name", "program_id", "program_name", "field_tags", "mentor_id", "expertise_tags","languages", "years_experience", "pred_label_match"]
+    df = df[cols].copy()
+
+    prog_order = df["program_id"].drop_duplicates().head(top_k_prog).tolist()
+
+    st.markdown("""
+        <style>
+            .prog-outer{
+                border:1px solid #e5e7eb; border-radius:14px; padding:14px 16px; margin:14px 0;
+                box-shadow:0 2px 10px rgba(2,6,23,.05); background:#fff;
+            }
+            .prog-title{font-weight:800; font-size:1.05rem; margin-bottom:8px;}
+            .prog-sub{color:#6b7280; font-size:.92rem; margin-bottom:6px;}
+            .mentor-wrap{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:10px;}
+            .mentor-card{
+                border:1px solid #e5e7eb; border-radius:12px; padding:10px 12px; background:#fafafa;
+            }
+            .meta{color:#374151; font-size:.92rem; margin:2px 0;}
+            .muted{color:#6b7280;}
+        </style>
+    """, unsafe_allow_html=True)
+
+    for pid in prog_order:
+        sub = df[df["program_id"] == pid].head(top_k_mentor).reset_index(drop=True)
+        program_name = sub.get("program_name").iloc[0]
+        institution_name = sub.get("institution_name").iloc[0]
+
+        st.markdown(f"""
+            <div class="prog-outer">
+                <div class="prog-title">Institution: {institution_name }</div>
+                <div class="prog-sub">program: {program_name}</div>
+                <div class="prog-sub">program_id: {pid}</div>
+                <div class="mentor-wrap">
+        """, unsafe_allow_html=True)
+
+        for r in sub.to_dict(orient="records"):
+            mid   = r.get("mentor_id", "")
+            langs = r.get("languages", "")
+            yrs   = r.get("years_experience", "")
+
+            st.markdown(f"""
+                <div class="mentor-card">
+                <div class="meta"><b>mentor_id:</b> {mid}</div>
+                {"<div class='meta'><b>languages:</b> <span class='muted'>{}</span></div>".format(langs)}
+                {"<div class='meta'><b>years_experience:</b> <span class='muted'>{}</span></div>".format(yrs)}
+                </div>
+            """, unsafe_allow_html=True)
+        st.markdown("</div></div>", unsafe_allow_html=True)
+
 if st.session_state["last_output"] is not None:
-    st.dataframe(st.session_state["last_output"].head(10), use_container_width=True)
+    if st.session_state.get("last_action") == "programs":
+        render_program_cards(st.session_state["last_output"], top_k=3)
+    elif st.session_state.get("last_action") == "mentors":
+        render_mentor_cards(st.session_state["last_output"], top_k_prog=3, top_k_mentor=3)

@@ -47,26 +47,14 @@ programs = pd.read_csv(RAW / "programs.csv")
 programs = strip_obj(programs)
 
 paren_pattern = r"\s*\([^)]*\)"
-if "name" in programs.columns:
-    programs["name"] = programs["name"].str.replace(paren_pattern, "", regex=True).str.strip()
+programs["program_name"] = programs["program_name"].str.replace(paren_pattern, "", regex=True).str.strip()
 
-for col in ["program_id", "institution_id"]:
-    if col in programs.columns:
-        programs[col] = to_int(programs[col])
-if "tuition_aud_per_year" in programs.columns:
-    programs["tuition_aud_per_year"] = to_float(programs["tuition_aud_per_year"])
-if "is_migration_aligned" in programs.columns:
-    programs["is_migration_aligned"] = bool_col(programs["is_migration_aligned"])
+programs["program_id"] = to_int(programs["program_id"])
+programs["institution_id"] = to_int(programs["institution_id"])
+programs["tuition_aud_per_year"] = to_float(programs["tuition_aud_per_year"])
+programs["is_migration_aligned"] = bool_col(programs["is_migration_aligned"])
 
-if {"institution_id"}.issubset(programs.columns) and "institution_id" in institutions.columns:
-    programs = programs[programs["institution_id"].isin(institutions["institution_id"])]
-
-need_nonnull = [c for c in ["program_id", "program_name", "degree_level"] if c in programs.columns]
-if need_nonnull:
-    programs = programs.dropna(subset=need_nonnull)
-
-if "program_id" in programs.columns:
-    programs = programs.drop_duplicates(subset=["program_id"])
+programs = programs.drop_duplicates(subset=["program_id"])
 programs = programs.reset_index(drop=True)
 programs.to_csv(OUT / "programs.csv", index=False)
 

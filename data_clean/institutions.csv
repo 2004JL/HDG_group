@@ -1,4 +1,4 @@
-institution_id,name,type,country,locations,overall_ranking,visa_support,teaching_languages,website
+institution_id,institution_name,type,country,locations,overall_ranking,visa_support,teaching_languages,website
 1,Australian Catholic University (ACU),University,Australia,Sydney,103,True,English,https://www.acu.edu.au
 2,Australian University of Theology,University,Australia,Melbourne,436,True,English,https://aut.edu.au
 3,Australian National University (ANU),University,Australia,Brisbane,349,True,English,https://www.anu.edu.au

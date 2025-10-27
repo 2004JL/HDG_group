@@ -17,13 +17,13 @@ class RetrievalMentor:
 
         sp = pd.read_csv(self.OUT / "student_program.csv")
 
-        order_cols = [c for c in ["pred_label_match", "score", "label_match"] if c in sp.columns]
+        order_cols = [c for c in ["pred_label_match"] if c in sp.columns]
         if order_cols:
             sp_top = sp.sort_values(order_cols, ascending=[False]*len(order_cols)).head(top_n)
         else:
             sp_top = sp.head(top_n)
 
-        sp_top = sp_top[["program_id", "field_tags"]].copy()
+        sp_top = sp_top.copy()
         sp_top["_tmp"] = 1
 
         mentors = self.mentors.copy()
@@ -31,8 +31,8 @@ class RetrievalMentor:
 
         cross = sp_top.merge(mentors, on="_tmp").drop(columns="_tmp")
 
-        base_cols = ["program_id", "field_tags", "mentor_id", "expertise_tags"]
-        extra_cols = [c for c in ["languages", "education_background", "years_experience"] if c in cross.columns]
+        base_cols = ["program_id", "program_name", "field_tags", "mentor_id", "mentor_name", "expertise_tags", "institution_id", "institution_name"]
+        extra_cols = ["languages", "education_background", "years_experience"]
         out = cross[base_cols + extra_cols].copy()
         return out
 

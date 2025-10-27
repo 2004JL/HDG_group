@@ -20,9 +20,9 @@ class RetrievalCore:
         self.sim = pd.read_csv(self.RAW2 / "label_matrix_core.csv", index_col=0)
 
 
-        self.prog_ins = self.programs_df[["program_id", "name", "field_tags", "institution_id", "degree_level"]].copy() \
+        self.prog_ins = self.programs_df[["program_id", "program_name", "field_tags", "institution_id", "degree_level"]].copy() \
             .merge(self.reqs_df[["program_id", "min_gpa_std_4", "english_required_type", "english_min_overall"]].copy(), on="program_id", how="inner") \
-            .merge(self.institutions[["institution_id", "locations", "overall_ranking", "website"]].copy(), on="institution_id", how="inner")
+            .merge(self.institutions[["institution_id", "institution_name", "locations", "overall_ranking", "website"]].copy(), on="institution_id", how="inner")
 
     @staticmethod
     def load_student_json(path: Path) -> dict:
@@ -74,7 +74,7 @@ class RetrievalCore:
         core = pd.read_csv(self.OUT / "core_program.csv")
 
         top_name = core["core_program"].astype(str).str.strip().replace("", pd.NA).dropna().head(top_n).str.lower().tolist()
-        prog_name = self.prog_ins["name"].astype(str).str.strip().str.lower()
+        prog_name = self.prog_ins["program_name"].astype(str).str.strip().str.lower()
         mask = prog_name.isin(top_name)
         match = self.prog_ins.loc[mask].copy()
         match["_tmp"] = 1
@@ -93,7 +93,7 @@ class RetrievalCore:
             (cross["degree_goal"] == cross["degree_level"])
         ].copy()
 
-        out = eligible[["student_id", "program_id", "interests", "field_tags", "name", "institution_id", "website", "locations", "overall_ranking"]]
+        out = eligible[["student_id", "interests", "program_id", "program_name", "field_tags", "institution_id", "institution_name", "website", "locations", "overall_ranking"]]
         return out
 
     def find(self, student_json: Path | None = None) -> pd.DataFrame:

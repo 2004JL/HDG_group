@@ -1,12 +1,12 @@
 student_id,interests,core_program,pred_label_match
-S000123,business,information technology,0.4936
-S000123,business,public health,0.4242
-S000123,business,education,0.4105
-S000123,business,engineering,0.3823
-S000123,business,construction,0.3503
-S000123,business,agriculture,0.3193
-S000123,business,mining,0.2918
-S000123,business,logistics,0.2679
-S000123,business,cyber security,0.2668
-S000123,business,trades,0.2615
-S000123,business,nursing,0.2137
+S000123,business;artificial intelligence,information technology,0.4991
+S000123,business;artificial intelligence,public health,0.3812
+S000123,business;artificial intelligence,engineering,0.3366
+S000123,business;artificial intelligence,education,0.3291
+S000123,business;artificial intelligence,cyber security,0.3259
+S000123,business;artificial intelligence,construction,0.3056
+S000123,business;artificial intelligence,agriculture,0.2843
+S000123,business;artificial intelligence,logistics,0.2564
+S000123,business;artificial intelligence,mining,0.2215
+S000123,business;artificial intelligence,trades,0.1878
+S000123,business;artificial intelligence,nursing,0.1815

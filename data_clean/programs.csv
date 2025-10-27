@@ -1,4 +1,4 @@
-program_id,institution_id,name,field_tags,degree_level,mode,tuition_aud_per_year,intakes,is_migration_aligned
+program_id,institution_id,program_name,field_tags,degree_level,mode,tuition_aud_per_year,intakes,is_migration_aligned
 1,1,Design,Ecology;Design,Diploma,online,27998,2;7,False
 2,1,Architecture,Architecture;Finance,Diploma,oncampus,19528,10,False
 3,1,Accounting,Marketing;Banking;Computer Science,Bachelor,oncampus,36627,2;7,False
