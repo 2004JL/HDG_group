@@ -9,20 +9,18 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 students = pd.read_csv(RAW1 / "students.csv")
 programs = pd.read_csv(RAW1 / "programs.csv")
-institutions = pd.read_csv(RAW1 / "institutions.csv")
 reqs = pd.read_csv(RAW1 / "program_requirements.csv")
 sim = pd.read_csv(RAW2 / "label_matrix_program.csv", index_col=0)
 
 students_slim = students[["student_id", "interests"]].copy()
-programs_ins = (programs[["program_id", "field_tags", "institution_id"]]
- .merge(institutions[["institution_id", "overall_ranking"]], on="institution_id", how="left"))
+programs_ins = programs[["program_id", "field_tags"]].copy()
 
 students_slim["_tmp"] = 1
 programs_ins["_tmp"] = 1
 cross = students_slim.merge(programs_ins, on="_tmp").drop(columns="_tmp")
 
 eligible_out = cross[
-    ["student_id", "interests", "program_id", "field_tags", "institution_id", "overall_ranking"]
+    ["student_id", "interests", "program_id", "field_tags"]
 ].copy()
 
 # Cache row and column labels from the matrix

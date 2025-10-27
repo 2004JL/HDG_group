@@ -15,9 +15,7 @@ def to_int(s: pd.Series) -> pd.Series:
 def bool_col(s: pd.Series) -> pd.Series:
     s_num = pd.to_numeric(s, errors="coerce")
 
-    mapping = {
-        "true": True, "false": False
-    }
+    mapping = {"true": True, "false": False}
 
     cond_str = s.astype(str).str.strip().str.lower().map(mapping)
     cond_str = cond_str.astype("boolean").fillna(False)
@@ -36,15 +34,11 @@ def strip_obj(df: pd.DataFrame) -> pd.DataFrame:
 # institutions
 institutions = pd.read_csv(RAW / "institutions.csv")
 institutions = strip_obj(institutions)
-if "institution_id" in institutions.columns:
-    institutions["institution_id"] = to_int(institutions["institution_id"])
 
-need_nonnull = [c for c in ["institution_id", "name"] if c in institutions.columns]
-if need_nonnull:
-    institutions = institutions.dropna(subset=need_nonnull)
+institutions["institution_id"] = to_int(institutions["institution_id"])
+institutions["overall_ranking"] = pd.to_numeric(institutions["overall_ranking"], errors="coerce")
+institutions["locations"] = institutions["locations"].str.replace(";", ",").str.title()
 
-if "institution_id" in institutions.columns:
-    institutions = institutions.drop_duplicates(subset=["institution_id"])
 institutions = institutions.reset_index(drop=True)
 institutions.to_csv(OUT / "institutions.csv", index=False)
 

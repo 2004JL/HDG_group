@@ -1,22 +1,22 @@
-student_id,program_id,interests,field_tags,name,institution_id,locations,overall_ranking
-S000123,23,business,Public Health;Information Technology,Information Technology,1,Sydney,103
-S000123,151,business,Sustainable Design;Information Technology;Nursing,Information Technology,5,Perth,107
-S000123,211,business,Design;Information Technology;Renewable Energy,Information Technology,7,Canberra,189
-S000123,259,business,Education;Psychology;Education,Education,9,Wollongong,103
-S000123,276,business,Environmental Science;Engineering;Design,Public Health,9,Wollongong,103
-S000123,331,business,Public Health;Public Health;Ecology,Public Health,11,Geelong,467
-S000123,510,business,Marketing;Public Health,Public Health,17,Brisbane,100
-S000123,520,business,Banking;Nursing;Environmental Science,Public Health,17,Brisbane,100
-S000123,535,business,Information Technology;Education,Education,18,Adelaide,360
-S000123,615,business,Finance;Education;Renewable Energy,Education,21,Canberra,150
-S000123,654,business,Nursing;Engineering;Information Technology,Information Technology,22,Gold Coast,309
-S000123,720,business,Nursing;Computer Science,Education,24,Newcastle,344
-S000123,760,business,Public Health;Psychology,Public Health,25,Geelong,492
-S000123,761,business,Public Health;Data Science,Public Health,25,Geelong,492
-S000123,813,business,Education;Renewable Energy,Education,27,Darwin,294
-S000123,866,business,Cybersecurity;Information Technology;Public Health,Public Health,29,Sydney,192
-S000123,1042,business,Cybersecurity;Computer Science;Data Science,Education,34,Hobart,314
-S000123,1092,business,Marketing;Artificial Intelligence,Public Health,36,Gold Coast,253
-S000123,1305,business,Finance;Ecology;Education,Education,43,Sydney,476
-S000123,1316,business,Ecology;Accounting,Education,43,Sydney,476
-S000123,1324,business,Education;Sustainable Design,Education,43,Sydney,476
+student_id,program_id,interests,field_tags,name,institution_id,website,locations,overall_ranking
+S000123,23,business,Public Health;Information Technology,Information Technology,1,https://www.acu.edu.au,Sydney,103
+S000123,151,business,Sustainable Design;Information Technology;Nursing,Information Technology,5,https://bond.edu.au,Perth,107
+S000123,211,business,Design;Information Technology;Renewable Energy,Information Technology,7,https://study.csu.edu.au,Canberra,189
+S000123,259,business,Education;Psychology;Education,Education,9,https://www.unsw.edu.au,Wollongong,103
+S000123,276,business,Environmental Science;Engineering;Design,Public Health,9,https://www.unsw.edu.au,Wollongong,103
+S000123,331,business,Public Health;Public Health;Ecology,Public Health,11,https://www.sunitafe.edu.au,Geelong,467
+S000123,510,business,Marketing;Public Health,Public Health,17,https://www.mq.edu.au,Brisbane,100
+S000123,520,business,Banking;Nursing;Environmental Science,Public Health,17,https://www.mq.edu.au,Brisbane,100
+S000123,535,business,Information Technology;Education,Education,18,https://www.monash.edu,Adelaide,360
+S000123,615,business,Finance;Education;Renewable Energy,Education,21,https://www.rmit.edu.au,Canberra,150
+S000123,654,business,Nursing;Engineering;Information Technology,Information Technology,22,https://www.scu.edu.au,Gold Coast,309
+S000123,720,business,Nursing;Computer Science,Education,24,https://www.torrens.edu.au,Newcastle,344
+S000123,760,business,Public Health;Psychology,Public Health,25,https://www.adelaide.edu.au,Geelong,492
+S000123,761,business,Public Health;Data Science,Public Health,25,https://www.adelaide.edu.au,Geelong,492
+S000123,813,business,Education;Renewable Energy,Education,27,https://divinity.edu.au,Darwin,294
+S000123,866,business,Cybersecurity;Information Technology;Public Health,Public Health,29,https://www.une.edu.au,Sydney,192
+S000123,1042,business,Cybersecurity;Computer Science;Data Science,Education,34,https://www.unisa.edu.au,Hobart,314
+S000123,1092,business,Marketing;Artificial Intelligence,Public Health,36,https://www.sydney.edu.au,Gold Coast,253
+S000123,1305,business,Finance;Ecology;Education,Education,43,https://www.westernsydney.edu.au,Sydney,476
+S000123,1316,business,Ecology;Accounting,Education,43,https://www.westernsydney.edu.au,Sydney,476
+S000123,1324,business,Education;Sustainable Design,Education,43,https://www.westernsydney.edu.au,Sydney,476

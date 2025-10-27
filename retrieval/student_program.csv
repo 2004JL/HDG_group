@@ -1,4 +1,4 @@
-student_id,program_id,interests,field_tags,name,institution_id,locations,overall_ranking,pred_label_match
-S000123,23,business,Public Health;Information Technology,Information Technology,1,Sydney,103,0.4524
-S000123,535,business,Information Technology;Education,Education,18,Adelaide,360,0.4509
-S000123,761,business,Public Health;Data Science,Public Health,25,Geelong,492,0.443
+student_id,program_id,interests,field_tags,name,institution_id,website,locations,overall_ranking,pred_label_match
+S000123,23,business,Public Health;Information Technology,Information Technology,1,https://www.acu.edu.au,Sydney,103,0.4524
+S000123,535,business,Information Technology;Education,Education,18,https://www.monash.edu,Adelaide,360,0.4509
+S000123,761,business,Public Health;Data Science,Public Health,25,https://www.adelaide.edu.au,Geelong,492,0.443
