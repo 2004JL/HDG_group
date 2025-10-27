@@ -51,7 +51,8 @@
 
 <h3 style = "padding: 5px">Tool & Architecture</h3>
 <p align="center">
-  <img src="picture/tool.png" alt="tool and architecture" width="300"/>
+  <img src="picture/tool.png" alt="tool and architecture" width="600"/>
+
 </p>
 
 <h2><span style="font-size:30px;">Methodology</span></h2>
