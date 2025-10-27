@@ -43,13 +43,13 @@
   <img src="picture/studentProgramMatching.png" alt="Student and Program" width="300"/>
 </p>
 <br>
-<p align="center">
+<!-- <p align="center">
   <img src="picture/model.png" alt="Student and Program" width="100"/>
 </p>
 <br>
 <p align="center">
   <img src="picture/PR.png" alt="Student and Program" width="100"/>
-</p>
+</p> -->
 
 <h1><span style="font-size:30px;">Project Scope</span></h1>
 
