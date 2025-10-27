@@ -72,6 +72,24 @@
   <img src="picture/PR.png" alt="Student and Program" width="100"/>
 </p> -->
 
+<h2><span style="font-size:30px;">User Interface</span></h2> 
 
+<p align="center">
+  <img src="picture/01.png" alt="Student and Program" width="500"/>
+</p>
 
+<p align="center">
+  <img src="picture/02.png" alt="Student and Program" width="100"/>
+</p>
 
+<p align="center">
+  <img src="picture/03.png" alt="Student and Program" width="100"/>
+</p>
+
+<p align="center">
+  <img src="picture/04.png" alt="Student and Program" width="400"/>
+</p>
+
+<p align="center">
+  <img src="picture/05.png" alt="Student and Program" width="400"/>
+</p>
