@@ -32,11 +32,27 @@
  <li>Evaluates results using <b>nDCG@3 metrics</b>.</li>
 </ul>
 <p>🎯 Enhances study decision-making by improving recommendation accuracy and scalability.</p>
+<br>
 
+<h2><span style="font-size:30px;">Methodology</span></h2>
+<p align="center">
+  <img src="picture/studentMentolMatching.png" alt="Student and Program" width="300"/>
+</p>
+<br>
+<p align="center">
+  <img src="picture/studentProgramMatching.png" alt="Student and Program" width="300"/>
+</p>
+<br>
+<p align="center">
+  <img src="picture/model.png" alt="Student and Program" width="100"/>
+</p>
+<br>
+<p align="center">
+  <img src="picture/PR.png" alt="Student and Program" width="100"/>
+</p>
 
+<h1><span style="font-size:30px;">Project Scope</span></h1>
 
-<h2><span style="font-size:30px;">Methodolodgy</span></h2> 
-<h1><span style="font-size:30px;>Project Scope</span></h1>
 
 Synthetic Data creation: Generate a synthetic dataset representing students, mentors, and institutions. 
 
