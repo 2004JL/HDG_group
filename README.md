@@ -3,6 +3,7 @@
 <p align = "center" style="font-size:20px">
 <a href="#background--motivation" styple="color:#1E90FF; text-decoration:underline;">Background &amp;&amp; Motivation</a>&nbsp;&nbsp;&nbsp;
 <a href="#background--motivation" styple="color:#1E90FF; text-decoration:underline;">Overview</a>&nbsp;&nbsp;&nbsp;
+<a href="#background--motivation" styple="color:#1E90FF; text-decoration:underline;">Project scope</a>&nbsp;&nbsp;&nbsp;
 <a href="#background--motivation" styple="color:#1E90FF; text-decoration:underline;">Methodology</a>&nbsp;&nbsp;&nbsp;
  
 </p>
@@ -34,6 +35,20 @@
 <p>🎯 Enhances study decision-making by improving recommendation accuracy and scalability.</p>
 <br>
 
+<h2><span style="font-size:30px;">Project Scope</span></h2> 
+
+<ul>
+<li>Synthetic Data creation: Generate a synthetic dataset representing students, mentors, and institutions.</li>
+
+<li>AI Recommendation Model Development:  Maching algorithms using machine learning models such as KNN, XGBoost, and Random Forest.</li>
+
+<li>Data Integration: Integrate diverse datasets – including majors, scholarships, interests, and QS rankings –as input features for the recommendation system.</li>
+
+<li>Prototype Implementation: A user interface is developed to visually present recommendation results.</li> 
+
+<li>Evaluation: Model performance is compared using accuracy and relevance metrics (nDCG@3, diversity, interpretability).</li>
+</ul>
+
 <h2><span style="font-size:30px;">Methodology</span></h2>
 <p align="center">
   <img src="picture/studentMentolMatching.png" alt="Student and Program" width="300"/>
@@ -51,17 +66,6 @@
   <img src="picture/PR.png" alt="Student and Program" width="100"/>
 </p> -->
 
-<h1><span style="font-size:30px;">Project Scope</span></h1>
 
-
-Synthetic Data creation: Generate a synthetic dataset representing students, mentors, and institutions. 
-
-AI Recommendation Model Development:  Maching algorithms using machine learning models such as KNN, XGBoost, and Random Forest. 
-
-Data Integration: Integrate diverse datasets – including majors, scholarships, interests, and QS rankings –as input features for the recommendation system. 
-
-Prototype Implementation: A user interface is developed to visually present recommendation results. 
-
-Evaluation: Model performance is compared using accuracy and relevance metrics (nDCG@3, diversity, interpretability). 
 
 
