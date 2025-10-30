@@ -1,178 +1,22 @@
 student_id,interests,program_id,program_name,field_tags,institution_id,institution_name,website,locations,overall_ranking,pred_label_match
-S000123,psychology;business,220,Environmental Science,Data Science;Computer Science;Business,7,Charles Sturt University,https://study.csu.edu.au,Canberra,189,0.524
-S000123,psychology;business,534,Computer Science,Business;Engineering;Computer Science,18,Monash University,https://www.monash.edu,Adelaide,360,0.4884
-S000123,psychology;business,968,Marketing,Marketing;Business,32,The University of Notre Dame Australia,https://www.notredame.edu.au,Adelaide,161,0.4852
-S000123,psychology;business,996,Business,Business;Marketing,33,The University of Queensland (UQ),https://www.uq.edu.au,Perth,460,0.4852
-S000123,psychology;business,567,Renewable Energy,Environmental Science;Engineering;Business,19,Murdoch University,https://www.murdoch.edu.au,Perth,152,0.4823
-S000123,psychology;business,259,Education,Education;Psychology;Education,9,Curtin University,https://www.unsw.edu.au,Wollongong,103,0.4753
-S000123,psychology;business,760,Public Health,Public Health;Psychology,25,The University of Adelaide,https://www.adelaide.edu.au,Geelong,492,0.4694
-S000123,psychology;business,1119,Design,Marketing;Psychology,37,University of Tasmania (UTAS),https://www.utas.edu.au,Wollongong,236,0.4678
-S000123,psychology;business,957,Psychology,Psychology;Psychology;Sustainable Design,32,The University of Notre Dame Australia,https://www.notredame.edu.au,Adelaide,161,0.4579
-S000123,psychology;business,167,Psychology,Psychology;Psychology,5,Bond University,https://bond.edu.au,Perth,107,0.4566
-S000123,psychology;business,109,Law,Computer Science;Environmental Science,4,Avondale University,https://www.avondale.edu.au,Adelaide,271,0.454
-S000123,psychology;business,626,Cybersecurity,Environmental Science;Data Science,21,RMIT University,https://www.rmit.edu.au,Canberra,150,0.4533
-S000123,psychology;business,1183,Accounting,Business;Accounting,39,University of the Sunshine Coast (UniSC),ttps://www.usc.edu.au,Geelong,49,0.4486
-S000123,psychology;business,1011,Business,Architecture;Business,33,The University of Queensland (UQ),https://www.uq.edu.au,Perth,460,0.4455
-S000123,psychology;business,229,Film,Engineering;Business;Sustainable Design,7,Charles Sturt University,https://study.csu.edu.au,Canberra,189,0.4445
-S000123,psychology;business,583,Marketing,Ecology;Business;Computer Science,19,Murdoch University,https://www.murdoch.edu.au,Perth,152,0.442
-S000123,psychology;business,653,Psychology,Sustainable Design;Psychology;Design,22,Southern Cross University,https://www.scu.edu.au,Gold Coast,309,0.4402
-S000123,psychology;business,1111,International Law,Architecture;Psychology;International Law,37,University of Tasmania (UTAS),https://www.utas.edu.au,Wollongong,236,0.4333
-S000123,psychology;business,186,Environmental Science,Environmental Science;Environmental Science,6,Charles Darwin University (CDU),https://www.cdu.edu.au,Hobart,72,0.4323
-S000123,psychology;business,961,Environmental Science,Psychology;Design,32,The University of Notre Dame Australia,https://www.notredame.edu.au,Adelaide,161,0.4314
-S000123,psychology;business,917,Environmental Science,International Law;Environmental Science;Computer Science,30,UNSW Sydney (The University of New South Wales),https://www.unsw.edu.au,Melbourne,444,0.4308
-S000123,psychology;business,955,Psychology,Architecture;Psychology,32,The University of Notre Dame Australia,https://www.notredame.edu.au,Adelaide,161,0.4302
-S000123,psychology;business,512,Marketing,Marketing;Data Science,17,Macquarie University,https://www.mq.edu.au,Brisbane,100,0.4273
-S000123,psychology;business,49,Data Science,Data Science;Engineering,2,Australian University of Theology,https://aut.edu.au,Melbourne,436,0.423
-S000123,psychology;business,685,Engineering,Information Technology;Data Science;Engineering,23,Swinburne University of Technology,https://www.swinburneonline.edu.au,Wollongong,258,0.4223
-S000123,psychology;business,668,International Law,International Law;Environmental Science,22,Southern Cross University,https://www.scu.edu.au,Gold Coast,309,0.4213
-S000123,psychology;business,1263,Data Science,Marketing;Engineering;Data Science,42,Victoria University (VU),https://www.vu.edu.au,Launceston,170,0.4188
-S000123,psychology;business,740,Computer Science,Environmental Science;Finance;Computer Science,24,Torrens University Australia,https://www.torrens.edu.au,Newcastle,344,0.4117
-S000123,psychology;business,761,Public Health,Public Health;Data Science,25,The University of Adelaide,https://www.adelaide.edu.au,Geelong,492,0.4105
-S000123,psychology;business,571,Accounting,Accounting;Ecology;Business,19,Murdoch University,https://www.murdoch.edu.au,Perth,152,0.4084
-S000123,psychology;business,125,Computer Science,Computer Science;Public Health,4,Avondale University,https://www.avondale.edu.au,Adelaide,271,0.408
-S000123,psychology;business,243,Data Science,Education;Information Technology,8,CQUniversity Australia,https://www.cqu.edu.au,Gold Coast,21,0.4069
-S000123,psychology;business,535,Education,Information Technology;Education,18,Monash University,https://www.monash.edu,Adelaide,360,0.4069
-S000123,psychology;business,659,Cybersecurity,Data Science;Sustainable Design,22,Southern Cross University,https://www.scu.edu.au,Gold Coast,309,0.4069
-S000123,psychology;business,878,Computer Science,Banking;Computer Science;Data Science,29,University of New England (UNE),https://www.une.edu.au,Sydney,192,0.3993
-S000123,psychology;business,1271,Architecture,Information Technology;Engineering,42,Victoria University (VU),https://www.vu.edu.au,Launceston,170,0.3988
-S000123,psychology;business,868,Banking,Law;Data Science,29,University of New England (UNE),https://www.une.edu.au,Sydney,192,0.3978
-S000123,psychology;business,1216,Computer Science,Computer Science;Law,40,The University of Western Australia (UWA),https://www.studyperth.com.au,Townsville,475,0.3965
-S000123,psychology;business,122,Design,Computer Science;Design,4,Avondale University,https://www.avondale.edu.au,Adelaide,271,0.3947
-S000123,psychology;business,255,Computer Science,Design;Computer Science,8,CQUniversity Australia,https://www.cqu.edu.au,Gold Coast,21,0.3947
-S000123,psychology;business,753,Psychology,Marketing;International Law,25,The University of Adelaide,https://www.adelaide.edu.au,Geelong,492,0.3912
-S000123,psychology;business,1167,International Law,Education;International Law,39,University of the Sunshine Coast (UniSC),ttps://www.usc.edu.au,Geelong,49,0.3895
-S000123,psychology;business,1312,Artificial Intelligence,Business;Artificial Intelligence;Ecology,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,0.389
-S000123,psychology;business,23,Information Technology,Public Health;Information Technology,1,Australian Catholic University (ACU),https://www.acu.edu.au,Sydney,103,0.3885
-S000123,psychology;business,770,Marketing,Computer Science;Banking;Marketing,26,University of Canberra,https://www.canberra.edu.au,Townsville,414,0.388
-S000123,psychology;business,510,Public Health,Marketing;Public Health,17,Macquarie University,https://www.mq.edu.au,Brisbane,100,0.3843
-S000123,psychology;business,224,Sustainable Design,Marketing;Public Health,7,Charles Sturt University,https://study.csu.edu.au,Canberra,189,0.3843
-S000123,psychology;business,1230,Nursing,Marketing;Public Health,41,University of Wollongong (UOW),https://www.uow.edu.au,Darwin,59,0.3843
-S000123,psychology;business,847,Law,Design;International Law;Data Science,28,The University of Melbourne,https://www.unimelb.edu.au,Launceston,386,0.3839
-S000123,psychology;business,153,Film,Film;Business,5,Bond University,https://bond.edu.au,Perth,107,0.3839
-S000123,psychology;business,831,International Law,International Law;Public Health,28,The University of Melbourne,https://www.unimelb.edu.au,Launceston,386,0.3777
-S000123,psychology;business,276,Public Health,Environmental Science;Engineering;Design,9,Curtin University,https://www.unsw.edu.au,Wollongong,103,0.3776
-S000123,psychology;business,1149,Renewable Energy,Data Science;Banking;Engineering,38,University of Technology Sydney (UTS),https://www.uts.edu.au,Newcastle,345,0.3771
-S000123,psychology;business,1324,Education,Education;Sustainable Design,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,0.3767
-S000123,psychology;business,328,Sustainable Design,Information Technology;Law,11,Edith Cowan University (ECU),https://www.sunitafe.edu.au,Geelong,467,0.3761
-S000123,psychology;business,233,Business,Information Technology;Law,7,Charles Sturt University,https://study.csu.edu.au,Canberra,189,0.3761
-S000123,psychology;business,1311,Environmental Science,Environmental Science;Ecology,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,0.3701
-S000123,psychology;business,21,Data Science,Ecology;Data Science;International Law,1,Australian Catholic University (ACU),https://www.acu.edu.au,Sydney,103,0.367
-S000123,psychology;business,1184,Business,Renewable Energy;Business;Sustainable Design,39,University of the Sunshine Coast (UniSC),ttps://www.usc.edu.au,Geelong,49,0.3651
-S000123,psychology;business,399,Engineering,Engineering;Design;Marketing,13,Flinders University,https://www.aib.edu.au,Darwin,331,0.3632
-S000123,psychology;business,423,Renewable Energy,Renewable Energy;Design;Psychology,14,Griffith University,https://www.open.edu.au,Launceston,459,0.3627
-S000123,psychology;business,1161,Engineering,Education;Design,39,University of the Sunshine Coast (UniSC),ttps://www.usc.edu.au,Geelong,49,0.3598
-S000123,psychology;business,880,Banking,Engineering;Marketing;Banking,29,University of New England (UNE),https://www.une.edu.au,Sydney,192,0.3588
-S000123,psychology;business,218,Design,Finance;International Law;Engineering,7,Charles Sturt University,https://study.csu.edu.au,Canberra,189,0.3566
-S000123,psychology;business,720,Education,Nursing;Computer Science,24,Torrens University Australia,https://www.torrens.edu.au,Newcastle,344,0.3564
-S000123,psychology;business,35,Engineering,Design;Information Technology,1,Australian Catholic University (ACU),https://www.acu.edu.au,Sydney,103,0.3562
-S000123,psychology;business,450,Renewable Energy,Information Technology;Design,15,James Cook University (JCU),https://www.sunitafe.edu.au,Sydney,88,0.3562
-S000123,psychology;business,1082,Engineering,Engineering;Design,36,The University of Sydney,https://www.sydney.edu.au,Gold Coast,253,0.3517
-S000123,psychology;business,294,Design,Design;International Law,10,Deakin University,https://www.torrens.edu.au,Newcastle,122,0.3513
-S000123,psychology;business,708,Engineering,Engineering;Sustainable Design;Design,24,Torrens University Australia,https://www.torrens.edu.au,Newcastle,344,0.3497
-S000123,psychology;business,1064,Accounting,Education;Accounting,35,University of Southern Queensland (UniSQ),https://www.unisq.edu.au,Canberra,22,0.3491
-S000123,psychology;business,903,Finance,Accounting;Education,30,UNSW Sydney (The University of New South Wales),https://www.unsw.edu.au,Melbourne,444,0.3491
-S000123,psychology;business,1003,Artificial Intelligence,Artificial Intelligence;Environmental Science,33,The University of Queensland (UQ),https://www.uq.edu.au,Perth,460,0.3485
-S000123,psychology;business,47,Environmental Science,Architecture;Finance;Environmental Science,2,Australian University of Theology,https://aut.edu.au,Melbourne,436,0.3485
-S000123,psychology;business,1104,Marketing,Architecture;Engineering,37,University of Tasmania (UTAS),https://www.utas.edu.au,Wollongong,236,0.3484
-S000123,psychology;business,431,Computer Science,Architecture;International Law,14,Griffith University,https://www.open.edu.au,Launceston,459,0.3482
-S000123,psychology;business,1072,International Law,International Law;Accounting;International Law,36,The University of Sydney,https://www.sydney.edu.au,Gold Coast,253,0.3472
-S000123,psychology;business,317,Accounting,Accounting;International Law,10,Deakin University,https://www.torrens.edu.au,Newcastle,122,0.3472
-S000123,psychology;business,1181,International Law,Business;Cybersecurity,39,University of the Sunshine Coast (UniSC),ttps://www.usc.edu.au,Geelong,49,0.3459
-S000123,psychology;business,161,Psychology,Marketing;Environmental Science;Film,5,Bond University,https://bond.edu.au,Perth,107,0.3454
-S000123,psychology;business,654,Information Technology,Nursing;Engineering;Information Technology,22,Southern Cross University,https://www.scu.edu.au,Gold Coast,309,0.3452
-S000123,psychology;business,210,Law,Law;Environmental Science;Ecology,7,Charles Sturt University,https://study.csu.edu.au,Canberra,189,0.3448
-S000123,psychology;business,190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,6,Charles Darwin University (CDU),https://www.cdu.edu.au,Hobart,72,0.3437
-S000123,psychology;business,1152,Renewable Energy,Environmental Science;Nursing,38,University of Technology Sydney (UTS),https://www.uts.edu.au,Newcastle,345,0.3435
-S000123,psychology;business,1148,Business,Cybersecurity;Business;Public Health,38,University of Technology Sydney (UTS),https://www.uts.edu.au,Newcastle,345,0.342
-S000123,psychology;business,1023,Artificial Intelligence,Artificial Intelligence;Business;Renewable Energy,34,University of South Australia (UniSA),https://www.unisa.edu.au,Hobart,314,0.3418
-S000123,psychology;business,573,Finance,Banking;International Law,19,Murdoch University,https://www.murdoch.edu.au,Perth,152,0.3404
-S000123,psychology;business,302,Law,Banking;International Law,10,Deakin University,https://www.torrens.edu.au,Newcastle,122,0.3404
-S000123,psychology;business,1143,Ecology,Ecology;Education;Public Health,38,University of Technology Sydney (UTS),https://www.uts.edu.au,Newcastle,345,0.3398
-S000123,psychology;business,81,Renewable Energy,Law;Sustainable Design,3,Australian National University (ANU),https://www.anu.edu.au,Brisbane,349,0.3373
-S000123,psychology;business,65,Finance,Finance;Marketing;Banking,3,Australian National University (ANU),https://www.anu.edu.au,Brisbane,349,0.3364
-S000123,psychology;business,825,Environmental Science,Marketing;Ecology,28,The University of Melbourne,https://www.unimelb.edu.au,Launceston,386,0.3359
-S000123,psychology;business,539,Banking,Banking;Finance;Education,18,Monash University,https://www.monash.edu,Adelaide,360,0.335
-S000123,psychology;business,969,Sustainable Design,Finance;Sustainable Design,32,The University of Notre Dame Australia,https://www.notredame.edu.au,Adelaide,161,0.3332
-S000123,psychology;business,372,International Law,International Law;Law;Accounting,12,Federation University Australia,https://www.torrens.edu.au,Townsville,215,0.3332
-S000123,psychology;business,516,Ecology,International Law;Ecology,17,Macquarie University,https://www.mq.edu.au,Brisbane,100,0.3323
-S000123,psychology;business,1227,International Law,Ecology;International Law,41,University of Wollongong (UOW),https://www.uow.edu.au,Darwin,59,0.3323
-S000123,psychology;business,126,Architecture,Engineering;Ecology,4,Avondale University,https://www.avondale.edu.au,Adelaide,271,0.3319
-S000123,psychology;business,435,Finance,Nursing;Data Science;Finance,14,Griffith University,https://www.open.edu.au,Launceston,459,0.3311
-S000123,psychology;business,331,Public Health,Public Health;Public Health;Ecology,11,Edith Cowan University (ECU),https://www.sunitafe.edu.au,Geelong,467,0.3309
-S000123,psychology;business,520,Public Health,Banking;Nursing;Environmental Science,17,Macquarie University,https://www.mq.edu.au,Brisbane,100,0.3278
-S000123,psychology;business,151,Information Technology,Sustainable Design;Information Technology;Nursing,5,Bond University,https://bond.edu.au,Perth,107,0.3257
-S000123,psychology;business,33,Design,Design;Nursing;Data Science,1,Australian Catholic University (ACU),https://www.acu.edu.au,Sydney,103,0.3244
-S000123,psychology;business,1305,Education,Finance;Ecology;Education,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,0.3226
-S000123,psychology;business,486,Nursing,International Law;Nursing,16,La Trobe University,https://www.latrobe.edu.au,Melbourne,373,0.3222
-S000123,psychology;business,1327,Computer Science,Marketing;Nursing,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,0.3187
-S000123,psychology;business,624,Psychology,Design;Law,21,RMIT University,https://www.rmit.edu.au,Canberra,150,0.3186
-S000123,psychology;business,1081,Ecology,Accounting;Ecology;Information Technology,36,The University of Sydney,https://www.sydney.edu.au,Gold Coast,253,0.3179
-S000123,psychology;business,1092,Public Health,Marketing;Artificial Intelligence,36,The University of Sydney,https://www.sydney.edu.au,Gold Coast,253,0.3179
-S000123,psychology;business,72,Computer Science,Accounting;Finance,3,Australian National University (ANU),https://www.anu.edu.au,Brisbane,349,0.3157
-S000123,psychology;business,953,Nursing,Finance;Accounting,32,The University of Notre Dame Australia,https://www.notredame.edu.au,Adelaide,161,0.3157
-S000123,psychology;business,800,Cybersecurity,Finance;Nursing;Marketing,27,University of Divinity,https://divinity.edu.au,Darwin,294,0.3139
-S000123,psychology;business,495,Design,Finance;Design,16,La Trobe University,https://www.latrobe.edu.au,Melbourne,373,0.3119
-S000123,psychology;business,1289,Finance,Architecture;Finance,42,Victoria University (VU),https://www.vu.edu.au,Launceston,170,0.3116
-S000123,psychology;business,959,Ecology,Ecology;Engineering;Design,32,The University of Notre Dame Australia,https://www.notredame.edu.au,Adelaide,161,0.3099
-S000123,psychology;business,454,Banking,Banking;Law;Accounting,15,James Cook University (JCU),https://www.sunitafe.edu.au,Sydney,88,0.3081
-S000123,psychology;business,560,Banking,Accounting;Banking;Law,18,Monash University,https://www.monash.edu,Adelaide,360,0.3081
-S000123,psychology;business,63,Artificial Intelligence,International Law;Artificial Intelligence,3,Australian National University (ANU),https://www.anu.edu.au,Brisbane,349,0.307
-S000123,psychology;business,658,Renewable Energy,Renewable Energy;Marketing;Public Health,22,Southern Cross University,https://www.scu.edu.au,Gold Coast,309,0.3018
-S000123,psychology;business,1073,Artificial Intelligence,Education;Artificial Intelligence;Finance,36,The University of Sydney,https://www.sydney.edu.au,Gold Coast,253,0.3003
-S000123,psychology;business,246,Accounting,Artificial Intelligence;Public Health,8,CQUniversity Australia,https://www.cqu.edu.au,Gold Coast,21,0.298
-S000123,psychology;business,1309,Ecology,Ecology;Architecture,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,0.2972
-S000123,psychology;business,1042,Education,Cybersecurity;Computer Science;Data Science,34,University of South Australia (UniSA),https://www.unisa.edu.au,Hobart,314,0.2962
-S000123,psychology;business,813,Education,Education;Renewable Energy,27,University of Divinity,https://divinity.edu.au,Darwin,294,0.2932
-S000123,psychology;business,1330,Finance,Accounting;Finance;Ecology,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,0.2924
-S000123,psychology;business,547,Accounting,International Law;Accounting;Artificial Intelligence,18,Monash University,https://www.monash.edu,Adelaide,360,0.2893
-S000123,psychology;business,69,Environmental Science,Ecology;Renewable Energy;Marketing,3,Australian National University (ANU),https://www.anu.edu.au,Brisbane,349,0.2871
-S000123,psychology;business,998,Accounting,Nursing;Environmental Science;Film,33,The University of Queensland (UQ),https://www.uq.edu.au,Perth,460,0.2869
-S000123,psychology;business,1163,Artificial Intelligence,Artificial Intelligence;Sustainable Design,39,University of the Sunshine Coast (UniSC),ttps://www.usc.edu.au,Geelong,49,0.2854
-S000123,psychology;business,1316,Education,Ecology;Accounting,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,0.2854
-S000123,psychology;business,75,Banking,Accounting;Ecology,3,Australian National University (ANU),https://www.anu.edu.au,Brisbane,349,0.2854
-S000123,psychology;business,609,Environmental Science,Nursing;Environmental Science;Renewable Energy,20,Queensland University of Technology (QUT),https://online.qut.edu.au,Hobart,131,0.2844
-S000123,psychology;business,647,Computer Science,Engineering;Renewable Energy;Law,21,RMIT University,https://www.rmit.edu.au,Canberra,150,0.284
-S000123,psychology;business,615,Education,Finance;Education;Renewable Energy,21,RMIT University,https://www.rmit.edu.au,Canberra,150,0.2828
-S000123,psychology;business,701,Film,Data Science;Artificial Intelligence;Film,23,Swinburne University of Technology,https://www.swinburneonline.edu.au,Wollongong,258,0.2801
-S000123,psychology;business,893,Renewable Energy,Ecology;Renewable Energy;Engineering,30,UNSW Sydney (The University of New South Wales),https://www.unsw.edu.au,Melbourne,444,0.2777
-S000123,psychology;business,496,Film,Film;Accounting;Education,16,La Trobe University,https://www.latrobe.edu.au,Melbourne,373,0.2756
-S000123,psychology;business,1116,Nursing,Nursing;Banking;Nursing,37,University of Tasmania (UTAS),https://www.utas.edu.au,Wollongong,236,0.2743
-S000123,psychology;business,696,Renewable Energy,Sustainable Design;Renewable Energy,23,Swinburne University of Technology,https://www.swinburneonline.edu.au,Wollongong,258,0.2708
-S000123,psychology;business,211,Information Technology,Design;Information Technology;Renewable Energy,7,Charles Sturt University,https://study.csu.edu.au,Canberra,189,0.2686
-S000123,psychology;business,130,Sustainable Design,Sustainable Design;Cybersecurity;Environmental Science,4,Avondale University,https://www.avondale.edu.au,Adelaide,271,0.2681
-S000123,psychology;business,824,Law,Design;Artificial Intelligence,28,The University of Melbourne,https://www.unimelb.edu.au,Launceston,386,0.2663
-S000123,psychology;business,635,Artificial Intelligence,Artificial Intelligence;Design,21,RMIT University,https://www.rmit.edu.au,Canberra,150,0.2663
-S000123,psychology;business,24,Architecture,Artificial Intelligence;Accounting,1,Australian Catholic University (ACU),https://www.acu.edu.au,Sydney,103,0.2659
-S000123,psychology;business,162,Ecology,Nursing;Ecology,5,Bond University,https://bond.edu.au,Perth,107,0.2648
-S000123,psychology;business,993,Psychology,Ecology;Nursing,33,The University of Queensland (UQ),https://www.uq.edu.au,Perth,460,0.2648
-S000123,psychology;business,282,Accounting,Renewable Energy;Law,9,Curtin University,https://www.unsw.edu.au,Wollongong,103,0.2639
-S000123,psychology;business,1193,Law,Film;Law,39,University of the Sunshine Coast (UniSC),ttps://www.usc.edu.au,Geelong,49,0.2637
-S000123,psychology;business,202,Renewable Energy,Finance;Renewable Energy,6,Charles Darwin University (CDU),https://www.cdu.edu.au,Hobart,72,0.2614
-S000123,psychology;business,146,Artificial Intelligence,Architecture;Accounting;Artificial Intelligence,5,Bond University,https://bond.edu.au,Perth,107,0.2605
-S000123,psychology;business,979,Ecology,Film;Finance,32,The University of Notre Dame Australia,https://www.notredame.edu.au,Adelaide,161,0.2566
-S000123,psychology;business,1138,Psychology,Renewable Energy;Cybersecurity;Psychology,38,University of Technology Sydney (UTS),https://www.uts.edu.au,Newcastle,345,0.2533
-S000123,psychology;business,929,Architecture,Architecture;Film;Architecture,31,The University of Newcastle (UON),https://www.newcastle.edu.au,Brisbane,277,0.2522
-S000123,psychology;business,749,Renewable Energy,Banking;Sustainable Design;Renewable Energy,25,The University of Adelaide,https://www.adelaide.edu.au,Geelong,492,0.2516
-S000123,psychology;business,1089,Environmental Science,Ecology;Renewable Energy,36,The University of Sydney,https://www.sydney.edu.au,Gold Coast,253,0.25
-S000123,psychology;business,1226,Film,Film;Ecology;Architecture,41,University of Wollongong (UOW),https://www.uow.edu.au,Darwin,59,0.2488
-S000123,psychology;business,1165,Computer Science,Computer Science;Cybersecurity;Accounting,39,University of the Sunshine Coast (UniSC),ttps://www.usc.edu.au,Geelong,49,0.2477
-S000123,psychology;business,1118,Accounting,Film;Accounting,37,University of Tasmania (UTAS),https://www.utas.edu.au,Wollongong,236,0.2461
-S000123,psychology;business,747,Artificial Intelligence,Film;Artificial Intelligence;Public Health,25,The University of Adelaide,https://www.adelaide.edu.au,Geelong,492,0.2459
-S000123,psychology;business,436,Renewable Energy,Renewable Energy;Design,14,Griffith University,https://www.open.edu.au,Launceston,459,0.2455
-S000123,psychology;business,730,Nursing,Design;Artificial Intelligence;Nursing,24,Torrens University Australia,https://www.torrens.edu.au,Newcastle,344,0.2419
-S000123,psychology;business,1018,Sustainable Design,Banking;Renewable Energy,33,The University of Queensland (UQ),https://www.uq.edu.au,Perth,460,0.241
-S000123,psychology;business,866,Public Health,Cybersecurity;Information Technology;Public Health,29,University of New England (UNE),https://www.une.edu.au,Sydney,192,0.2376
-S000123,psychology;business,921,International Law,Public Health;Cybersecurity;Engineering,30,UNSW Sydney (The University of New South Wales),https://www.unsw.edu.au,Melbourne,444,0.2329
-S000123,psychology;business,4,Artificial Intelligence,Artificial Intelligence;Film,1,Australian Catholic University (ACU),https://www.acu.edu.au,Sydney,103,0.2234
-S000123,psychology;business,366,Architecture,Cybersecurity;Finance;Public Health,12,Federation University Australia,https://www.torrens.edu.au,Townsville,215,0.2222
-S000123,psychology;business,160,Artificial Intelligence,Artificial Intelligence;Renewable Energy,5,Bond University,https://bond.edu.au,Perth,107,0.2192
-S000123,psychology;business,1301,Nursing,International Law;Cybersecurity,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,0.2157
-S000123,psychology;business,605,Cybersecurity,Artificial Intelligence;Renewable Energy;Design,20,Queensland University of Technology (QUT),https://online.qut.edu.au,Hobart,131,0.2075
-S000123,psychology;business,1128,Film,Renewable Energy;Film,37,University of Tasmania (UTAS),https://www.utas.edu.au,Wollongong,236,0.1911
-S000123,psychology;business,848,Environmental Science,Accounting;Cybersecurity,28,The University of Melbourne,https://www.unimelb.edu.au,Launceston,386,0.1818
-S000123,psychology;business,1140,Cybersecurity,Law;Cybersecurity,38,University of Technology Sydney (UTS),https://www.uts.edu.au,Newcastle,345,0.1739
-S000123,psychology;business,891,Sustainable Design,Film;Cybersecurity;Sustainable Design,29,University of New England (UNE),https://www.une.edu.au,Sydney,192,0.1717
-S000123,psychology;business,390,Design,Cybersecurity;Design;Nursing,12,Federation University Australia,https://www.torrens.edu.au,Townsville,215,0.1684
-S000123,psychology;business,116,Law,Design;Cybersecurity,4,Avondale University,https://www.avondale.edu.au,Adelaide,271,0.1679
-S000123,psychology;business,43,Banking,Cybersecurity;Banking,2,Australian University of Theology,https://aut.edu.au,Melbourne,436,0.1642
-S000123,psychology;business,303,Nursing,Renewable Energy;Cybersecurity;Nursing,10,Deakin University,https://www.torrens.edu.au,Newcastle,122,0.1449
+S000123,data science;education,535,Education,Information Technology;Education,18,Monash University,https://www.monash.edu,Adelaide,360,0.5936
+S000123,data science;education,761,Public Health,Public Health;Data Science,25,The University of Adelaide,https://www.adelaide.edu.au,Geelong,492,0.5929
+S000123,data science;education,23,Information Technology,Public Health;Information Technology,1,Australian Catholic University (ACU),https://www.acu.edu.au,Sydney,103,0.5391
+S000123,data science;education,1324,Education,Education;Sustainable Design,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,0.5284
+S000123,data science;education,259,Education,Education;Psychology;Education,9,Curtin University,https://www.unsw.edu.au,Wollongong,103,0.518
+S000123,data science;education,813,Education,Education;Renewable Energy,27,University of Divinity,https://divinity.edu.au,Darwin,294,0.4818
+S000123,data science;education,276,Public Health,Environmental Science;Engineering;Design,9,Curtin University,https://www.unsw.edu.au,Wollongong,103,0.4778
+S000123,data science;education,1042,Education,Cybersecurity;Computer Science;Data Science,34,University of South Australia (UniSA),https://www.unisa.edu.au,Hobart,314,0.4744
+S000123,data science;education,615,Education,Finance;Education;Renewable Energy,21,RMIT University,https://www.rmit.edu.au,Canberra,150,0.4714
+S000123,data science;education,1305,Education,Finance;Ecology;Education,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,0.4609
+S000123,data science;education,720,Education,Nursing;Computer Science,24,Torrens University Australia,https://www.torrens.edu.au,Newcastle,344,0.4607
+S000123,data science;education,760,Public Health,Public Health;Psychology,25,The University of Adelaide,https://www.adelaide.edu.au,Geelong,492,0.4562
+S000123,data science;education,654,Information Technology,Nursing;Engineering;Information Technology,22,Southern Cross University,https://www.scu.edu.au,Gold Coast,309,0.4515
+S000123,data science;education,510,Public Health,Marketing;Public Health,17,Macquarie University,https://www.mq.edu.au,Brisbane,100,0.4418
+S000123,data science;education,151,Information Technology,Sustainable Design;Information Technology;Nursing,5,Bond University,https://bond.edu.au,Perth,107,0.438
+S000123,data science;education,331,Public Health,Public Health;Public Health;Ecology,11,Edith Cowan University (ECU),https://www.sunitafe.edu.au,Geelong,467,0.4345
+S000123,data science;education,211,Information Technology,Design;Information Technology;Renewable Energy,7,Charles Sturt University,https://study.csu.edu.au,Canberra,189,0.425
+S000123,data science;education,866,Public Health,Cybersecurity;Information Technology;Public Health,29,University of New England (UNE),https://www.une.edu.au,Sydney,192,0.4005
+S000123,data science;education,520,Public Health,Banking;Nursing;Environmental Science,17,Macquarie University,https://www.mq.edu.au,Brisbane,100,0.3951
+S000123,data science;education,1092,Public Health,Marketing;Artificial Intelligence,36,The University of Sydney,https://www.sydney.edu.au,Gold Coast,253,0.348
+S000123,data science;education,1316,Education,Ecology;Accounting,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,0.3049

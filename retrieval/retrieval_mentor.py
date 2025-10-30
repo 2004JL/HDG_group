@@ -31,9 +31,8 @@ class RetrievalMentor:
 
         cross = sp_top.merge(mentors, on="_tmp").drop(columns="_tmp")
 
-        base_cols = ["program_id", "program_name", "field_tags", "mentor_id", "mentor_name", "expertise_tags", "institution_id", "institution_name"]
-        extra_cols = ["languages", "education_background", "years_experience"]
-        out = cross[base_cols + extra_cols].copy()
+        cols = ["program_id", "program_name", "field_tags", "mentor_id", "mentor_name", "expertise_tags", "languages", "education_background", "years_experience", "institution_id", "institution_name", "overall_ranking"]
+        out = cross[cols].copy()
         return out
 
     def run(self, top_n: int = 3) -> pd.DataFrame:

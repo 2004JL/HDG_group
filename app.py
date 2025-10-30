@@ -35,6 +35,8 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.title("Educational pathway")
 
+sort_rank = st.checkbox("Sort by institution rank", value=False)
+
 # ================== OUA LOOK & FEEL ==================
 # 1) CSS
 st.markdown("""
@@ -127,57 +129,6 @@ def render_oua_degree_card(p: dict, idx: int):
     st.markdown('</div>', unsafe_allow_html=True)  
     st.markdown('</div>', unsafe_allow_html=True) 
 
-# 4) Mock 数据
-if "DEMO_DEGREES" not in st.session_state:
-    st.session_state.DEMO_DEGREES = [
-        {
-            "title":"Undergraduate Certificate in Health Sciences",
-            "institution":"Curtin University",
-            "level":"Undergraduate",
-            "code":"CUR-CHS-CTF",
-            "online":True,
-            "duration":"6 months full time or part time equivalent",
-            "entry":"No ATAR required. Start with a subject.",
-            "blurb":"Take your first step towards a career in health—including nursing",
-            "url":"https://example.org/chs",
-        },
-        {
-            "title":"Undergraduate Certificate in Psychology",
-            "institution":"Curtin University",
-            "level":"Undergraduate",
-            "code":"CUR-HPS-CTF",
-            "online":True,
-            "duration":"6 months full time or part time equivalent",
-            "entry":"No ATAR required. Start with a subject.",
-            "blurb":"Launch your future in psychology",
-            "url":"https://example.org/psy",
-        },
-        {
-            "title":"Bachelor of Business",
-            "institution":"Griffith University",
-            "level":"Undergraduate",
-            "code":"GRF-BUS-DEG",
-            "online":True,
-            "duration":"3 years full time or part time equivalent",
-            "entry":"No ATAR required. Start with a subject.",
-            "blurb":"Get the professional skills employers are looking for",
-            "url":"https://example.org/bus",
-            "majors":["Marketing","Management","International Business"],
-        },
-        {
-            "title":"Bachelor of Psychology and Counselling",
-            "institution":"Edith Cowan University",
-            "level":"Undergraduate",
-            "code":"ECU-PSC-DEG",
-            "online":True,
-            "duration":"3 years full time or part time equivalent",
-            "entry":"No ATAR required. Start with a subject.",
-            "blurb":"Analyse, listen, and respond to people with empathy",
-            "url":"https://example.org/pc",
-            "majors":["Psychology","Counselling"],
-        },
-    ]
-
 INTEREST_OPTIONS = ["accounting", "architecture", "artificial intelligence", "banking", "business", "computer science", "cybersecurity",
     "data science", "design", "ecology", "education", "engineering", "environmental science", "film", "finance", "information technology",
     "international law", "law", "marketing", "nursing", "psychology", "public health", "renewable energy", "sustainable design"]
@@ -225,7 +176,7 @@ with st.sidebar:
     # Output json
     col, = st.columns(1)
     with col:
-        if st.button("json", use_container_width=True):
+        if st.button("update", use_container_width=True):
             ROOT = Path(__file__).resolve().parents[0]
             dest_dir = ROOT / "retrieval"
             dest_dir.mkdir(parents=True, exist_ok=True)
@@ -372,22 +323,20 @@ def render_program_cards(df: pd.DataFrame, top_k: int = 3):
     """, unsafe_allow_html=True)
 
     for i, row in small.iterrows():
-        institution_id = safe(row, "institution_id")
-        ins_name       = safe(row, "ins_name") or safe(row, "institution_name")
-        website        = safe(row, "website")
-        program_id     = safe(row, "program_id")
+        ins_name = safe(row, "institution_name")
+        website = safe(row, "website")
+        program_name = safe(row, "program_name")
 
         st.markdown(f"""
         <div class="prog-card">
           <div class="prog-title">{ins_name or 'Institution'}</div>
-          <div class="prog-meta">institution_id: <b>{institution_id}</b></div>
-          <div class="prog-meta">program_id: <b>{program_id}</b></div>
-          <div class="prog-link">website: {"<a href='"+website+"' target='_blank'>"+website+"</a>" if website else "—"}</div>
+          <div class="prog-meta">program_name: <b>{program_name}</b></div>
+          <div class="prog-link">website: {"<a href='"+website+"' target='_blank'>"+website+"</a>"}</div>
         </div>
         """, unsafe_allow_html=True)
 
 def render_mentor_cards(df: pd.DataFrame, top_k_prog: int = 3, top_k_mentor: int = 3):
-    cols = ["institution_name", "program_id", "program_name", "field_tags", "mentor_id", "expertise_tags","languages", "years_experience", "pred_label_match"]
+    cols = ["institution_name", "overall_ranking", "program_id", "program_name", "field_tags", "mentor_id", "mentor_name", "expertise_tags","languages", "years_experience", "pred_label_match"]
     df = df[cols].copy()
 
     prog_order = df["program_id"].drop_duplicates().head(top_k_prog).tolist()
@@ -395,17 +344,14 @@ def render_mentor_cards(df: pd.DataFrame, top_k_prog: int = 3, top_k_mentor: int
     st.markdown("""
         <style>
             .prog-outer{
-                border:1px solid #e5e7eb; border-radius:14px; padding:14px 16px; margin:14px 0;
-                box-shadow:0 2px 10px rgba(2,6,23,.05); background:#fff;
+                border:1px solid #e5e7eb; border-radius:14px; padding:14px 16px; margin:14px 0; background:#fff;
             }
             .prog-title{font-weight:800; font-size:1.05rem; margin-bottom:8px;}
             .prog-sub{color:#6b7280; font-size:.92rem; margin-bottom:6px;}
-            .mentor-wrap{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:10px;}
             .mentor-card{
                 border:1px solid #e5e7eb; border-radius:12px; padding:10px 12px; background:#fafafa;
             }
-            .meta{color:#374151; font-size:.92rem; margin:2px 0;}
-            .muted{color:#6b7280;}
+            .meta{color:#6b7280; font-size:.92rem; margin-bottom:8px;}
         </style>
     """, unsafe_allow_html=True)
 
@@ -416,28 +362,33 @@ def render_mentor_cards(df: pd.DataFrame, top_k_prog: int = 3, top_k_mentor: int
 
         st.markdown(f"""
             <div class="prog-outer">
-                <div class="prog-title">Institution: {institution_name }</div>
+                <div class="prog-title">Institution: {institution_name}</div>
                 <div class="prog-sub">program: {program_name}</div>
                 <div class="prog-sub">program_id: {pid}</div>
-                <div class="mentor-wrap">
+            </div>
         """, unsafe_allow_html=True)
 
         for r in sub.to_dict(orient="records"):
-            mid   = r.get("mentor_id", "")
+            mna = r.get("mentor_name", "")
             langs = r.get("languages", "")
-            yrs   = r.get("years_experience", "")
+            yrs = r.get("years_experience", "")
 
             st.markdown(f"""
                 <div class="mentor-card">
-                <div class="meta"><b>mentor_id:</b> {mid}</div>
-                {"<div class='meta'><b>languages:</b> <span class='muted'>{}</span></div>".format(langs)}
-                {"<div class='meta'><b>years_experience:</b> <span class='muted'>{}</span></div>".format(yrs)}
+                <div class="meta"><b>mentor_name: {mna} </b></div>
+                <div class='meta'><b>languages: {langs} </b></div>
+                <div class='meta'><b>years_experience: {yrs} </b></div>
                 </div>
             """, unsafe_allow_html=True)
         st.markdown("</div></div>", unsafe_allow_html=True)
 
 if st.session_state["last_output"] is not None:
+    df_out = st.session_state["last_output"]
+
+    if sort_rank and "overall_ranking" in df_out.columns:
+        df_out = df_out.sort_values("overall_ranking", ascending=True).reset_index(drop=True)
+
     if st.session_state.get("last_action") == "programs":
-        render_program_cards(st.session_state["last_output"], top_k=3)
+        render_program_cards(df_out, top_k=3)
     elif st.session_state.get("last_action") == "mentors":
-        render_mentor_cards(st.session_state["last_output"], top_k_prog=3, top_k_mentor=3)
+        render_mentor_cards(df_out, top_k_prog=3, top_k_mentor=3)

@@ -1,4 +1,4 @@
-mentor_id,mentor_name,country_origin,languages,expertise_tags,education_background,years_experience,immigration_journey,time_zone,availability_slots,contact_method,gender
+mentor_id,mentor_name,country_origin,languages,expertise_tags,education_background,years_experience,immigration_journey,mentor_loction,availability_slots,contact_method,gender
 1,Jia Chen,Bangladesh,English;Vietnamese;German,Renewable Energy;Education;Law,Mixed,9,direct_pr,Australia/Sydney,Mon 09:00;Mon 18:00;Fri 18:00,phone,prefer_not_to_say
 2,Li Chen,Sri Lanka,Indonesian;Urdu,Marketing;Law;Artificial Intelligence,Bachelor,9,work_to_pr,Australia/Sydney,Thu 18:00,email,female
 3,Mina Singh,United Kingdom,Urdu;Russian;Nepali,Accounting;Public Health,Bachelor,17,citizen,Australia/Sydney,Thu 18:00,video_call,non_binary
