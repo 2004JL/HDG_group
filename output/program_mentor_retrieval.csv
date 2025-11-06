@@ -1,0 +1,215 @@
+program_id,program_name,field_tags,mentor_id,mentor_name,mentor_location,expertise_tags,languages,years_experience,institution_id,institution_name,locations,overall_ranking
+878,Computer Science,Banking;Computer Science;Data Science,24,Noelle Ali,sydney,International Law;Business;Marketing,Russian;Hindi,2,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,28,Rosa Sanchez,sydney,Information Technology;Artificial Intelligence;Engineering,Vietnamese,18,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,31,Farah Trivedi,sydney,Public Health;Finance;International Law,Nepali;Russian;Spanish,8,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,35,Sam Omar,sydney,Public Health;Law;Nursing,English;Italian;Russian,18,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,41,Wei Choi,sydney,Marketing;Public Health;Design;Engineering,Urdu,4,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,42,Nadia Huang,sydney,Environmental Science;Sustainable Design;Marketing,Russian;Arabic,10,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,47,Mohammed Green,sydney,Environmental Science;International Law;Law,Mandarin;Spanish;Thai,14,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,61,Liam Rahman,sydney,Engineering;Sustainable Design;Public Health;Accounting,Thai;Mandarin;Arabic,10,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,70,Alice Lopez,sydney,Film;Accounting,English;Indonesian;Japanese,18,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,71,Maya Baker,sydney,Ecology;Information Technology;Business;Public Health,Arabic,11,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,73,Dinesh Hernandez,sydney,Psychology;Nursing;International Law;Engineering,Japanese;Italian,5,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,93,Lucia Choi,sydney,Architecture;Nursing;Marketing;Law,Japanese;Italian,8,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,102,Noelle Ivanov,sydney,Data Science;Design;Artificial Intelligence;Business,Japanese;Mandarin;Arabic,17,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,113,Nguyen Hernandez,sydney,Engineering;Finance;Computer Science;Film,Japanese;Arabic;German,18,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,114,Noel Anderson,sydney,Computer Science;Design;Banking,Italian;Mandarin,2,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,115,Alice Anderson,sydney,Psychology;Artificial Intelligence,Arabic;Korean;Spanish,10,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,126,Amir Gupta,sydney,Information Technology;Environmental Science;Education,German;Thai;Mandarin,11,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,142,Emma Omar,sydney,Film;Education;Accounting;Artificial Intelligence,Arabic;German;Vietnamese,7,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,146,Mei Bianchi,sydney,Accounting;Nursing;Data Science,Russian;Mandarin,19,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,155,Harper Davis,sydney,Artificial Intelligence;Architecture;Ecology,Spanish,9,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,175,Theo Miller,sydney,Psychology;Banking;Information Technology,Indonesian,18,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,196,Jacob Green,sydney,Education;Marketing;Information Technology,Thai;Spanish,6,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,204,Jorge Taylor,sydney,Cybersecurity;Public Health;Banking;Nursing,Vietnamese;English;Hindi,17,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,205,Luca Green,sydney,Design;Engineering;International Law;Computer Science,English;Hindi,4,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,206,Qiang Lopez,sydney,Design;Education,German;Russian,6,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,207,Nadia Johnson,sydney,Finance;Engineering;Cybersecurity,Thai,10,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,214,Emma Zhang,sydney,International Law;Architecture;Computer Science,Arabic,7,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,238,Noor Sanchez,sydney,Marketing;Ecology,Nepali;Urdu;French,2,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,250,Noel Xu,sydney,Data Science;Computer Science;Psychology;Cybersecurity,Japanese;English;Thai,13,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,264,Arjun Jamal,sydney,Environmental Science;Public Health;Information Technology,Nepali,19,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,274,Mina Kaur,sydney,Banking;Business;Computer Science,Spanish;Hindi;Korean,16,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,294,Leah Fernandez,sydney,Finance;Ecology,Hindi;Japanese,9,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,300,Aiden Tran,sydney,Environmental Science;Engineering;Business;Ecology,Vietnamese;English;Hindi,15,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,318,Nadia Sharma,sydney,Architecture;Information Technology,Indonesian;English,14,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,327,Zoe Chen,sydney,Education;Business;Environmental Science,German;French,5,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,331,Mateo Zhang,sydney,Information Technology;Environmental Science,English;Urdu,13,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,336,Isha Wilson,sydney,Banking;Law,German;Italian;Korean,13,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,388,Min Tran,sydney,Information Technology;Education;Architecture;Marketing,Russian;German;Spanish,5,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,408,Lara Kaur,sydney,Nursing;Banking;International Law;Accounting,Spanish;Italian;Nepali,12,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,411,Mila Bianchi,sydney,Sustainable Design;Marketing,Nepali;English;Urdu,4,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,418,Noor Kumar,sydney,Computer Science;Cybersecurity;Nursing,Korean,9,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,419,Suresh Kumar,sydney,Renewable Energy;Architecture;Banking;Data Science,German,9,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,426,Noor Rodriguez,sydney,Sustainable Design;Design;Marketing,Thai,18,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,435,Qiang Huang,sydney,Marketing;Renewable Energy;Education,Korean;Japanese,1,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,476,Sam Taylor,sydney,Public Health;Film;Computer Science,Arabic;Spanish,1,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,487,Luca Sharma,sydney,Finance;Marketing,Urdu;Russian,2,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,490,Jorge Sharma,sydney,Architecture;Film;Environmental Science;Nursing,Indonesian;Russian;Mandarin,1,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,510,Aarav O'Neill,sydney,Architecture;Ecology;Engineering,Arabic;Nepali;French,16,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,515,Alice Williams,sydney,Marketing;Cybersecurity;International Law;Psychology,Indonesian;Urdu;German,7,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,516,Amir Liu,sydney,Nursing;Business;Film;Banking,Thai;Urdu,12,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,517,Isha Hernandez,sydney,Computer Science;Film;Engineering,Arabic,15,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,531,Marcus Rodriguez,sydney,Renewable Energy;Ecology;Psychology,Hindi,12,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,538,Ana Johnson,sydney,Banking;Ecology;Environmental Science;International Law,Arabic,6,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,548,Ava Khan,sydney,Business;Renewable Energy;International Law,Indonesian;Thai,17,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,569,Iris Jones,sydney,Data Science;Psychology;Architecture;Ecology,Thai,10,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,577,Dinesh Chan,sydney,Environmental Science;Marketing,French;Korean;Mandarin,16,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,585,Dinesh Tan,sydney,Information Technology;Computer Science;Artificial Intelligence;Ecology,Vietnamese;Spanish,8,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,616,Ava Wang,sydney,Artificial Intelligence;Architecture,Japanese;Korean,19,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,620,Mila Khan,sydney,Data Science;Business,Korean;English,7,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,623,Emma Smith,sydney,Data Science;Law;Ecology;Sustainable Design,Arabic;Russian;Nepali,10,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,630,Mei Miller,sydney,International Law;Environmental Science;Banking,Italian,13,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,637,Noor Bianchi,sydney,Computer Science;Ecology,Spanish;Thai,18,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,640,Maya Martin,sydney,Film;Psychology;Public Health,Nepali;Indonesian;English,6,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,689,Julia Patel,sydney,Education;Public Health;Cybersecurity;Law,Russian,11,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,709,Kai Chan,sydney,Banking;Nursing;Engineering;Finance,Urdu,14,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,713,Omar Yang,sydney,Banking;Artificial Intelligence;Education;Ecology,Russian;Urdu;Hindi,1,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,716,Olivia Nakamura,sydney,Architecture;Information Technology;Computer Science,Thai;Spanish,19,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,724,Julia Zhang,sydney,Accounting;Banking;Marketing,Vietnamese,11,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,748,Keiko Campbell,sydney,Finance;Accounting,Spanish;Vietnamese;Japanese,4,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,752,Evelyn Ali,sydney,Business;Computer Science,Nepali;Urdu;Indonesian,8,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,783,Grace Anderson,sydney,Cybersecurity;Law;Engineering,Russian;English;Arabic,4,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,786,Rosa Campbell,sydney,Information Technology;Renewable Energy,Vietnamese,6,29,University of New England (UNE),sydney,192
+878,Computer Science,Banking;Computer Science;Data Science,799,Grace Wang,sydney,Architecture;Cybersecurity,Korean;Italian,7,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,24,Noelle Ali,sydney,International Law;Business;Marketing,Russian;Hindi,2,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,28,Rosa Sanchez,sydney,Information Technology;Artificial Intelligence;Engineering,Vietnamese,18,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,31,Farah Trivedi,sydney,Public Health;Finance;International Law,Nepali;Russian;Spanish,8,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,35,Sam Omar,sydney,Public Health;Law;Nursing,English;Italian;Russian,18,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,41,Wei Choi,sydney,Marketing;Public Health;Design;Engineering,Urdu,4,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,42,Nadia Huang,sydney,Environmental Science;Sustainable Design;Marketing,Russian;Arabic,10,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,47,Mohammed Green,sydney,Environmental Science;International Law;Law,Mandarin;Spanish;Thai,14,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,61,Liam Rahman,sydney,Engineering;Sustainable Design;Public Health;Accounting,Thai;Mandarin;Arabic,10,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,70,Alice Lopez,sydney,Film;Accounting,English;Indonesian;Japanese,18,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,71,Maya Baker,sydney,Ecology;Information Technology;Business;Public Health,Arabic,11,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,73,Dinesh Hernandez,sydney,Psychology;Nursing;International Law;Engineering,Japanese;Italian,5,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,93,Lucia Choi,sydney,Architecture;Nursing;Marketing;Law,Japanese;Italian,8,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,102,Noelle Ivanov,sydney,Data Science;Design;Artificial Intelligence;Business,Japanese;Mandarin;Arabic,17,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,113,Nguyen Hernandez,sydney,Engineering;Finance;Computer Science;Film,Japanese;Arabic;German,18,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,114,Noel Anderson,sydney,Computer Science;Design;Banking,Italian;Mandarin,2,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,115,Alice Anderson,sydney,Psychology;Artificial Intelligence,Arabic;Korean;Spanish,10,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,126,Amir Gupta,sydney,Information Technology;Environmental Science;Education,German;Thai;Mandarin,11,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,142,Emma Omar,sydney,Film;Education;Accounting;Artificial Intelligence,Arabic;German;Vietnamese,7,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,146,Mei Bianchi,sydney,Accounting;Nursing;Data Science,Russian;Mandarin,19,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,155,Harper Davis,sydney,Artificial Intelligence;Architecture;Ecology,Spanish,9,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,175,Theo Miller,sydney,Psychology;Banking;Information Technology,Indonesian,18,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,196,Jacob Green,sydney,Education;Marketing;Information Technology,Thai;Spanish,6,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,204,Jorge Taylor,sydney,Cybersecurity;Public Health;Banking;Nursing,Vietnamese;English;Hindi,17,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,205,Luca Green,sydney,Design;Engineering;International Law;Computer Science,English;Hindi,4,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,206,Qiang Lopez,sydney,Design;Education,German;Russian,6,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,207,Nadia Johnson,sydney,Finance;Engineering;Cybersecurity,Thai,10,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,214,Emma Zhang,sydney,International Law;Architecture;Computer Science,Arabic,7,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,238,Noor Sanchez,sydney,Marketing;Ecology,Nepali;Urdu;French,2,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,250,Noel Xu,sydney,Data Science;Computer Science;Psychology;Cybersecurity,Japanese;English;Thai,13,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,264,Arjun Jamal,sydney,Environmental Science;Public Health;Information Technology,Nepali,19,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,274,Mina Kaur,sydney,Banking;Business;Computer Science,Spanish;Hindi;Korean,16,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,294,Leah Fernandez,sydney,Finance;Ecology,Hindi;Japanese,9,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,300,Aiden Tran,sydney,Environmental Science;Engineering;Business;Ecology,Vietnamese;English;Hindi,15,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,318,Nadia Sharma,sydney,Architecture;Information Technology,Indonesian;English,14,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,327,Zoe Chen,sydney,Education;Business;Environmental Science,German;French,5,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,331,Mateo Zhang,sydney,Information Technology;Environmental Science,English;Urdu,13,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,336,Isha Wilson,sydney,Banking;Law,German;Italian;Korean,13,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,388,Min Tran,sydney,Information Technology;Education;Architecture;Marketing,Russian;German;Spanish,5,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,408,Lara Kaur,sydney,Nursing;Banking;International Law;Accounting,Spanish;Italian;Nepali,12,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,411,Mila Bianchi,sydney,Sustainable Design;Marketing,Nepali;English;Urdu,4,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,418,Noor Kumar,sydney,Computer Science;Cybersecurity;Nursing,Korean,9,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,419,Suresh Kumar,sydney,Renewable Energy;Architecture;Banking;Data Science,German,9,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,426,Noor Rodriguez,sydney,Sustainable Design;Design;Marketing,Thai,18,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,435,Qiang Huang,sydney,Marketing;Renewable Energy;Education,Korean;Japanese,1,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,476,Sam Taylor,sydney,Public Health;Film;Computer Science,Arabic;Spanish,1,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,487,Luca Sharma,sydney,Finance;Marketing,Urdu;Russian,2,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,490,Jorge Sharma,sydney,Architecture;Film;Environmental Science;Nursing,Indonesian;Russian;Mandarin,1,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,510,Aarav O'Neill,sydney,Architecture;Ecology;Engineering,Arabic;Nepali;French,16,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,515,Alice Williams,sydney,Marketing;Cybersecurity;International Law;Psychology,Indonesian;Urdu;German,7,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,516,Amir Liu,sydney,Nursing;Business;Film;Banking,Thai;Urdu,12,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,517,Isha Hernandez,sydney,Computer Science;Film;Engineering,Arabic,15,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,531,Marcus Rodriguez,sydney,Renewable Energy;Ecology;Psychology,Hindi,12,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,538,Ana Johnson,sydney,Banking;Ecology;Environmental Science;International Law,Arabic,6,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,548,Ava Khan,sydney,Business;Renewable Energy;International Law,Indonesian;Thai,17,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,569,Iris Jones,sydney,Data Science;Psychology;Architecture;Ecology,Thai,10,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,577,Dinesh Chan,sydney,Environmental Science;Marketing,French;Korean;Mandarin,16,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,585,Dinesh Tan,sydney,Information Technology;Computer Science;Artificial Intelligence;Ecology,Vietnamese;Spanish,8,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,616,Ava Wang,sydney,Artificial Intelligence;Architecture,Japanese;Korean,19,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,620,Mila Khan,sydney,Data Science;Business,Korean;English,7,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,623,Emma Smith,sydney,Data Science;Law;Ecology;Sustainable Design,Arabic;Russian;Nepali,10,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,630,Mei Miller,sydney,International Law;Environmental Science;Banking,Italian,13,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,637,Noor Bianchi,sydney,Computer Science;Ecology,Spanish;Thai,18,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,640,Maya Martin,sydney,Film;Psychology;Public Health,Nepali;Indonesian;English,6,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,689,Julia Patel,sydney,Education;Public Health;Cybersecurity;Law,Russian,11,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,709,Kai Chan,sydney,Banking;Nursing;Engineering;Finance,Urdu,14,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,713,Omar Yang,sydney,Banking;Artificial Intelligence;Education;Ecology,Russian;Urdu;Hindi,1,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,716,Olivia Nakamura,sydney,Architecture;Information Technology;Computer Science,Thai;Spanish,19,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,724,Julia Zhang,sydney,Accounting;Banking;Marketing,Vietnamese,11,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,748,Keiko Campbell,sydney,Finance;Accounting,Spanish;Vietnamese;Japanese,4,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,752,Evelyn Ali,sydney,Business;Computer Science,Nepali;Urdu;Indonesian,8,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,783,Grace Anderson,sydney,Cybersecurity;Law;Engineering,Russian;English;Arabic,4,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,786,Rosa Campbell,sydney,Information Technology;Renewable Energy,Vietnamese,6,29,University of New England (UNE),sydney,192
+880,Banking,Engineering;Marketing;Banking,799,Grace Wang,sydney,Architecture;Cybersecurity,Korean;Italian,7,29,University of New England (UNE),sydney,192
+109,Law,Computer Science;Environmental Science,30,Hannah Garcia,adelaide,Architecture;Law,Thai;Urdu;Arabic,16,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,37,Jorge Wang,adelaide,Architecture;Artificial Intelligence;Film,Indonesian,12,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,78,Aiden Le,adelaide,Accounting;Environmental Science;International Law,French,14,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,120,Mei Gupta,adelaide,Sustainable Design;Architecture;Nursing;Marketing,German;Russian;Mandarin,1,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,125,Benjamin Xu,adelaide,Information Technology;Marketing;International Law;Environmental Science,Nepali;German;Italian,4,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,131,Qiang Bianchi,adelaide,Business;Design,Italian,11,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,135,Hanna Jamal,adelaide,Banking;Finance;Public Health,Arabic,15,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,148,Keiko Trivedi,adelaide,Design;International Law;Psychology,Indonesian,12,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,160,Kai Wilson,adelaide,Law;Computer Science,Vietnamese;French,18,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,165,Benjamin Anderson,adelaide,Engineering;Film,Italian;Nepali,4,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,179,Hiroshi Wang,adelaide,Environmental Science;Architecture;Information Technology;Banking,Thai;Italian;German,5,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,218,Mei Sanchez,adelaide,Ecology;Architecture;Marketing,Urdu;German;Thai,3,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,219,Zoe Khan,adelaide,Computer Science;Public Health,Thai,7,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,235,Isha Liu,adelaide,Sustainable Design;Education,Mandarin;French;English,7,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,245,Hanna Chen,adelaide,Architecture;Banking;Computer Science,Russian;German;Hindi,1,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,247,Benjamin Khan,adelaide,Marketing;Environmental Science;Business,Spanish;English;Arabic,19,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,255,Mei Rahman,adelaide,Marketing;Law,Hindi;Spanish;Vietnamese,8,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,257,Omar Singh,adelaide,Banking;Computer Science;Finance,Urdu;Mandarin,9,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,259,Luca Khan,adelaide,Sustainable Design;International Law;Finance,Japanese;French;Thai,9,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,261,Daniel Sharma,adelaide,Data Science;Business,Nepali;Russian,5,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,268,Pavel O'Neill,adelaide,Information Technology;Artificial Intelligence,English;Urdu,16,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,269,Owen Taylor,adelaide,International Law;Business,Mandarin,9,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,283,Farah Wang,adelaide,Education;Ecology;Psychology,Urdu;Japanese,13,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,292,Priya Liu,adelaide,Cybersecurity;Accounting,Indonesian,11,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,311,Ravi Ivanov,adelaide,International Law;Design,Mandarin,4,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,316,Ivy Patel,adelaide,Design;Ecology;Nursing,French;Urdu,14,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,332,Owen Khan,adelaide,Design;Nursing;Artificial Intelligence;Public Health,English;Mandarin;Urdu,6,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,334,Jin Fisher,adelaide,Marketing;Education,Urdu,2,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,350,Rosa Davis,adelaide,Film;Engineering;Accounting,Nepali,13,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,354,Sienna Jackson,adelaide,Film;Engineering;Data Science;Environmental Science,Indonesian;Japanese;Italian,18,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,376,Sara Anderson,adelaide,Information Technology;Nursing;Data Science;Marketing,English,17,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,378,Iris Chan,adelaide,Engineering;Cybersecurity;Data Science;Public Health,Arabic,18,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,386,Chen Campbell,adelaide,Cybersecurity;Ecology,Korean,16,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,387,Aria Wilson,adelaide,Information Technology;International Law;Sustainable Design,Indonesian,9,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,407,Nadia Grant,adelaide,Nursing;Psychology,German;Hindi;Korean,11,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,409,Jia Sharma,adelaide,Design;Accounting;Finance;Business,Urdu;Hindi;Arabic,8,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,416,Aiden Wang,adelaide,Computer Science;Renewable Energy;Finance;Law,English;Mandarin;Hindi,11,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,417,Qiang Grant,adelaide,Data Science;Design,Arabic;Italian;Indonesian,12,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,431,Alex Clark,adelaide,Design;Architecture;Marketing,Arabic,6,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,436,Aarav O'Neill,adelaide,Sustainable Design;Artificial Intelligence,Korean;German;Japanese,12,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,441,Sam Wang,adelaide,Cybersecurity;Accounting,Nepali;Russian,1,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,460,Nguyen Martinez,adelaide,Cybersecurity;Accounting,Thai;Spanish;Mandarin,1,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,462,Pavel Martinez,adelaide,Cybersecurity;Design,German,7,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,483,Jacob Davis,adelaide,Sustainable Design;Film;Education;Accounting,German;Spanish;Korean,10,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,504,Rohan Hernandez,adelaide,Finance;Nursing;Accounting;Information Technology,Nepali;French;Vietnamese,12,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,512,Nora Miller,adelaide,Accounting;Artificial Intelligence,Italian;Arabic,4,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,535,Arjun Fernandez,adelaide,Information Technology;Computer Science;Sustainable Design,Nepali,5,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,550,Ethan Xu,adelaide,Artificial Intelligence;Education,Russian,18,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,553,Pavel Khan,adelaide,Nursing;Artificial Intelligence;Renewable Energy;Cybersecurity,French;Nepali,1,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,561,Mateo Ali,adelaide,Finance;Sustainable Design;Psychology,Mandarin;Korean,5,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,579,Lara Trivedi,adelaide,Architecture;Artificial Intelligence;Data Science,Thai;English,18,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,591,Emma Martin,adelaide,Finance;Film,Indonesian;Vietnamese,13,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,607,Aiden Rossi,adelaide,Computer Science;Law,Korean;Hindi;French,10,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,615,Owen Baker,adelaide,Renewable Energy;Public Health;Artificial Intelligence;Architecture,Urdu;Thai,19,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,624,Pavel Rodriguez,adelaide,Sustainable Design;Architecture;Finance;Nursing,Thai;French;Italian,18,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,625,Kai Akhtar,adelaide,International Law;Engineering;Information Technology;Education,German;French;Arabic,14,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,632,Riya Li,adelaide,Environmental Science;Cybersecurity;International Law;Artificial Intelligence,Italian;Korean;French,8,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,633,Jin Grant,adelaide,Film;Public Health;Artificial Intelligence;Sustainable Design,German;Japanese;Urdu,1,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,648,Grace Zhang,adelaide,Computer Science;Accounting;Education,Japanese;Vietnamese,12,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,679,Mohammed Park,adelaide,Marketing;Nursing,Japanese,3,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,683,Daniel Campbell,adelaide,Education;Psychology;Engineering,German;Urdu;Thai,8,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,690,Owen Rossi,adelaide,Banking;Marketing,Mandarin,13,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,698,Evelyn Rahman,adelaide,Architecture;Engineering,Hindi;Indonesian,2,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,699,Grace Omar,adelaide,Engineering;Banking;Film;Computer Science,Italian;Nepali;English,10,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,707,Leo Hussain,adelaide,Data Science;Finance,Russian;Spanish,15,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,753,Maya Trivedi,adelaide,Ecology;Banking;Environmental Science;International Law,Arabic;Korean,5,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,773,Mohammed Trivedi,adelaide,Law;Education;Film;Engineering,Italian;Urdu,7,4,Avondale University,adelaide,271
+109,Law,Computer Science;Environmental Science,776,Nguyen Sharma,adelaide,Public Health;Architecture;Nursing,Japanese;Urdu,6,4,Avondale University,adelaide,271

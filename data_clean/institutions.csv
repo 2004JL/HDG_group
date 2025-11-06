@@ -1,44 +1,44 @@
-institution_id,name,type,country,locations,overall_ranking,visa_support,teaching_languages
-1,Australian Catholic University (ACU),University,Australia,Sydney,103,True,English
-2,Australian University of Theology,University,Australia,Melbourne,436,True,English
-3,Australian National University (ANU),University,Australia,Brisbane,349,True,English
-4,Avondale University,University,Australia,Adelaide,271,True,English
-5,Bond University,University,Australia,Perth,107,True,English
-6,Charles Darwin University (CDU),University,Australia,Hobart,72,True,English
-7,Charles Sturt University,University,Australia,Canberra,189,True,English
-8,CQUniversity Australia,University,Australia,Gold Coast,21,True,English
-9,Curtin University,University,Australia,Wollongong,103,True,English
-10,Deakin University,University,Australia,Newcastle,122,True,English
-11,Edith Cowan University (ECU),University,Australia,Geelong,467,True,English
-12,Federation University Australia,University,Australia,Townsville,215,True,English
-13,Flinders University,University,Australia,Darwin,331,True,English
-14,Griffith University,University,Australia,Launceston,459,True,English
-15,James Cook University (JCU),University,Australia,Sydney,88,True,English
-16,La Trobe University,University,Australia,Melbourne,373,True,English
-17,Macquarie University,University,Australia,Brisbane,100,True,English
-18,Monash University,University,Australia,Adelaide,360,True,English
-19,Murdoch University,University,Australia,Perth,152,True,English
-20,Queensland University of Technology (QUT),University,Australia,Hobart,131,True,English
-21,RMIT University,University,Australia,Canberra,150,True,English
-22,Southern Cross University,University,Australia,Gold Coast,309,True,English
-23,Swinburne University of Technology,University,Australia,Wollongong,258,True,English
-24,Torrens University Australia,University,Australia,Newcastle,344,True,English
-25,The University of Adelaide,University,Australia,Geelong,492,True,English
-26,University of Canberra,University,Australia,Townsville,414,True,English
-27,University of Divinity,University,Australia,Darwin,294,True,English
-28,The University of Melbourne,University,Australia,Launceston,386,True,English
-29,University of New England (UNE),University,Australia,Sydney,192,True,English
-30,UNSW Sydney (The University of New South Wales),University,Australia,Melbourne,444,True,English
-31,The University of Newcastle (UON),University,Australia,Brisbane,277,True,English
-32,The University of Notre Dame Australia,University,Australia,Adelaide,161,True,English
-33,The University of Queensland (UQ),University,Australia,Perth,460,True,English
-34,University of South Australia (UniSA),University,Australia,Hobart,314,True,English
-35,University of Southern Queensland (UniSQ),University,Australia,Canberra,22,True,English
-36,The University of Sydney,University,Australia,Gold Coast,253,True,English
-37,University of Tasmania (UTAS),University,Australia,Wollongong,236,True,English
-38,University of Technology Sydney (UTS),University,Australia,Newcastle,345,True,English
-39,University of the Sunshine Coast (UniSC),University,Australia,Geelong,49,True,English
-40,The University of Western Australia (UWA),University,Australia,Townsville,475,True,English
-41,University of Wollongong (UOW),University,Australia,Darwin,59,True,English
-42,Victoria University (VU),University,Australia,Launceston,170,True,English
-43,Western Sydney University (WSU),University,Australia,Sydney,476,True,English
+institution_id,institution_name,type,country,locations,overall_ranking,visa_support,teaching_languages,website,tuition_fee_low,tuition_fee_up
+1,Australian Catholic University (ACU),University,Australia,Sydney,103,True,English,https://www.acu.edu.au,28000.0,38000.0
+2,Australian University of Theology,University,Australia,Melbourne,436,True,English,https://aut.edu.au,22000.0,32000.0
+3,Australian National University (ANU),University,Australia,Brisbane,349,True,English,https://www.anu.edu.au,45000.0,60000.0
+4,Avondale University,University,Australia,Adelaide,271,True,English,https://www.avondale.edu.au,24000.0,32000.0
+5,Bond University,University,Australia,Perth,107,True,English,https://bond.edu.au,45000.0,60000.0
+6,Charles Darwin University (CDU),University,Australia,Hobart,72,True,English,https://www.cdu.edu.au,28000.0,38000.0
+7,Charles Sturt University,University,Australia,Canberra,189,True,English,https://study.csu.edu.au,28000.0,36000.0
+8,CQUniversity Australia,University,Australia,Gold Coast,21,True,English,https://www.cqu.edu.au,28000.0,36000.0
+9,Curtin University,University,Australia,Wollongong,103,True,English,https://www.unsw.edu.au,34000.0,45000.0
+10,Deakin University,University,Australia,Newcastle,122,True,English,https://www.torrens.edu.au,34000.0,45000.0
+11,Edith Cowan University (ECU),University,Australia,Geelong,467,True,English,https://www.sunitafe.edu.au,28000.0,38000.0
+12,Federation University Australia,University,Australia,Townsville,215,True,English,https://www.torrens.edu.au,26000.0,34000.0
+13,Flinders University,University,Australia,Adelaide,331,True,English,https://www.aib.edu.au,32000.0,42000.0
+14,Griffith University,University,Australia,Launceston,459,True,English,https://www.open.edu.au,32000.0,44000.0
+15,James Cook University (JCU),University,Australia,Sydney,88,True,English,https://www.sunitafe.edu.au,32000.0,42000.0
+16,La Trobe University,University,Australia,Melbourne,373,True,English,https://www.latrobe.edu.au,32000.0,44000.0
+17,Macquarie University,University,Australia,Brisbane,100,True,English,https://www.mq.edu.au,34000.0,45000.0
+18,Monash University,University,Australia,Adelaide,360,True,English,https://www.monash.edu,45000.0,60000.0
+19,Murdoch University,University,Australia,Perth,152,True,English,https://www.murdoch.edu.au,30000.0,40000.0
+20,Queensland University of Technology (QUT),University,Australia,Hobart,131,True,English,https://online.qut.edu.au,34000.0,45000.0
+21,RMIT University,University,Australia,Canberra,150,True,English,https://www.rmit.edu.au,34000.0,46000.0
+22,Southern Cross University,University,Australia,Gold Coast,309,True,English,https://www.scu.edu.au,28000.0,36000.0
+23,Swinburne University of Technology,University,Australia,Wollongong,258,True,English,https://www.swinburneonline.edu.au,32000.0,44000.0
+24,Torrens University Australia,University,Australia,Newcastle,344,True,English,https://www.torrens.edu.au,28000.0,38000.0
+25,The University of Adelaide,University,Australia,Adelaide,492,True,English,https://www.adelaide.edu.au,45000.0,58000.0
+26,University of Canberra,University,Australia,Townsville,414,True,English,https://www.canberra.edu.au,30000.0,40000.0
+27,University of Divinity,University,Australia,Darwin,294,True,English,https://divinity.edu.au,22000.0,32000.0
+28,The University of Melbourne,University,Australia,Launceston,386,True,English,https://www.unimelb.edu.au,45000.0,60000.0
+29,University of New England (UNE),University,Australia,Sydney,192,True,English,https://www.une.edu.au,26000.0,34000.0
+30,UNSW Sydney (The University of New South Wales),University,Australia,Melbourne,444,True,English,https://www.unsw.edu.au,45000.0,60000.0
+31,The University of Newcastle (UON),University,Australia,Brisbane,277,True,English,https://www.newcastle.edu.au,32000.0,44000.0
+32,The University of Notre Dame Australia,University,Australia,Adelaide,161,True,English,https://www.notredame.edu.au,34000.0,45000.0
+33,The University of Queensland (UQ),University,Australia,Perth,460,True,English,https://www.uq.edu.au,45000.0,58000.0
+34,University of South Australia (UniSA),University,Australia,Adelaide,314,True,English,https://www.unisa.edu.au,32000.0,42000.0
+35,University of Southern Queensland (UniSQ),University,Australia,Canberra,22,True,English,https://www.unisq.edu.au,28000.0,36000.0
+36,The University of Sydney,University,Australia,Gold Coast,253,True,English,https://www.sydney.edu.au,45000.0,60000.0
+37,University of Tasmania (UTAS),University,Australia,Wollongong,236,True,English,https://www.utas.edu.au,30000.0,40000.0
+38,University of Technology Sydney (UTS),University,Australia,Newcastle,345,True,English,https://www.uts.edu.au,36000.0,48000.0
+39,University of the Sunshine Coast (UniSC),University,Australia,Geelong,49,True,English,https://www.usc.edu.au,28000.0,36000.0
+40,The University of Western Australia (UWA),University,Australia,Townsville,475,True,English,https://www.studyperth.com.au,45000.0,58000.0
+41,University of Wollongong (UOW),University,Australia,Darwin,59,True,English,https://www.uow.edu.au,32000.0,44000.0
+42,Victoria University (VU),University,Australia,Launceston,170,True,English,https://www.vu.edu.au,28000.0,38000.0
+43,Western Sydney University (WSU),University,Australia,Sydney,476,True,English,https://www.westernsydney.edu.au,30000.0,40000.0

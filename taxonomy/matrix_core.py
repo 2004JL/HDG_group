@@ -14,6 +14,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 students_df = pd.read_csv(RAW / "students.csv")
 programs_df = pd.read_csv(RAW / "programs.csv")
 
+
 interests = students_df["interests"].dropna()
 field_tags = programs_df["field_tags"].dropna()
 
@@ -25,11 +26,11 @@ word_set = sorted(set(all_interests.unique()) | set(all_tags.unique()))
 target_labels = [
     "Nursing", "Education", "Engineering", "Information Technology",
     "Cyber Security", "Construction", "Mining", "Trades",
-    "Agriculture", "Logistics", "Health Sciences"
+    "Agriculture", "Logistics", "Public Health"
 ]
 target_labels_lower = [t.lower() for t in target_labels]
 
-def get_vector(text: str) -> np.ndarray:
+def get_vector(text):
     tokens = text.split()
     vecs = [model[w] for w in tokens if w in model.key_to_index]
     if vecs:

@@ -1,0 +1,27 @@
+import pandas as pd
+import numpy as np
+from pathlib import Path
+from sklearn.model_selection import train_test_split
+
+ROOT = Path(__file__).resolve().parents[1]
+RAW = ROOT / "features"
+OUT = ROOT / "models"
+OUT.mkdir(parents=True, exist_ok=True)
+
+df = pd.read_csv(RAW / "eligible_mentor.csv")
+df_sample = df.sample(frac=0.1, random_state=42).reset_index(drop=True)
+unique_programs = df_sample["program_id"].unique()
+
+np.random.seed(42)
+test_programs = np.random.choice(unique_programs, size=10, replace=False)
+
+test = df_sample[df_sample["program_id"].isin(test_programs)].copy()
+test = test.sort_values(by=["program_id", "label_match"], ascending=[True, False])
+
+train = df_sample[~df_sample["program_id"].isin(test_programs)].copy()
+
+train.to_csv(OUT / "train_mentor.csv", index=False)
+test.to_csv(OUT / "test_mentor.csv", index=False)
+
+print(f"train set {len(train)} row")
+print(f"test set {len(test)} row")
