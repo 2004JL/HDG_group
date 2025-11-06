@@ -95,5 +95,8 @@
   <img src="picture/05.png" alt="Student and Program" width="400"/>
 </p>
 
-<h2><span style="font-size:30px;">clear setup and run instructions</span></h2> 
+<h2><span style="font-size:30px;">Clear setup and run instructions</span></h2> 
+<ul>
+ <li>Before running the project, first ensure that Python 3.11 is installed on your device and select this version.</li>
+</ul>
 
