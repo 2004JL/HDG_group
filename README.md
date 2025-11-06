@@ -94,3 +94,6 @@
 <p align="center">
   <img src="picture/05.png" alt="Student and Program" width="400"/>
 </p>
+
+<h2><span style="font-size:30px;">clear setup and run instructions</span></h2> 
+
