@@ -1,4 +1,3 @@
-# retrieval/retrieval_mentor.py
 from pathlib import Path
 import pandas as pd
 
@@ -7,7 +6,7 @@ class RetrievalMentor:
     def __init__(self):
         self.ROOT = Path(__file__).resolve().parents[1]
         self.RAW  = self.ROOT / "data_clean"
-        self.OUT  = self.ROOT / "retrieval"
+        self.OUT  = self.ROOT / "output"
         self.OUT.mkdir(parents=True, exist_ok=True)
 
         self.mentors  = pd.read_csv(self.RAW / "mentors.csv")
@@ -31,8 +30,15 @@ class RetrievalMentor:
 
         cross = sp_top.merge(mentors, on="_tmp").drop(columns="_tmp")
 
-        cols = ["program_id", "program_name", "field_tags", "mentor_id", "mentor_name", "expertise_tags", "languages", "education_background", "years_experience", "institution_id", "institution_name", "overall_ranking"]
-        out = cross[cols].copy()
+        cross["locations"] = cross["locations"].astype(str).str.lower()
+        cross["mentor_location"] = cross["mentor_location"].astype(str).str.lower()
+
+        eligible = cross[
+            (cross["locations"] == cross["mentor_location"])
+        ].copy()
+
+        cols = ["program_id", "program_name", "field_tags", "mentor_id", "mentor_name", "mentor_location", "expertise_tags", "languages", "years_experience", "institution_id", "institution_name", "locations", "overall_ranking"]
+        out = eligible[cols].copy()
         return out
 
     def run(self, top_n: int = 3) -> pd.DataFrame:

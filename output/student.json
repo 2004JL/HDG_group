@@ -1,10 +1,11 @@
 {
   "student_id": "S000123",
-  "major_intent": "business",
+  "major_intent": "Business",
   "degree_goal": "bachelor",
   "english_test_type": "IELTS",
   "english_score_overall": 7.0,
   "gpa_std_4": 3.4,
-  "migration_interest": true,
-  "interests": "data science;education"
+  "budget_aud_per_year": 20000.0,
+  "migration_interest": false,
+  "interests": "banking"
 }

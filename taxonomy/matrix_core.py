@@ -14,6 +14,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 students_df = pd.read_csv(RAW / "students.csv")
 programs_df = pd.read_csv(RAW / "programs.csv")
 
+
 interests = students_df["interests"].dropna()
 field_tags = programs_df["field_tags"].dropna()
 

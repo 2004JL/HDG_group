@@ -1,0 +1,12 @@
+student_id,interests,core_program,pred_label_match
+S000123,psychology,education,0.3742
+S000123,psychology,engineering,0.3691
+S000123,psychology,information technology,0.3354
+S000123,psychology,public health,0.2936
+S000123,psychology,nursing,0.279
+S000123,psychology,agriculture,0.2025
+S000123,psychology,construction,0.1398
+S000123,psychology,mining,0.1321
+S000123,psychology,cyber security,0.1279
+S000123,psychology,logistics,0.1145
+S000123,psychology,trades,0.077

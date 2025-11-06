@@ -1,119 +1,76 @@
-# import pandas as pd
-# from pathlib import Path
+import pandas as pd
+from pathlib import Path
 
-# ROOT = Path(__file__).resolve().parents[1]
-# RAW = ROOT / "data_raw"
-# OUT = ROOT / "data_clean"
-# OUT.mkdir(parents=True, exist_ok=True)
+ROOT = Path(__file__).resolve().parents[1]
+RAW = ROOT / "data_raw"
+OUT = ROOT / "data_clean"
+OUT.mkdir(parents=True, exist_ok=True)
 
-# def to_float(s: pd.Series) -> pd.Series:
-#     return pd.to_numeric(s, errors="coerce")
+# institutions
+institutions = pd.read_csv(RAW / "institutions.csv")
 
-# def to_int(s: pd.Series) -> pd.Series:
-#     return pd.to_numeric(s, errors="coerce").astype("Int64")
+institutions["institution_id"] = institutions["institution_id"].astype(str)
+institutions["overall_ranking"] = pd.to_numeric(institutions["overall_ranking"], errors="coerce")
+institutions["locations"] = institutions["locations"].str.title()
+institutions["tuition_fee_low"] = institutions["tuition_fee_low"].astype(float)
+institutions["tuition_fee_up"] = institutions["tuition_fee_up"].astype(float)
 
-# def bool_col(s: pd.Series) -> pd.Series:
-#     s_num = pd.to_numeric(s, errors="coerce")
+institutions = institutions.reset_index(drop=True)
+institutions.to_csv(OUT / "institutions.csv", index=False)
 
-#     mapping = {"true": True, "false": False}
+# programs
+programs = pd.read_csv(RAW / "programs.csv")
 
-#     cond_str = s.astype(str).str.strip().str.lower().map(mapping)
-#     cond_str = cond_str.astype("boolean").fillna(False)
-#     return ((s_num > 0) | cond_str).astype("boolean")
+programs["program_id"] = programs["program_id"].astype(str)
+programs["institution_id"] = programs["institution_id"].astype(str)
+programs["degree_level"] = programs["degree_level"].astype(str)
+programs["is_migration_aligned"] = programs["is_migration_aligned"].astype(bool)
 
-# def english_test_col(s: pd.Series) -> pd.Series:
-#     s = s.astype(str).str.strip().str.upper()
-#     synonyms = {"IELTS ACADEMIC": "IELTS", "TOEFL IBT": "TOEFL", "PTE ACADEMIC": "PTE"}
-#     return s.replace(synonyms)
+programs = programs.reset_index(drop=True)
+programs.to_csv(OUT / "programs.csv", index=False)
 
-# def strip_obj(df: pd.DataFrame) -> pd.DataFrame:
-#     for c in df.select_dtypes(include="object").columns:
-#         df[c] = df[c].astype(str).str.strip()
-#     return df
+# program_requirements
+reqs = pd.read_csv(RAW / "program_requirements.csv")
 
-# # institutions
-# institutions = pd.read_csv(RAW / "institutions.csv")
-# institutions = strip_obj(institutions)
+reqs["program_id"] = reqs["program_id"].astype(str)
+reqs["min_gpa_std_4"] = reqs["min_gpa_std_4"].astype(float).clip(0, 4)
+reqs["english_required_type"] = reqs["english_required_type"].astype(str).str.strip()
+reqs["english_min_overall"] = reqs["english_min_overall"].astype(float)
 
-# institutions["institution_id"] = to_int(institutions["institution_id"])
-# institutions["overall_ranking"] = pd.to_numeric(institutions["overall_ranking"], errors="coerce")
-# institutions["locations"] = institutions["locations"].str.replace(";", ",").str.title()
+reqs = reqs.reset_index(drop=True)
+reqs.to_csv(OUT / "program_requirements.csv", index=False)
 
-# institutions = institutions.reset_index(drop=True)
-# institutions.to_csv(OUT / "institutions.csv", index=False)
+# students
+students = pd.read_csv(RAW / "students.csv")
 
-# # programs
-# programs = pd.read_csv(RAW / "programs.csv")
-# programs = strip_obj(programs)
+students["student_id"] = students["student_id"].astype(str)
+students["age"] = students["age"].astype(int).clip(16, 40)
+students["budget_aud_per_year"] = students["budget_aud_per_year"].astype(float)
+students["migration_interest"] = students["migration_interest"].astype(bool)
+students["gpa_std_4"] = (students["gpa_std_4"]).astype(float).clip(0, 4)
+students["english_test_type"] = students["english_test_type"].astype(str).str.strip()
+students["english_score_overall"] = students["english_score_overall"].astype(float)
 
-# paren_pattern = r"\s*\([^)]*\)"
-# programs["program_name"] = programs["program_name"].str.replace(paren_pattern, "", regex=True).str.strip()
+students = students.reset_index(drop=True)
+students.to_csv(OUT / "students.csv", index=False)
 
-# programs["program_id"] = to_int(programs["program_id"])
-# programs["institution_id"] = to_int(programs["institution_id"])
-# programs["tuition_aud_per_year"] = to_float(programs["tuition_aud_per_year"])
-# programs["is_migration_aligned"] = bool_col(programs["is_migration_aligned"])
+# mentors
+mentors = pd.read_csv(RAW / "mentors.csv")
 
-# programs = programs.drop_duplicates(subset=["program_id"])
-# programs = programs.reset_index(drop=True)
-# programs.to_csv(OUT / "programs.csv", index=False)
+mentors["mentor_id"] = mentors["mentor_id"].astype(str)
+mentors["years_experience"] = mentors["years_experience"].astype(int).clip(0, 50)
 
-# # program_requirements
-# reqs = pd.read_csv(RAW / "program_requirements.csv")
-# reqs = strip_obj(reqs)
+mentors = mentors.reset_index(drop=True)
+mentors.to_csv(OUT / "mentors.csv", index=False)
 
-# if "program_id" in reqs.columns:
-#     reqs["program_id"] = to_int(reqs["program_id"])
-# if "min_gpa_std_4" in reqs.columns:
-#     reqs["min_gpa_std_4"] = to_float(reqs["min_gpa_std_4"]).clip(0, 4)
-# if "english_required_type" in reqs.columns:
-#     reqs["english_required_type"] = english_test_col(reqs["english_required_type"])
-# if "english_min_overall" in reqs.columns:
-#     reqs["english_min_overall"] = to_float(reqs["english_min_overall"])
-#     reqs = reqs[reqs["english_min_overall"].notna() & (reqs["english_min_overall"] >= 0)]
+# scholarship
+scholarship = pd.read_csv(RAW / "scholarship.csv")
 
-# if "program_id" in reqs.columns and "program_id" in programs.columns:
-#     reqs = reqs[reqs["program_id"].isin(programs["program_id"])]
+scholarship["institution_id"] = scholarship["institution_id"].astype(str)
+scholarship["scholarship_percent"] = scholarship["scholarship_percent"].astype(float).clip(0, 1)
+scholarship["scholarship_GPA_request"] = scholarship["scholarship_GPA_request"].astype(float).clip(0, 4)
 
-# reqs = reqs.dropna(subset=["program_id"])
-# reqs = reqs.drop_duplicates(subset=["program_id"]).reset_index(drop=True)
-# reqs.to_csv(OUT / "program_requirements.csv", index=False)
+scholarship = scholarship.reset_index(drop=True)
+scholarship.to_csv(OUT / "scholarship.csv", index=False)
 
-# # students
-# students = pd.read_csv(RAW / "students.csv")
-# students = strip_obj(students)
-
-# if "student_id" in students.columns:
-#     students["student_id"] = to_int(students["student_id"])
-# if "age" in students.columns:
-#     students["age"] = to_int(students["age"])
-#     students = students[(students["age"].isna()) | ((students["age"] >= 14) & (students["age"] <= 80))]
-# if "budget_aud_per_year" in students.columns:
-#     students["budget_aud_per_year"] = to_float(students["budget_aud_per_year"])
-# if "migration_interest" in students.columns:
-#     students["migration_interest"] =  bool_col(students["migration_interest"])
-# if "english_test_type" in students.columns:
-#     students["english_test_type"] = english_test_col(students["english_test_type"])
-# if "english_score_overall" in students.columns:
-#     students["english_score_overall"] = to_float(students["english_score_overall"])
-# if "gpa_std_4" in students.columns:
-#     students["gpa_std_4"] = to_float(students["gpa_std_4"]).clip(0, 4)
-
-# students = students.dropna(subset=["student_id"])
-# students = students.drop_duplicates(subset=["student_id"]).reset_index(drop=True)
-# students.to_csv(OUT / "students.csv", index=False)
-
-# # mentors
-# mentors = pd.read_csv(RAW / "mentors.csv")
-# mentors = strip_obj(mentors)
-
-# if "mentor_id" in mentors.columns:
-#     mentors["mentor_id"] = to_int(mentors["mentor_id"])
-# if "years_experience" in mentors.columns:
-#     mentors["years_experience"] = to_int(mentors["years_experience"]).fillna(0).clip(0, 80)
-
-# mentors = mentors.dropna(subset=["mentor_id"])
-# mentors = mentors.drop_duplicates(subset=["mentor_id"]).reset_index(drop=True)
-# mentors.to_csv(OUT / "mentors.csv", index=False)
-
-# print("cleaned parquet written to", OUT.resolve())
+print("cleaned parquet written to", OUT.resolve())

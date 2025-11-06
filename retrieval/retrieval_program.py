@@ -1,25 +1,26 @@
-# retrieval.py  —— 可导入类版本
 import json
-import argparse
 import pandas as pd
+import numpy as np
 from pathlib import Path
 
-class Retrieval:
+class RetrievalProgram:
 
     def __init__(self):
 
         self.ROOT = Path(__file__).resolve().parents[1]
         self.RAW1 = self.ROOT / "data_clean"
-        self.OUT  = self.ROOT / "retrieval"
+        self.OUT  = self.ROOT / "output"
         self.OUT.mkdir(parents=True, exist_ok=True)
 
-        self.programs_df   = pd.read_csv(self.RAW1 / "programs.csv")
-        self.institutions  = pd.read_csv(self.RAW1 / "institutions.csv")
-        self.reqs_df       = pd.read_csv(self.RAW1 / "program_requirements.csv")
+        self.programs_df = pd.read_csv(self.RAW1 / "programs.csv")
+        self.institutions = pd.read_csv(self.RAW1 / "institutions.csv")
+        self.reqs_df = pd.read_csv(self.RAW1 / "program_requirements.csv")
+        self.scholarship_df = pd.read_csv(self.RAW1 / "scholarship.csv")
 
         self.prog_ins = self.programs_df[["program_id", "program_name", "field_tags", "institution_id", "degree_level"]].copy() \
             .merge(self.reqs_df[["program_id", "min_gpa_std_4", "english_required_type", "english_min_overall"]].copy(), on="program_id", how="inner") \
-            .merge(self.institutions[["institution_id", "institution_name", "locations", "overall_ranking", "website"]].copy(), on="institution_id", how="inner")
+            .merge(self.institutions[["institution_id", "institution_name", "locations", "overall_ranking", "website", "tuition_fee_low"]].copy(), on="institution_id", how="inner") \
+            .merge(self.scholarship_df[["institution_id", "scholarship_percent", "scholarship_GPA_request"]])
 
     @staticmethod
     def load_student_json(path: Path) -> dict:
@@ -33,7 +34,8 @@ class Retrieval:
             "english_test_type": str(obj["english_test_type"]).strip(),
             "english_score_overall": float(obj["english_score_overall"]),
             "gpa_std_4": float(obj["gpa_std_4"]),
-            "interests": (str(obj.get("interests", "")).strip() if obj.get("interests") is not None else "")
+            "budget_aud_per_year": float(obj["budget_aud_per_year"]),
+            "interests": (str(obj.get("interests", "")).strip())
         }
 
     def eligible_programs(self, student: dict) -> pd.DataFrame:
@@ -44,6 +46,7 @@ class Retrieval:
             "english_test_type": student["english_test_type"],
             "english_score_overall": student["english_score_overall"],
             "gpa_std_4": student["gpa_std_4"],
+            "budget_aud_per_year": student["budget_aud_per_year"],
             "interests": student["interests"],
         }])
 
@@ -57,21 +60,24 @@ class Retrieval:
         cross["degree_goal"] = cross["degree_goal"].astype(str).str.lower()
         cross["degree_level"] = cross["degree_level"].astype(str).str.lower()
 
+        mask = cross["gpa_std_4"] >= cross["scholarship_GPA_request"]
+        cross["reduction"] = np.where(mask, cross["tuition_fee_low"] * cross["scholarship_percent"], 0.0)
+        cross["tuition_fee_low"] = cross["tuition_fee_low"] - cross["reduction"]
+
         eligible = cross[
             (cross["gpa_std_4"] >= cross["min_gpa_std_4"]) &
             (cross["english_test_type"] == cross["english_required_type"]) &
             (cross["english_score_overall"] >= cross["english_min_overall"]) &
-            (cross["degree_goal"] == cross["degree_level"])
+            (cross["degree_goal"] == cross["degree_level"]) &
+            (cross["budget_aud_per_year"] >= cross["tuition_fee_low"])
         ].copy()
 
-        out = eligible[["student_id", "interests", "program_id", "program_name", "field_tags", "institution_id", "institution_name", "website", "locations", "overall_ranking"]]
+        out = eligible[["student_id", "interests", "program_id", "program_name", "field_tags", "institution_id", "institution_name", "website", "locations", "overall_ranking", "tuition_fee_low", "reduction"]]
         return out
 
     def run(self, student_json: Path | None = None) -> pd.DataFrame:
         stu = self.load_student_json(Path(student_json))
         df  = self.eligible_programs(stu)
-        ROOT = Path(__file__).resolve().parents[1]
-        OUT  = ROOT / "retrieval"
-        OUT.mkdir(parents=True, exist_ok=True)
-        df.to_csv(OUT / "student_program_retrieval.csv", index=False)
+        self.OUT.mkdir(parents=True, exist_ok=True)
+        df.to_csv(self.OUT / "student_program_retrieval.csv", index=False)
         return df

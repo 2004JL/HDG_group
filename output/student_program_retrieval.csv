@@ -1,0 +1,20 @@
+student_id,interests,program_id,program_name,field_tags,institution_id,institution_name,website,locations,overall_ranking,tuition_fee_low,reduction
+S000123,banking,43,Banking,Cybersecurity;Banking,2,Australian University of Theology,https://aut.edu.au,Melbourne,436,18700.0,3300.0
+S000123,banking,47,Environmental Science,Architecture;Finance;Environmental Science,2,Australian University of Theology,https://aut.edu.au,Melbourne,436,18700.0,3300.0
+S000123,banking,49,Data Science,Data Science;Engineering,2,Australian University of Theology,https://aut.edu.au,Melbourne,436,18700.0,3300.0
+S000123,banking,109,Law,Computer Science;Environmental Science,4,Avondale University,https://www.avondale.edu.au,Adelaide,271,18000.0,6000.0
+S000123,banking,116,Law,Design;Cybersecurity,4,Avondale University,https://www.avondale.edu.au,Adelaide,271,18000.0,6000.0
+S000123,banking,122,Design,Computer Science;Design,4,Avondale University,https://www.avondale.edu.au,Adelaide,271,18000.0,6000.0
+S000123,banking,125,Computer Science,Computer Science;Public Health,4,Avondale University,https://www.avondale.edu.au,Adelaide,271,18000.0,6000.0
+S000123,banking,126,Architecture,Engineering;Ecology,4,Avondale University,https://www.avondale.edu.au,Adelaide,271,18000.0,6000.0
+S000123,banking,130,Sustainable Design,Sustainable Design;Cybersecurity;Environmental Science,4,Avondale University,https://www.avondale.edu.au,Adelaide,271,18000.0,6000.0
+S000123,banking,366,Architecture,Cybersecurity;Finance;Public Health,12,Federation University Australia,https://www.torrens.edu.au,Townsville,215,19500.0,6500.0
+S000123,banking,372,International Law,International Law;Law;Accounting,12,Federation University Australia,https://www.torrens.edu.au,Townsville,215,19500.0,6500.0
+S000123,banking,390,Design,Cybersecurity;Design;Nursing,12,Federation University Australia,https://www.torrens.edu.au,Townsville,215,19500.0,6500.0
+S000123,banking,800,Cybersecurity,Finance;Nursing;Marketing,27,University of Divinity,https://divinity.edu.au,Darwin,294,18700.0,3300.0
+S000123,banking,813,Education,Education;Renewable Energy,27,University of Divinity,https://divinity.edu.au,Darwin,294,18700.0,3300.0
+S000123,banking,866,Public Health,Cybersecurity;Information Technology;Public Health,29,University of New England (UNE),https://www.une.edu.au,Sydney,192,19500.0,6500.0
+S000123,banking,868,Banking,Law;Data Science,29,University of New England (UNE),https://www.une.edu.au,Sydney,192,19500.0,6500.0
+S000123,banking,878,Computer Science,Banking;Computer Science;Data Science,29,University of New England (UNE),https://www.une.edu.au,Sydney,192,19500.0,6500.0
+S000123,banking,880,Banking,Engineering;Marketing;Banking,29,University of New England (UNE),https://www.une.edu.au,Sydney,192,19500.0,6500.0
+S000123,banking,891,Sustainable Design,Film;Cybersecurity;Sustainable Design,29,University of New England (UNE),https://www.une.edu.au,Sydney,192,19500.0,6500.0
