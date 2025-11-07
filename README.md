@@ -104,6 +104,7 @@
 
 ```bash
 python3.11 -m pip install --upgrade pip
+```
 
 <h3><span style="font-size:20px;">Set library file</span></h3> 
 <ul>
