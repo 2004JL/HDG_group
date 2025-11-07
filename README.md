@@ -100,3 +100,17 @@
  <li>Before running the project, first ensure that Python 3.11 is installed on your device.</li>
 </ul>
 
+<h3><span style="font-size:20px;">python pip</span></h2> 
+<ul>
+ <li>python3.11 -m pip install --upgrade pip</li>
+</ul>
+
+<h3><span style="font-size:20px;">Set library file</span></h2> 
+<ul>
+ <li>pip install pandas numpy streamlit joblib xgboost scikit-learn scipy</li>
+</ul>
+
+<h3><span style="font-size:20px;">Open the folder in Visual Studio Code and enter commands in the terminal</span></h2> 
+<ul>
+ <li>streamlit run app.py</li>
+</ul>
