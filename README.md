@@ -97,6 +97,6 @@
 
 <h2><span style="font-size:30px;">Clear setup and run instructions</span></h2> 
 <ul>
- <li>Before running the project, first ensure that Python 3.11 is installed on your device and select this version.</li>
+ <li>Before running the project, first ensure that Python 3.11 is installed on your device.</li>
 </ul>
 
