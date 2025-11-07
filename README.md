@@ -1,5 +1,5 @@
 
- <h1 align="center" style="font-size:45px; font-weight:bold;">AI-Powered Prediction Platform for Study Pathways and Mentorship</h1>
+<h1 align="center" style="font-size:45px; font-weight:bold;">AI-Powered Prediction Platform for Study Pathways and Mentorship</h1>
 <p align = "center" style="font-size:20px">
 <a href="#background--motivation" styple="color:#1E90FF; text-decoration:underline;">Background &amp;&amp; Motivation</a>&nbsp;&nbsp;&nbsp;
 <a href="#background--motivation" styple="color:#1E90FF; text-decoration:underline;">Overview</a>&nbsp;&nbsp;&nbsp;
@@ -94,3 +94,26 @@
 <p align="center">
   <img src="picture/05.png" alt="Student and Program" width="400"/>
 </p>
+
+<h2><span style="font-size:30px;">Clear setup and run instructions</span></h2> 
+<ul>
+ <li>Before running the project, first ensure that Python 3.11 is installed on your device.</li>
+</ul>
+
+### python pip
+
+```bash
+python3.11 -m pip install --upgrade pip
+```
+
+### Setup library file
+
+```bash
+python3.11 -m pip install pandas numpy streamlit joblib xgboost scikit-learn scipy
+```
+
+### Open folder in Visual Studio Code and enter commands in terminal
+
+```
+streamlit run app.py
+```

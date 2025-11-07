@@ -1,178 +1,130 @@
 program_id,program_name,field_tags,mentor_id,mentor_name,mentor_location,expertise_tags,languages,years_experience,institution_id,institution_name,locations,overall_ranking
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,1,Jia Chen,hobart,Renewable Energy;Education;Law,English;Vietnamese;German,9,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,8,Fatima Omar,hobart,Psychology;Education,Vietnamese;Japanese;Hindi,12,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,11,Nadia Liu,hobart,Engineering;Marketing;Architecture,Russian;Arabic;Mandarin,5,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,48,Aisha Chan,hobart,Design;Banking,Spanish;Japanese;Korean,9,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,54,Suresh Taylor,hobart,Psychology;Public Health;Nursing,Indonesian;Thai,9,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,57,Marcus Zhang,hobart,Renewable Energy;Ecology;Artificial Intelligence,Korean;Russian;Thai,4,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,72,Aisha Rahman,hobart,Finance;Data Science;International Law,Spanish,5,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,101,Suresh Davis,hobart,Computer Science;Finance;Cybersecurity;Engineering,English,13,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,122,Krystal Bianchi,hobart,Education;Renewable Energy;Information Technology,Nepali;Hindi;Italian,4,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,139,Camila Xu,hobart,Public Health;Finance;Sustainable Design;Information Technology,French,18,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,143,Mei Grant,hobart,International Law;Law,Nepali;Italian;Vietnamese,16,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,149,Qiang Chen,hobart,Nursing;Data Science;Sustainable Design;Computer Science,Nepali;Thai,10,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,150,Theo Khan,hobart,Design;Data Science;Artificial Intelligence;Education,Nepali,3,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,168,Levi Fisher,hobart,Accounting;Artificial Intelligence,Urdu,5,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,170,Qiang Lopez,hobart,Nursing;Psychology;Law,English,2,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,178,Yuki Williams,hobart,Artificial Intelligence;Renewable Energy,Urdu;Hindi,7,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,185,Nora O'Neill,hobart,Psychology;Banking;Artificial Intelligence,Nepali;French;Korean,8,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,186,Levi Lee,hobart,Artificial Intelligence;Computer Science;Renewable Energy,Japanese,1,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,192,Ivy O'Neill,hobart,Business;Public Health;Ecology,Japanese;Thai,15,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,213,Dinesh Choi,hobart,Law;Nursing;Information Technology;Banking,Arabic;Korean,9,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,216,Iris Anderson,hobart,Law;Renewable Energy,Mandarin;Spanish;Hindi,5,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,228,Sara Rodriguez,hobart,Law;Sustainable Design;Accounting,Korean;Mandarin,3,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,252,Lucia Green,hobart,Nursing;Marketing,Indonesian,4,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,266,Aisha Sanchez,hobart,Banking;Ecology;Renewable Energy,Mandarin,15,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,277,Wei Hussain,hobart,International Law;Architecture,Indonesian;Italian;French,16,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,279,Suraj Fernandez,hobart,Sustainable Design;Marketing;Environmental Science,Mandarin,10,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,308,Aiden Le,hobart,Ecology;Education;International Law;Film,Thai;Indonesian,13,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,313,Leo Liu,hobart,International Law;Public Health;Accounting;Finance,German;Italian;Thai,18,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,322,Sienna Anderson,hobart,Engineering;Business;Accounting;Banking,Arabic;Thai;Russian,6,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,326,Qiang Jackson,hobart,Design;Environmental Science,English;Vietnamese;Korean,18,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,340,Mateo Fisher,hobart,Banking;Environmental Science;Marketing;Law,Spanish;German;Hindi,17,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,384,Keiko Lopez,hobart,Environmental Science;Architecture;Marketing,Italian;Mandarin;French,4,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,392,Karan Ng,hobart,Finance;Environmental Science,Indonesian;German;Russian,13,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,440,Amir Grant,hobart,Law;Finance,Japanese,2,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,454,Nora Ahmed,hobart,Business;Ecology;Marketing,Indonesian;Russian,2,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,466,Aiden Ali,hobart,Ecology;International Law,Italian;Spanish;French,15,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,469,Aarav O'Neill,hobart,Accounting;Law,Arabic;Nepali,7,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,478,Leo Hernandez,hobart,Banking;Education;Film,Urdu;Vietnamese,19,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,489,Noelle Smith,hobart,Nursing;Design;Cybersecurity,Thai,1,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,493,Mateo Martin,hobart,Banking;Business;Artificial Intelligence;Information Technology,Indonesian,12,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,519,Hannah Khan,hobart,Data Science;Information Technology,Spanish;Urdu;Arabic,1,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,526,Mila Yang,hobart,Design;Education;Film,German,2,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,540,Ava Gupta,hobart,Renewable Energy;Environmental Science;Banking;Psychology,Nepali;Korean,2,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,546,Pavel Li,hobart,Architecture;Accounting,Arabic,13,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,563,Arjun Xu,hobart,Accounting;Engineering,Urdu;Russian,15,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,567,Maya Ahmed,hobart,Sustainable Design;Business;Environmental Science;Cybersecurity,Japanese;Hindi;Spanish,15,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,589,Isha Tan,hobart,Computer Science;Data Science;Artificial Intelligence;Accounting,Urdu;Japanese;Italian,14,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,595,Zara Kaur,hobart,Cybersecurity;Sustainable Design;Artificial Intelligence;Computer Science,Japanese;French,15,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,613,Lara Rahman,hobart,Film;Data Science,Italian;Japanese;French,2,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,647,Ibrahim Nakamura,hobart,Design;Architecture;Marketing,Korean,19,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,659,Ethan Martinez,hobart,Law;Information Technology;Cybersecurity;Renewable Energy,English;Hindi,10,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,684,Rosa Trivedi,hobart,Banking;Education,Russian;Vietnamese,19,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,686,Maya Jamal,hobart,Architecture;Public Health;Cybersecurity,Mandarin;Hindi,8,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,691,Evelyn Wang,hobart,Education;Renewable Energy,Vietnamese;Arabic,16,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,693,Jacob Lee,hobart,Education;Information Technology,Japanese;Arabic;Spanish,7,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,715,Yuki Miller,hobart,Information Technology;Public Health,Arabic;Italian;German,6,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,731,Anh Smith,hobart,Psychology;Artificial Intelligence;Computer Science;Film,Thai;Nepali;Urdu,14,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,733,Tom Hussain,hobart,Public Health;Architecture;Nursing,Japanese;Arabic;Korean,11,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,738,Ava Patel,hobart,Business;Public Health;Design;Renewable Energy,Urdu,19,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,743,Krystal Jamal,hobart,Artificial Intelligence;Data Science,French;German;Vietnamese,3,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,756,Liam Baker,hobart,Environmental Science;International Law,Korean,15,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,777,Omar Kim,hobart,International Law;Sustainable Design;Finance,Urdu;Spanish;Arabic,14,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,788,Nadia Rodriguez,hobart,Ecology;Cybersecurity,Russian;German,16,6,Charles Darwin University (CDU),hobart,72
-190,Artificial Intelligence,Engineering;Environmental Science;Artificial Intelligence,793,Pavel Wilson,hobart,Information Technology;Law,Japanese;Italian;Vietnamese,5,6,Charles Darwin University (CDU),hobart,72
-49,Data Science,Data Science;Engineering,36,Julia Martinez,melbourne,Information Technology;Psychology,German,15,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,50,Rosa Brown,melbourne,Law;Engineering;Ecology;Artificial Intelligence,Thai;Nepali,18,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,56,Soojin Kumar,melbourne,Nursing;Finance;Psychology,French;Thai,2,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,60,Chen Kumar,melbourne,Banking;Education;Law;Marketing,French;Indonesian;Mandarin,1,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,65,Benjamin Rodriguez,melbourne,International Law;Architecture,Korean,15,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,103,Grace Tran,melbourne,Law;Education,Arabic;Indonesian,3,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,112,Nora Lee,melbourne,Law;Data Science;Computer Science;Banking,Arabic;Hindi,12,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,117,Suresh Baker,melbourne,Public Health;Banking;Accounting;Renewable Energy,Urdu;Nepali,3,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,121,Aisha Tran,melbourne,Data Science;Public Health,Mandarin,13,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,123,Suresh Li,melbourne,Architecture;Information Technology,Russian;Japanese;Italian,9,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,141,Mateo Khan,melbourne,Information Technology;Law;Design;Sustainable Design,German;Japanese;Russian,17,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,144,Mateo Lopez,melbourne,Ecology;Environmental Science;Nursing,Russian,10,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,172,Karan Lopez,melbourne,Environmental Science;Computer Science,Hindi;Urdu;Italian,5,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,201,Nguyen Lee,melbourne,Design;Data Science,Vietnamese;Thai,4,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,215,Owen Nakamura,melbourne,International Law;Education,Mandarin,2,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,220,Min Ali,melbourne,Banking;Law;Education,Spanish;Mandarin;Italian,2,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,223,Julia Jackson,melbourne,Public Health;Finance;Renewable Energy;Information Technology,Arabic;Vietnamese;Japanese,8,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,226,Iris Park,melbourne,Psychology;Architecture;Education,German,18,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,232,Keiko Le,melbourne,Marketing;Renewable Energy;Information Technology,Japanese,17,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,243,Amir Chen,melbourne,Cybersecurity;Renewable Energy;Engineering,Italian;German,3,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,293,Ravi Johnson,melbourne,Renewable Energy;Business,Nepali;Spanish;Mandarin,7,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,310,Aiden Kaur,melbourne,Artificial Intelligence;Nursing;Architecture;Renewable Energy,Nepali;Urdu,10,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,319,Noor Ahmed,melbourne,Engineering;Environmental Science;Architecture,Arabic;Mandarin,16,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,320,Hanna Ali,melbourne,Ecology;Accounting,Japanese,8,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,329,Ibrahim Chen,melbourne,Cybersecurity;Banking,Italian;Spanish,18,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,341,Niko Clark,melbourne,Psychology;Architecture,Urdu;English;Russian,4,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,342,Mohammed Anderson,melbourne,Banking;Marketing,Hindi;French,5,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,363,Owen Wang,melbourne,Architecture;Cybersecurity;Design;Renewable Energy,French;Vietnamese;Thai,19,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,365,Aisha Kumar,melbourne,International Law;Ecology,Hindi;Nepali,15,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,374,Eli Miller,melbourne,Psychology;Accounting;Education;Marketing,Japanese;Italian;French,10,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,427,Isha Brown,melbourne,Marketing;Ecology;Psychology,Mandarin,2,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,444,Aisha Lopez,melbourne,Renewable Energy;Design;Architecture,Mandarin,15,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,463,Eli Lee,melbourne,Marketing;Computer Science,Mandarin,13,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,473,Ibrahim Sanchez,melbourne,Cybersecurity;Computer Science;Sustainable Design,Japanese;Vietnamese;Spanish,18,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,479,Elena Hussain,melbourne,Nursing;Business;Law;Data Science,Korean;Spanish;Italian,11,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,496,Li Akhtar,melbourne,Computer Science;Accounting;Public Health;Psychology,Hindi,14,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,547,Jorge Kaur,melbourne,Architecture;Data Science;Renewable Energy,Nepali,6,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,557,Qiang Park,melbourne,Data Science;Education;Renewable Energy;Computer Science,English;Italian,1,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,574,Daniel Baker,melbourne,Business;Public Health,French;Japanese,6,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,658,Ibrahim Campbell,melbourne,Ecology;Public Health;Renewable Energy,Arabic;Urdu;Spanish,4,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,669,Benjamin Yang,melbourne,Renewable Energy;Public Health,Japanese;English;Mandarin,14,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,672,Leo Kaur,melbourne,Education;Environmental Science;Sustainable Design;Public Health,French;Indonesian;English,12,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,676,Suraj Ali,melbourne,Engineering;Artificial Intelligence;Psychology;Public Health,Thai;Spanish;Japanese,3,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,694,Jorge Fernandez,melbourne,Renewable Energy;Business;Data Science,Urdu;Hindi;Nepali,19,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,696,Eli Jamal,melbourne,International Law;Engineering;Design,Nepali;Japanese;Urdu,4,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,702,Daniel Park,melbourne,Engineering;Business;Accounting,Thai;Urdu;Vietnamese,2,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,711,Iris Grant,melbourne,Nursing;Artificial Intelligence;Renewable Energy;Data Science,Indonesian;English,19,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,714,Trang Xu,melbourne,Design;Renewable Energy;Business;Ecology,Urdu;Vietnamese,16,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,725,Thao Ivanov,melbourne,Renewable Energy;Law;Cybersecurity;Nursing,Nepali;Urdu;French,8,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,732,Pavel Ahmed,melbourne,Nursing;Marketing;Artificial Intelligence;Renewable Energy,French;Urdu,13,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,749,Thao Hussain,melbourne,Architecture;Psychology;Public Health;Computer Science,Spanish,16,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,761,Jorge Ali,melbourne,Computer Science;Law,Indonesian;Nepali,2,2,Australian University of Theology,melbourne,436
-49,Data Science,Data Science;Engineering,778,Jin Smith,melbourne,Ecology;Design;Finance,Japanese;Mandarin,7,2,Australian University of Theology,melbourne,436
-685,Engineering,Information Technology;Data Science;Engineering,25,Nguyen Patel,wollongong,Finance;Psychology;Marketing,French;German,16,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,43,Jacob Liu,wollongong,Engineering;Information Technology;Ecology;Data Science,English,3,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,44,Qiang Johnson,wollongong,Education;Law;Artificial Intelligence,Spanish;Vietnamese,16,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,45,Ethan Miller,wollongong,Design;Law,Korean,7,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,62,Lucia Patel,wollongong,International Law;Architecture,Urdu;Italian;Vietnamese,16,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,77,Arjun Jones,wollongong,Accounting;Ecology,Hindi;German,18,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,84,Trang Liu,wollongong,Information Technology;Computer Science,Nepali;Japanese,8,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,96,Ana Clark,wollongong,Banking;Education;Public Health;Information Technology,Hindi;Spanish;Japanese,9,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,98,Hannah Taylor,wollongong,Computer Science;Data Science;Psychology;Law,Thai;Nepali,19,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,100,Maria Anderson,wollongong,Environmental Science;Architecture;Computer Science;Psychology,Thai;Indonesian;Korean,17,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,104,Levi Clark,wollongong,Environmental Science;International Law;Information Technology;Renewable Energy,German;Vietnamese,1,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,151,Alice Miller,wollongong,Law;Architecture,Korean;Italian;Hindi,11,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,163,Soojin Davis,wollongong,Education;Marketing;Design,Hindi,16,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,169,Karan Fisher,wollongong,Engineering;International Law;Banking,Russian,7,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,183,Eli Patel,wollongong,Ecology;Finance;Law,German;Japanese;Vietnamese,13,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,200,Marcus Yang,wollongong,Information Technology;Engineering;Banking;International Law,Urdu;Russian,10,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,209,Kim Singh,wollongong,Psychology;Computer Science,Italian;German;Korean,5,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,210,Li Jones,wollongong,Accounting;Environmental Science;Banking;Sustainable Design,Korean;Urdu;Mandarin,8,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,217,Jia Lee,wollongong,Education;Renewable Energy;Artificial Intelligence,German;Thai;Spanish,9,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,222,Ethan Jamal,wollongong,Data Science;Computer Science;Public Health,Mandarin;Vietnamese;Thai,12,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,233,Farah Khan,wollongong,Sustainable Design;Artificial Intelligence;International Law,Japanese;Urdu,11,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,246,Rohan Ivanov,wollongong,Nursing;Psychology;Business;Information Technology,Spanish;Nepali;Mandarin,13,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,251,Keiko Jamal,wollongong,Accounting;Film,Indonesian,1,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,271,Isha Fernandez,wollongong,Accounting;International Law;Psychology;Design,Mandarin;Korean;Arabic,6,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,323,Riya Wang,wollongong,Renewable Energy;Artificial Intelligence,Vietnamese;Nepali;Korean,5,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,335,Hanna Rossi,wollongong,International Law;Film;Sustainable Design;Renewable Energy,Urdu;Russian;Italian,14,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,360,Aisha Nguyen,wollongong,Environmental Science;Education;Architecture;Law,Mandarin;Thai;German,10,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,362,Ethan Rahman,wollongong,International Law;Psychology;Film,Russian;Indonesian,5,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,368,Aria Baker,wollongong,Engineering;Design;Accounting;Marketing,Nepali;Vietnamese,16,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,379,Zara Kumar,wollongong,Data Science;Education;Law;Marketing,Urdu;Vietnamese;Russian,4,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,394,Farah Grant,wollongong,Information Technology;Business;Public Health;Finance,Urdu;English,6,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,395,Mila Singh,wollongong,Cybersecurity;Sustainable Design;Nursing,Italian;English,3,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,406,Nguyen Sanchez,wollongong,Nursing;Finance,Mandarin;Russian,13,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,420,Mei Clark,wollongong,Artificial Intelligence;Architecture;Environmental Science;Finance,Arabic,18,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,422,Sam Hussain,wollongong,Business;Banking;Artificial Intelligence;Engineering,Korean;Mandarin;Thai,13,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,432,Min Patel,wollongong,Ecology;Education;Sustainable Design,Thai;Italian;Urdu,12,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,450,Mohammed Trivedi,wollongong,Public Health;Architecture;Computer Science,Korean,8,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,485,Hiroshi Trivedi,wollongong,Artificial Intelligence;Nursing,Italian;Urdu;Korean,3,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,486,Fatima Ahmed,wollongong,Education;Law,Russian,16,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,498,Mila Ivanov,wollongong,Data Science;Renewable Energy,Indonesian;Arabic;Hindi,18,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,524,Soojin Sanchez,wollongong,Education;Finance;Renewable Energy;Law,Thai;English,15,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,533,Alice Patel,wollongong,Artificial Intelligence;Public Health;Nursing,Hindi;French,12,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,545,Qiang Choi,wollongong,Computer Science;Public Health;Law;Environmental Science,Spanish,17,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,555,Olivia Ng,wollongong,Data Science;Information Technology;Finance,Nepali;French,2,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,576,Ravi Bianchi,wollongong,Accounting;Psychology;Nursing,Nepali;Mandarin,5,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,580,Kim Martinez,wollongong,Ecology;Marketing,Mandarin;English,16,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,581,Noor Gupta,wollongong,International Law;Marketing,Hindi,1,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,582,Nguyen Lee,wollongong,Sustainable Design;Banking,Arabic;Urdu;Vietnamese,5,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,592,Liam Brown,wollongong,Law;Information Technology,Russian;Thai,18,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,593,Isha Trivedi,wollongong,Data Science;Banking;Marketing,Spanish;French;Urdu,13,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,641,Sam Patel,wollongong,Environmental Science;Engineering;Design,Korean;Hindi;French,9,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,655,Jorge Johnson,wollongong,Education;Accounting;International Law;Finance,Thai;Japanese;Vietnamese,6,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,687,Aisha Yang,wollongong,Psychology;Film,Italian;Japanese;Korean,5,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,697,Lara Rodriguez,wollongong,Architecture;Business,Mandarin,11,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,700,Levi Brown,wollongong,Computer Science;Law,Vietnamese;Arabic,8,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,717,Wei Baker,wollongong,Renewable Energy;Banking;Ecology;Data Science,Italian;Korean,14,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,739,Eli Nakamura,wollongong,Business;Banking,Nepali,9,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,757,Yuki Yang,wollongong,Education;Finance,Korean;Japanese,4,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,794,Lucas Rahman,wollongong,Ecology;Public Health;Law,Nepali;Mandarin,12,23,Swinburne University of Technology,wollongong,258
-685,Engineering,Information Technology;Data Science;Engineering,800,Ava Wilson,wollongong,Psychology;Business;Ecology;Information Technology,Italian;Nepali;Hindi,13,23,Swinburne University of Technology,wollongong,258
+813,Education,Education;Renewable Energy,2,Li Chen,darwin,Marketing;Law;Artificial Intelligence,Indonesian;Urdu,9,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,16,Nadia Rahman,darwin,Marketing;Computer Science;International Law;Information Technology,Nepali,13,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,49,Theo Singh,darwin,Computer Science;Banking,Nepali,15,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,59,Owen Wilson,darwin,Sustainable Design;Law;Cybersecurity;Computer Science,Indonesian;Urdu,19,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,69,Suraj Kim,darwin,Nursing;Finance;Accounting,Nepali;German;Korean,8,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,79,Wei Xu,darwin,Sustainable Design;Ecology;International Law,German,15,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,82,Soojin Ivanov,darwin,Finance;Computer Science;Psychology,Korean,19,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,88,Noelle Garcia,darwin,International Law;Ecology;Engineering,Indonesian;Arabic;Italian,6,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,97,Grace Liu,darwin,Public Health;Data Science,Italian,15,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,180,Rosa Le,darwin,Marketing;Information Technology,Thai,19,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,182,Noor Rodriguez,darwin,Nursing;Environmental Science;Renewable Energy;Data Science,Italian,6,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,190,Jorge Jones,darwin,Sustainable Design;Environmental Science,Italian;Arabic,19,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,208,Ivy Trivedi,darwin,Cybersecurity;Business;Law,Hindi,9,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,224,Emma Rahman,darwin,Information Technology;Film;Sustainable Design,Arabic;Urdu;Thai,14,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,244,Isha Bianchi,darwin,Psychology;International Law,Thai;French,12,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,249,Evelyn Brown,darwin,Environmental Science;Law,Urdu,13,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,278,Hiroshi Yang,darwin,International Law;Finance;Ecology,French,6,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,287,Nadia Lopez,darwin,Business;Banking;Engineering;Law,Hindi,19,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,299,Leah Gupta,darwin,Cybersecurity;Design;Sustainable Design;Artificial Intelligence,Urdu;Korean;Russian,9,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,302,Nora Tran,darwin,Design;Artificial Intelligence;Business;Nursing,Russian;Spanish;French,9,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,307,Sara Ahmed,darwin,Accounting;Finance;Design,Indonesian,19,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,309,Omar Williams,darwin,Environmental Science;Accounting;Film;Data Science,Japanese,18,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,330,Noah Ahmed,darwin,Law;International Law;Engineering,Thai;French;German,8,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,346,Ravi Miller,darwin,Engineering;Marketing,Korean;Urdu;Japanese,18,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,352,Zara Trivedi,darwin,Artificial Intelligence;Ecology;Cybersecurity;Marketing,Spanish;Urdu;Mandarin,16,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,356,Suresh Tran,darwin,Psychology;Architecture;Artificial Intelligence,Spanish;English;Korean,14,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,359,Nora Chan,darwin,Design;Business,Vietnamese,14,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,375,Li Tan,darwin,Design;Computer Science,German,14,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,377,Thao Park,darwin,Business;Information Technology;Psychology;Cybersecurity,Urdu;Mandarin;Spanish,12,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,381,Wei Ali,darwin,Architecture;Business;Banking,Vietnamese,19,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,414,Nadia Nguyen,darwin,Business;Finance;Banking;Information Technology,Spanish;Korean;Vietnamese,16,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,437,Ivy Ali,darwin,Renewable Energy;Design;Computer Science,Mandarin;Urdu;Hindi,15,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,480,Luca Campbell,darwin,Business;Film;Computer Science,Nepali;English,3,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,482,Suresh Lopez,darwin,Ecology;Computer Science;Architecture;Film,Vietnamese;Mandarin;Russian,17,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,505,Sienna Wilson,darwin,Ecology;Law;Business;Finance,Japanese;Korean,3,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,520,Olivia Taylor,darwin,Nursing;Finance;Computer Science,Nepali;Arabic;Mandarin,4,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,523,Jia Tran,darwin,Cybersecurity;Business,Japanese;French;Korean,14,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,528,Suraj Bianchi,darwin,Renewable Energy;Computer Science;Education;Design,Spanish,2,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,583,Dinesh Rahman,darwin,Psychology;Artificial Intelligence;Banking;Engineering,Hindi;Japanese,10,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,590,Elena Anderson,darwin,Design;Finance;Film;Information Technology,Hindi;French,17,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,600,Luca Johnson,darwin,Ecology;Architecture;Renewable Energy;Education,Thai;Vietnamese;Hindi,18,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,602,Anh Chan,darwin,Artificial Intelligence;Ecology,Nepali,17,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,611,Eli Nakamura,darwin,Nursing;Design;Architecture,Nepali;English;Russian,13,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,618,Camila Anderson,darwin,Education;Accounting;Engineering;Artificial Intelligence,English;Japanese,19,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,660,Chen Li,darwin,Computer Science;Information Technology,Hindi,13,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,668,David Williams,darwin,Artificial Intelligence;Business;Accounting,Korean,17,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,673,Mei Davis,darwin,International Law;Artificial Intelligence;Finance,Japanese;Thai;German,1,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,681,Benjamin Le,darwin,Psychology;Information Technology;International Law;Accounting,Mandarin,8,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,701,Sofia Rossi,darwin,Psychology;Data Science,German,11,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,708,Julia Tran,darwin,Marketing;Psychology;Ecology;Information Technology,French;Mandarin;Russian,18,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,718,Chloe Omar,darwin,Law;Architecture,Hindi,13,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,726,Aisha Chen,darwin,Ecology;Information Technology;Cybersecurity,Russian;Indonesian;Spanish,16,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,729,Dinesh Le,darwin,Banking;Information Technology;Environmental Science;Engineering,Nepali;Russian;Urdu,7,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,775,Riya Akhtar,darwin,Marketing;Sustainable Design;Accounting,Urdu;French,3,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,780,Ana Fernandez,darwin,Finance;Architecture;Design;Ecology,Vietnamese;English,13,27,University of Divinity,darwin,294
+813,Education,Education;Renewable Energy,781,Mohammed Liu,darwin,Computer Science;International Law;Film,Hindi;Indonesian;English,9,27,University of Divinity,darwin,294
+866,Public Health,Cybersecurity;Information Technology;Public Health,24,Noelle Ali,sydney,International Law;Business;Marketing,Russian;Hindi,2,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,28,Rosa Sanchez,sydney,Information Technology;Artificial Intelligence;Engineering,Vietnamese,18,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,31,Farah Trivedi,sydney,Public Health;Finance;International Law,Nepali;Russian;Spanish,8,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,35,Sam Omar,sydney,Public Health;Law;Nursing,English;Italian;Russian,18,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,41,Wei Choi,sydney,Marketing;Public Health;Design;Engineering,Urdu,4,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,42,Nadia Huang,sydney,Environmental Science;Sustainable Design;Marketing,Russian;Arabic,10,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,47,Mohammed Green,sydney,Environmental Science;International Law;Law,Mandarin;Spanish;Thai,14,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,61,Liam Rahman,sydney,Engineering;Sustainable Design;Public Health;Accounting,Thai;Mandarin;Arabic,10,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,70,Alice Lopez,sydney,Film;Accounting,English;Indonesian;Japanese,18,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,71,Maya Baker,sydney,Ecology;Information Technology;Business;Public Health,Arabic,11,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,73,Dinesh Hernandez,sydney,Psychology;Nursing;International Law;Engineering,Japanese;Italian,5,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,93,Lucia Choi,sydney,Architecture;Nursing;Marketing;Law,Japanese;Italian,8,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,102,Noelle Ivanov,sydney,Data Science;Design;Artificial Intelligence;Business,Japanese;Mandarin;Arabic,17,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,113,Nguyen Hernandez,sydney,Engineering;Finance;Computer Science;Film,Japanese;Arabic;German,18,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,114,Noel Anderson,sydney,Computer Science;Design;Banking,Italian;Mandarin,2,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,115,Alice Anderson,sydney,Psychology;Artificial Intelligence,Arabic;Korean;Spanish,10,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,126,Amir Gupta,sydney,Information Technology;Environmental Science;Education,German;Thai;Mandarin,11,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,142,Emma Omar,sydney,Film;Education;Accounting;Artificial Intelligence,Arabic;German;Vietnamese,7,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,146,Mei Bianchi,sydney,Accounting;Nursing;Data Science,Russian;Mandarin,19,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,155,Harper Davis,sydney,Artificial Intelligence;Architecture;Ecology,Spanish,9,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,175,Theo Miller,sydney,Psychology;Banking;Information Technology,Indonesian,18,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,196,Jacob Green,sydney,Education;Marketing;Information Technology,Thai;Spanish,6,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,204,Jorge Taylor,sydney,Cybersecurity;Public Health;Banking;Nursing,Vietnamese;English;Hindi,17,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,205,Luca Green,sydney,Design;Engineering;International Law;Computer Science,English;Hindi,4,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,206,Qiang Lopez,sydney,Design;Education,German;Russian,6,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,207,Nadia Johnson,sydney,Finance;Engineering;Cybersecurity,Thai,10,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,214,Emma Zhang,sydney,International Law;Architecture;Computer Science,Arabic,7,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,238,Noor Sanchez,sydney,Marketing;Ecology,Nepali;Urdu;French,2,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,250,Noel Xu,sydney,Data Science;Computer Science;Psychology;Cybersecurity,Japanese;English;Thai,13,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,264,Arjun Jamal,sydney,Environmental Science;Public Health;Information Technology,Nepali,19,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,274,Mina Kaur,sydney,Banking;Business;Computer Science,Spanish;Hindi;Korean,16,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,294,Leah Fernandez,sydney,Finance;Ecology,Hindi;Japanese,9,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,300,Aiden Tran,sydney,Environmental Science;Engineering;Business;Ecology,Vietnamese;English;Hindi,15,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,318,Nadia Sharma,sydney,Architecture;Information Technology,Indonesian;English,14,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,327,Zoe Chen,sydney,Education;Business;Environmental Science,German;French,5,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,331,Mateo Zhang,sydney,Information Technology;Environmental Science,English;Urdu,13,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,336,Isha Wilson,sydney,Banking;Law,German;Italian;Korean,13,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,388,Min Tran,sydney,Information Technology;Education;Architecture;Marketing,Russian;German;Spanish,5,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,408,Lara Kaur,sydney,Nursing;Banking;International Law;Accounting,Spanish;Italian;Nepali,12,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,411,Mila Bianchi,sydney,Sustainable Design;Marketing,Nepali;English;Urdu,4,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,418,Noor Kumar,sydney,Computer Science;Cybersecurity;Nursing,Korean,9,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,419,Suresh Kumar,sydney,Renewable Energy;Architecture;Banking;Data Science,German,9,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,426,Noor Rodriguez,sydney,Sustainable Design;Design;Marketing,Thai,18,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,435,Qiang Huang,sydney,Marketing;Renewable Energy;Education,Korean;Japanese,1,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,476,Sam Taylor,sydney,Public Health;Film;Computer Science,Arabic;Spanish,1,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,487,Luca Sharma,sydney,Finance;Marketing,Urdu;Russian,2,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,490,Jorge Sharma,sydney,Architecture;Film;Environmental Science;Nursing,Indonesian;Russian;Mandarin,1,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,510,Aarav O'Neill,sydney,Architecture;Ecology;Engineering,Arabic;Nepali;French,16,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,515,Alice Williams,sydney,Marketing;Cybersecurity;International Law;Psychology,Indonesian;Urdu;German,7,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,516,Amir Liu,sydney,Nursing;Business;Film;Banking,Thai;Urdu,12,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,517,Isha Hernandez,sydney,Computer Science;Film;Engineering,Arabic,15,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,531,Marcus Rodriguez,sydney,Renewable Energy;Ecology;Psychology,Hindi,12,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,538,Ana Johnson,sydney,Banking;Ecology;Environmental Science;International Law,Arabic,6,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,548,Ava Khan,sydney,Business;Renewable Energy;International Law,Indonesian;Thai,17,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,569,Iris Jones,sydney,Data Science;Psychology;Architecture;Ecology,Thai,10,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,577,Dinesh Chan,sydney,Environmental Science;Marketing,French;Korean;Mandarin,16,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,585,Dinesh Tan,sydney,Information Technology;Computer Science;Artificial Intelligence;Ecology,Vietnamese;Spanish,8,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,616,Ava Wang,sydney,Artificial Intelligence;Architecture,Japanese;Korean,19,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,620,Mila Khan,sydney,Data Science;Business,Korean;English,7,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,623,Emma Smith,sydney,Data Science;Law;Ecology;Sustainable Design,Arabic;Russian;Nepali,10,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,630,Mei Miller,sydney,International Law;Environmental Science;Banking,Italian,13,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,637,Noor Bianchi,sydney,Computer Science;Ecology,Spanish;Thai,18,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,640,Maya Martin,sydney,Film;Psychology;Public Health,Nepali;Indonesian;English,6,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,689,Julia Patel,sydney,Education;Public Health;Cybersecurity;Law,Russian,11,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,709,Kai Chan,sydney,Banking;Nursing;Engineering;Finance,Urdu,14,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,713,Omar Yang,sydney,Banking;Artificial Intelligence;Education;Ecology,Russian;Urdu;Hindi,1,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,716,Olivia Nakamura,sydney,Architecture;Information Technology;Computer Science,Thai;Spanish,19,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,724,Julia Zhang,sydney,Accounting;Banking;Marketing,Vietnamese,11,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,748,Keiko Campbell,sydney,Finance;Accounting,Spanish;Vietnamese;Japanese,4,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,752,Evelyn Ali,sydney,Business;Computer Science,Nepali;Urdu;Indonesian,8,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,783,Grace Anderson,sydney,Cybersecurity;Law;Engineering,Russian;English;Arabic,4,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,786,Rosa Campbell,sydney,Information Technology;Renewable Energy,Vietnamese,6,29,University of New England (UNE),sydney,192
+866,Public Health,Cybersecurity;Information Technology;Public Health,799,Grace Wang,sydney,Architecture;Cybersecurity,Korean;Italian,7,29,University of New England (UNE),sydney,192
