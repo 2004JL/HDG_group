@@ -106,7 +106,7 @@
 python3.11 -m pip install --upgrade pip
 ```
 
-### Set library file
+### Setup library file
 
 ```bash
 python3.11 -m pip install pandas numpy streamlit joblib xgboost scikit-learn scipy
