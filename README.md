@@ -106,12 +106,15 @@
 python3.11 -m pip install --upgrade pip
 ```
 
-<h3><span style="font-size:20px;">Set library file</span></h3> 
-<ul>
- <li>pip install pandas numpy streamlit joblib xgboost scikit-learn scipy</li>
-</ul>
+### Set library file
 
-<h3><span style="font-size:20px;">Open the folder in Visual Studio Code and enter commands in the terminal</span></h3> 
-<ul>
- <li>streamlit run app.py</li>
-</ul>
+```bash
+pip install pandas numpy streamlit joblib xgboost scikit-learn scipy
+```
+
+### Open folder in Visual Studio Code and enter commands in terminal
+
+```
+streamlit run app.py
+```
+
