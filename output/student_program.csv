@@ -1,3 +1,16 @@
 student_id,interests,program_id,program_name,field_tags,institution_id,institution_name,website,locations,overall_ranking,tuition_fee_low,reduction,pred_label_match
-S000123,,813,Education,Education;Renewable Energy,27,University of Divinity,https://divinity.edu.au,Darwin,294,18700.0,3300.0,0.3451
-S000123,,866,Public Health,Cybersecurity;Information Technology;Public Health,29,University of New England (UNE),https://www.une.edu.au,Sydney,192,19500.0,6500.0,0.2915
+S000123,computer science;data science,685,Engineering,Information Technology;Data Science;Engineering,23,Swinburne University of Technology,https://www.swinburneonline.edu.au,Wollongong,258,25600.0,6400.0,0.6462
+S000123,computer science;data science,1042,Education,Cybersecurity;Computer Science;Data Science,34,University of South Australia (UniSA),https://www.unisa.edu.au,Adelaide,314,25600.0,6400.0,0.5591
+S000123,computer science;data science,23,Information Technology,Public Health;Information Technology,1,Australian Catholic University (ACU),https://www.acu.edu.au,Sydney,103,21000.0,7000.0,0.5328
+S000123,computer science;data science,35,Engineering,Design;Information Technology,1,Australian Catholic University (ACU),https://www.acu.edu.au,Sydney,103,21000.0,7000.0,0.5205
+S000123,computer science;data science,720,Education,Nursing;Computer Science,24,Torrens University Australia,https://www.torrens.edu.au,Newcastle,344,22400.0,5600.0,0.5164
+S000123,computer science;data science,654,Information Technology,Nursing;Engineering;Information Technology,22,Southern Cross University,https://www.scu.edu.au,Gold Coast,309,23800.0,4200.0,0.4757
+S000123,computer science;data science,211,Information Technology,Design;Information Technology;Renewable Energy,7,Charles Sturt University,https://study.csu.edu.au,Canberra,189,21000.0,7000.0,0.4657
+S000123,computer science;data science,708,Engineering,Engineering;Sustainable Design;Design,24,Torrens University Australia,https://www.torrens.edu.au,Newcastle,344,22400.0,5600.0,0.4557
+S000123,computer science;data science,259,Education,Education;Psychology;Education,9,Curtin University,https://www.unsw.edu.au,Wollongong,103,25500.0,8500.0,0.453
+S000123,computer science;data science,1324,Education,Education;Sustainable Design,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,22500.0,7500.0,0.4513
+S000123,computer science;data science,1161,Engineering,Education;Design,39,University of the Sunshine Coast (UniSC),https://www.usc.edu.au,Geelong,49,23800.0,4200.0,0.4469
+S000123,computer science;data science,813,Education,Education;Renewable Energy,27,University of Divinity,https://divinity.edu.au,Darwin,294,18700.0,3300.0,0.3991
+S000123,computer science;data science,1305,Education,Finance;Ecology;Education,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,22500.0,7500.0,0.3774
+S000123,computer science;data science,615,Education,Finance;Education;Renewable Energy,21,RMIT University,https://www.rmit.edu.au,Canberra,150,28900.0,5100.0,0.3677
+S000123,computer science;data science,1316,Education,Ecology;Accounting,43,Western Sydney University (WSU),https://www.westernsydney.edu.au,Sydney,476,22500.0,7500.0,0.3186

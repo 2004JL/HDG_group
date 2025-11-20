@@ -1,12 +1,12 @@
 student_id,interests,core_program,pred_label_match
-S000123,,information technology,0.4375
-S000123,,education,0.3927
-S000123,,public health,0.3786
-S000123,,engineering,0.3672
-S000123,,agriculture,0.29
-S000123,,construction,0.2772
-S000123,,cyber security,0.2484
-S000123,,nursing,0.2344
-S000123,,logistics,0.2099
-S000123,,mining,0.2078
-S000123,,trades,0.1436
+S000123,computer science;data science,information technology,0.664
+S000123,computer science;data science,engineering,0.5323
+S000123,computer science;data science,education,0.4731
+S000123,computer science;data science,public health,0.4441
+S000123,computer science;data science,agriculture,0.3361
+S000123,computer science;data science,cyber security,0.3255
+S000123,computer science;data science,construction,0.3056
+S000123,computer science;data science,nursing,0.2802
+S000123,computer science;data science,logistics,0.233
+S000123,computer science;data science,mining,0.2162
+S000123,computer science;data science,trades,0.181

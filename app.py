@@ -77,7 +77,7 @@ INTEREST_OPTIONS = ["accounting", "architecture", "artificial intelligence", "ba
     "data science", "design", "ecology", "education", "engineering", "environmental science", "film", "finance", "information technology",
     "international law", "law", "marketing", "nursing", "psychology", "public health", "renewable energy", "sustainable design"]
 
-# Take student input to json
+# take student input
 with st.sidebar:
     st.markdown("Student profile & export")
     is_ug = st.session_state.get("Study level-Undergraduate", True) if "Study level-Undergraduate" in st.session_state else False
@@ -123,18 +123,16 @@ with st.sidebar:
         "interests": interests.strip(),
     }
 
-    # Output json
-    col, = st.columns(1)
-    with col:
-        if st.button("update", use_container_width=True):
-            dest_dir = ROOT / "output"
-            dest_dir.mkdir(parents=True, exist_ok=True)
-            out_path = dest_dir / "student.json"
-            with open(out_path, "w", encoding="utf-8") as f:
-                json.dump(payload, f, ensure_ascii=False, indent=2)
-
+    # list to json
+    if st.button("update", use_container_width=True):
+        dest_dir = ROOT / "output"
+        dest_dir.mkdir(parents=True, exist_ok=True)
+        out_path = dest_dir / "student.json"
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
 json_path = st.session_state.get("json_path",str(ROOT / "output" / "student.json"))
 
+# function use xgb model file to prediction
 def program_labelmatch(df):
     bundle = joblib.load(ROOT / "models" / "xgb_program_labelmatch_regressor.pkl")
     if isinstance(bundle, dict) and "model" in bundle:
@@ -183,13 +181,14 @@ def core_labelmatch(df):
     out["pred_label_match"] = np.round(pred, 4)
     return out
 
+# initialization state
 col1, col2 = st.columns(2)
 if "last_output" not in st.session_state:
     st.session_state["last_output"] = None
 if "last_action" not in st.session_state:
     st.session_state["last_action"] = None
 
-# Programs recommendation
+# programs recommendation
 with col1:
     if st.button("Find eligible programs", use_container_width=True):
         if migration != True:
@@ -219,7 +218,7 @@ with col1:
         st.session_state["last_output"] = out
         st.session_state["last_action"] = "programs"
 
-# Mentors recommendation
+# mentors recommendation
 with col2:
     if st.button("Find mentors for programs", use_container_width=True):
         rm = RetrievalMentor()
@@ -246,68 +245,65 @@ with col2:
         scored = df.copy()
         scored["pred_label_match"] = np.round(pred, 4)
 
-        scored = scored.sort_values(["program_id", "pred_label_match"], ascending=[True, False])
+        scored["program_order"] = pd.Categorical(scored["program_id"],categories=pd.unique(scored["program_id"]),ordered=True).codes
+        scored = scored.sort_values(["program_order", "pred_label_match"],ascending=[True, False]).drop(columns="program_order")
         scored.to_csv(ROOT / "output" / "program_mentor.csv", index=False)
 
         out = scored.groupby("program_id", as_index=False).head(3).reset_index(drop=True)
+
         st.session_state["last_output"] = out
         st.session_state["last_action"] = "mentors"
 
+# block style and render function
 def render_program_cards(df: pd.DataFrame, top_k: int = 3):
-    small = df.head(top_k).reset_index(drop=True)
-
-    def safe(row, key, default=""):
-        return row.get(key, default)
+    df = df.head(top_k).reset_index(drop=True)
 
     st.markdown("""
-    <style>
-    .prog-card{
-        border:1px solid #e5e7eb; border-radius:14px; padding:14px 16px; margin:10px 0;
-        box-shadow:0 2px 10px rgba(2,6,23,.05); background:#fff;
-    }
-    .prog-title{font-weight:700; font-size:1.05rem; margin-bottom:6px;}
-    .prog-meta{color:#6b7280; font-size:.92rem; margin:2px 0;}
-    .prog-link a{font-weight:600; text-decoration:underline;}
-    </style>
+        <style>
+            .prog-card{
+                border:1px solid #e5e7eb; border-radius:14px; padding:14px 16px; margin:10px 0;
+                box-shadow:0 2px 10px rgba(2,6,23,.05); background:#fff;
+            }
+            .prog-title{font-weight:700; font-size:1.05rem; margin-bottom:6px;}
+            .prog-meta{color:#6b7280; font-size:.92rem; margin:2px 0;}
+            .prog-link a{font-weight:600; text-decoration:underline;}
+        </style>
     """, unsafe_allow_html=True)
 
-    for i, row in small.iterrows():
-        ins_name = safe(row, "institution_name")
-        website = safe(row, "website")
-        program_name = safe(row, "program_name")
-        tuition_fee = safe(row, "tuition_fee_low")
+    for i, row in df.iterrows():
+        ins_name = row.get("institution_name", "")
+        website = row.get("website", "")
+        program_name = row.get("program_name", "")
+        tuition_fee = row.get("tuition_fee_low", "")
         state = "Unavailable"
-        reduction = safe(row, "reduction")
+        reduction = row.get("reduction", "")
 
         if reduction > 0:
             state = "Available"
             st.markdown(f"""
-            <div class="prog-card">
-            <div class="prog-title">{ins_name or 'Institution'}</div>
-            <div class="prog-meta">program_name: <b>{program_name}</b></div>
-            <div class="prog-link">website: {"<a href='"+website+"' target='_blank'>"+website+"</a>"}</div>
-            <div class="prog-meta">Scholarship: <b>{state}</b></div>
-            <div class="prog-meta">Reduction amount: <b>{reduction}</b></div>
-            <div class="prog-meta">Original tuition fee: <b>{tuition_fee+reduction}</b></div>
-            <div class="prog-meta">Current tuition fees: <b>{tuition_fee}</b></div>
-            </div>
+                <div class="prog-card">
+                    <div class="prog-title">{ins_name or 'Institution'}</div>
+                    <div class="prog-meta">program_name: <b>{program_name}</b></div>
+                    <div class="prog-link">website: {"<a href='"+website+"' target='_blank'>"+website+"</a>"}</div>
+                    <div class="prog-meta">Scholarship: <b>{state}</b></div>
+                    <div class="prog-meta">Reduction amount: <b>{reduction}</b></div>
+                    <div class="prog-meta">Original tuition fee: <b>{tuition_fee+reduction}</b></div>
+                    <div class="prog-meta">Current tuition fees: <b>{tuition_fee}</b></div>
+                </div>
             """, unsafe_allow_html=True)
         else:
             st.markdown(f"""
-            <div class="prog-card">
-            <div class="prog-title">{ins_name or 'Institution'}</div>
-            <div class="prog-meta">program_name: <b>{program_name}</b></div>
-            <div class="prog-link">website: {"<a href='"+website+"' target='_blank'>"+website+"</a>"}</div>
-            <div class="prog-meta">Scholarship: <b>{state}</b></div>
-            <div class="prog-meta">Current tuition fees: <b>{tuition_fee}</b></div>
-            </div>
+                <div class="prog-card">
+                    <div class="prog-title">{ins_name or 'Institution'}</div>
+                    <div class="prog-meta">program_name: <b>{program_name}</b></div>
+                    <div class="prog-link">website: {"<a href='"+website+"' target='_blank'>"+website+"</a>"}</div>
+                    <div class="prog-meta">Scholarship: <b>{state}</b></div>
+                    <div class="prog-meta">Current tuition fees: <b>{tuition_fee}</b></div>
+                </div>
             """, unsafe_allow_html=True)
 
 def render_mentor_cards(df: pd.DataFrame, top_k_prog: int = 3, top_k_mentor: int = 3):
-    cols = ["institution_name", "overall_ranking", "program_id", "program_name", "field_tags", "mentor_id", "mentor_name", "expertise_tags","languages", "years_experience", "pred_label_match"]
-    df = df[cols].copy()
-
-    prog_order = df["program_id"].drop_duplicates().head(top_k_prog).tolist()
+    prog = df["program_id"].drop_duplicates().head(top_k_prog).tolist()
 
     st.markdown("""
         <style>
@@ -323,14 +319,14 @@ def render_mentor_cards(df: pd.DataFrame, top_k_prog: int = 3, top_k_mentor: int
         </style>
     """, unsafe_allow_html=True)
 
-    for pid in prog_order:
+    for pid in prog:
         sub = df[df["program_id"] == pid].head(top_k_mentor).reset_index(drop=True)
         program_name = sub.get("program_name").iloc[0]
         institution_name = sub.get("institution_name").iloc[0]
 
         st.markdown(f"""
             <div class="prog-outer">
-                <div class="prog-title">Institution: {institution_name}</div>
+                <div class="prog-title">{institution_name}</div>
                 <div class="prog-sub">program: {program_name}</div>
                 <div class="prog-sub">program_id: {pid}</div>
             </div>
@@ -343,12 +339,13 @@ def render_mentor_cards(df: pd.DataFrame, top_k_prog: int = 3, top_k_mentor: int
 
             st.markdown(f"""
                 <div class="mentor-card">
-                <div class="meta"><b>mentor_name: {mna} </b></div>
-                <div class='meta'><b>languages: {langs} </b></div>
-                <div class='meta'><b>years_experience: {yrs} </b></div>
+                    <div class="meta"><b>mentor_name: {mna} </b></div>
+                    <div class='meta'><b>languages: {langs} </b></div>
+                    <div class='meta'><b>years_experience: {yrs} </b></div>
                 </div>
             """, unsafe_allow_html=True)
 
+# output
 if st.session_state["last_output"] is not None:
     df_out = st.session_state["last_output"]
 
