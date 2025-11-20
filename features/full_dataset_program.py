@@ -19,7 +19,7 @@ students_slim["_tmp"] = 1
 programs_ins["_tmp"] = 1
 cross = students_slim.merge(programs_ins, on="_tmp").drop(columns="_tmp")
 
-eligible_out = cross[
+out = cross[
     ["student_id", "interests", "program_id", "field_tags"]
 ].copy()
 
@@ -69,7 +69,7 @@ def row_match(row):
         avg = round(avg, 2)
     return avg
 
-eligible_out["label_match"] = eligible_out.apply(row_match, axis=1)
+out["label_match"] = out.apply(row_match, axis=1)
 
-eligible_out[["student_id", "interests", "program_id", "field_tags", "label_match"]].to_csv(OUT / "eligible_program.csv", index=False)
+out[["student_id", "interests", "program_id", "field_tags", "label_match"]].to_csv(OUT / "eligible_program.csv", index=False)
 print(f"Saved: {OUT / 'eligible_program.csv'}")

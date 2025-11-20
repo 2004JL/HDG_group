@@ -18,7 +18,7 @@ programs_slim ["_tmp"] = 1
 mentors_slim["_tmp"] = 1
 cross = programs_slim .merge(mentors_slim, on="_tmp").drop(columns="_tmp")
 
-eligible_out = cross[
+out = cross[
     ["program_id", "field_tags", "mentor_id", "expertise_tags"]
 ].copy()
 
@@ -28,10 +28,7 @@ lc_to_canonical = {s.lower(): s for s in set(labels)}
 
 def split_clean(cell):
 
-    if pd.isna(cell):
-        return []
-    else:
-        return [p.strip().lower() for p in str(cell).split(";") if p.strip()]
+    return [p.strip().lower() for p in str(cell).split(";") if p.strip()]
 
 def row_match(row):
     
@@ -58,7 +55,7 @@ def row_match(row):
         avg = round(avg, 2)
     return avg
 
-eligible_out["label_match"] = eligible_out.apply(row_match, axis=1)
+out["label_match"] = out.apply(row_match, axis=1)
 
-eligible_out[["program_id", "field_tags", "mentor_id", "expertise_tags", "label_match"]].to_csv(OUT / "eligible_mentor.csv", index=False)
+out[["program_id", "field_tags", "mentor_id", "expertise_tags", "label_match"]].to_csv(OUT / "eligible_mentor.csv", index=False)
 print(f"Saved: {OUT / 'eligible_mentor.csv'}")

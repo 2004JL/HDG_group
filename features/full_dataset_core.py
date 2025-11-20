@@ -59,4 +59,5 @@ def row_match(row):
 
 out["program_match"] = out.apply(row_match, axis=1)
 
-out [["student_id", "interests", "core_program", "program_match"]].to_csv(OUT / "eligible_core.csv", index=False)
+out[["student_id", "interests", "core_program", "program_match"]].to_csv(OUT / "eligible_core.csv", index=False)
+print(f"Saved: {OUT / 'eligible_core.csv'}")

@@ -4,8 +4,8 @@
   "degree_goal": "bachelor",
   "english_test_type": "IELTS",
   "english_score_overall": 7.0,
-  "gpa_std_4": 3.4,
+  "gpa_std_4": 3.3,
   "budget_aud_per_year": 30000.0,
-  "migration_interest": true,
-  "interests": "computer science;data science"
+  "migration_interest": false,
+  "interests": "artificial intelligence;engineering"
 }

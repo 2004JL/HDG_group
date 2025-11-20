@@ -13,7 +13,7 @@ df_sample = df.sample(frac=0.05, random_state=42).reset_index(drop=True)
 unique_students = df_sample["student_id"].unique()
 
 np.random.seed(42)
-test_students = np.random.choice(unique_students, size=1500, replace=False)
+test_students = np.random.choice(unique_students, size=500, replace=False)
 
 test = df_sample[df_sample["student_id"].isin(test_students)].copy()
 test = test.sort_values(by=["student_id", "label_match"], ascending=[True, False])
